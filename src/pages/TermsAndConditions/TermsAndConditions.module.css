@@ -1,0 +1,509 @@
+/* Terms and Conditions page styles */
+
+/**
+ * Terms and Conditions Page Styles
+ */
+
+ .container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Hero Section */
+  .heroSection {
+    width: 100%;
+    padding: 60px 0 40px;
+    background: #ffffff;
+    box-sizing: border-box;
+  }
+  
+  .heroContent {
+    text-align: center;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  
+  .heroImageWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  
+  .heroImage {
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+    object-fit: contain;
+  }
+  
+  .mainTitle {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 57.99px;
+    letter-spacing: 0;
+    color: #03303D;
+    margin: 0;
+    text-align: center;
+  }
+  
+  .introSection {
+    text-align: left;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  
+  .effectiveDate {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28.99px;
+    color: rgba(3, 48, 61, 0.7); /* #03303DB2 - 70% opacity */
+    margin-bottom: 20px;
+  }
+  
+  .divider {
+    border: none;
+    border-top: 1px solid #e2e8f0;
+    margin: 20px 0;
+  }
+  
+  .introText {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28.99px;
+    color: rgba(3, 48, 61, 0.7); /* #03303DB2 - 70% opacity */
+    margin-bottom: 16px;
+  }
+  
+  /* Terms Section */
+  .termsSection {
+    width: 100%;
+    /* padding: 60px 0; */
+    background: #ffffff;
+    box-sizing: border-box;
+  }
+  
+  .content {
+    max-width: 1280px;
+    margin: 0 auto;
+    background: white;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  
+  .termsContent {
+    font-family: 'Montserrat';
+    color: #03303D;
+  }
+  
+  .sectionTitle {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 24.16px;
+    line-height: 28.99px;
+    color: #03303D;
+    margin-top: 40px;
+    margin-bottom: 16px;
+  }
+  
+  .sectionTitle:first-child {
+    margin-top: 0;
+  }
+  
+  .subHeading {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28.99px;
+    color: #03303D;
+    text-decoration: underline;
+    margin-top: 16px;
+    margin-bottom: 12px;
+  }
+  
+  .text {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28.99px;
+    color: rgba(3, 48, 61, 0.7); /* #03303DB2 - 70% opacity */
+    margin-bottom: 16px;
+  }
+  
+  .link {
+    color: #44d09f;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  
+  .link:hover {
+    color: #38b889;
+    text-decoration: underline;
+  }
+  
+  .orderedList {
+    margin-left: 0;
+    margin-top: 12px;
+    margin-bottom: 16px;
+    padding-left: 24px;
+    list-style-position: outside;
+  }
+  
+  /* Section 17 specific styling for better layout */
+  .orderedListRoman {
+    margin-left: 0;
+    padding-left: 24px;
+    list-style-type: lower-roman;
+  }
+  
+  .orderedListAlpha {
+    margin-left: 0;
+    padding-left: 24px;
+    list-style-type: lower-alpha;
+  }
+  
+  .orderedList li {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28.99px;
+    color: rgba(3, 48, 61, 0.7); /* #03303DB2 - 70% opacity */
+    margin-bottom: 12px;
+  }
+  
+  /* Appendix Section */
+  .appendixSection {
+    width: 100%;
+    padding: 60px 0;
+    background: #ffffff;
+    box-sizing: border-box;
+  }
+  
+  .appendixContent {
+    font-family: 'Montserrat';
+    color: #03303D;
+  }
+  
+  .appendixTitle {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 57.99px;
+    color: #03303D;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .definedTerms {
+    margin-top: 40px;
+  }
+  
+  .definedTerm {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28.99px;
+    color: rgba(3, 48, 61, 0.7); /* #03303DB2 - 70% opacity */
+    margin-bottom: 16px;
+  }
+  
+  .definedTerm b {
+    color: #03303D;
+    font-weight: 600;
+  }
+  
+  /* Interpretation List */
+  .interpretationList {
+    margin-top: 40px;
+  }
+  
+  .termsListsub ol {
+    counter-reset: item;
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .termsListsub li {
+    display: block;
+    margin-bottom: 16px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28.99px;
+    color: rgba(3, 48, 61, 0.7); /* #03303DB2 - 70% opacity */
+  }
+  
+  .termsListsub li:before {
+    content: counters(item, ".") " ";
+    counter-increment: item;
+    font-weight: 600;
+    color: #03303D;
+  }
+  
+  .termsListsub ol ol {
+    margin-left: 24px;
+    margin-top: 12px;
+  }
+  
+  .termsListsub ol ol ol {
+    margin-left: 24px;
+    margin-top: 12px;
+  }
+  
+  /* Download Button */
+  .downloadButtonWrapper {
+    text-align: center;
+    margin-top: 60px;
+    padding: 20px 0;
+    width: 100%;
+  }
+  
+  .downloadLink {
+    display: inline-block;
+    text-decoration: none;
+  }
+  
+  .downloadButton {
+    font-family: 'Montserrat';
+    background: #59C09A;
+    color: #03303D;
+    border: none;
+    width: 559.33px;
+    height: 70.07px;
+    border-radius: 36px;
+    font-size: 21.74px;
+    font-weight: 700;
+    line-height: 100%;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 0;
+  }
+  
+  .downloadButtonText {
+    color: #03303D;
+    letter-spacing: 0;
+  }
+  
+  .downloadArrow {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+  }
+  
+  .downloadButton:hover {
+    background: #4fb088;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .downloadButton:active {
+    transform: translateY(0);
+  }
+  
+  /* Responsive */
+  @media (max-width: 1024px) {
+    .container {
+      padding: 0 20px;
+    }
+  
+    .content {
+      padding: 0 20px;
+    }
+  
+    .introSection {
+      padding: 0 20px;
+    }
+  
+    .downloadButton {
+      width: 100%;
+      max-width: 559.33px;
+      height: auto;
+      min-height: 70.07px;
+      font-size: 20px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .heroSection {
+      padding: 40px 0 30px;
+    }
+  
+    .mainTitle {
+      font-size: 32px;
+      line-height: 48px;
+    }
+  
+    .content {
+      padding: 0 16px;
+    }
+  
+    .introSection {
+      padding: 0 16px;
+    }
+  
+    .sectionTitle {
+      font-size: 20px;
+      margin-top: 32px;
+    }
+  
+    .appendixTitle {
+      font-size: 24px;
+      line-height: 32px;
+      margin-bottom: 30px;
+    }
+  
+    .text,
+    .introText,
+    .effectiveDate {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  
+    .orderedList li {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  
+    .sectionTitle {
+      line-height: 24px;
+    }
+  
+    .downloadButtonWrapper {
+      margin-top: 40px;
+    }
+  
+    .downloadButton {
+      width: 100%;
+      max-width: 559.33px;
+      height: auto;
+      min-height: 70.07px;
+      padding: 18px 32px;
+      font-size: 18px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .container {
+      padding: 0 16px;
+    }
+  
+    .heroSection {
+      padding: 30px 0 20px;
+    }
+  
+    .content {
+      padding: 0 16px;
+    }
+  
+    .introSection {
+      padding: 0 16px;
+    }
+  
+    .mainTitle {
+      font-size: 28px;
+      line-height: 42px;
+    }
+  
+    .sectionTitle {
+      font-size: 20px;
+      line-height: 28px;
+    }
+  
+    .appendixTitle {
+      font-size: 20px;
+      line-height: 26px;
+    }
+  
+    .text,
+    .introText,
+    .effectiveDate,
+    .definedTerm,
+    .termsListsub li {
+      font-size: 15px;
+      line-height: 22px;
+    }
+  
+    .orderedList li {
+      font-size: 15px;
+      line-height: 22px;
+    }
+  
+    .sectionTitle {
+      line-height: 24px;
+    }
+  
+    .downloadButton {
+      width: 100%;
+      max-width: 559.33px;
+      height: auto;
+      min-height: 60px;
+      padding: 16px 24px;
+      font-size: 16px;
+      border-radius: 40px;
+    }
+  
+    .downloadArrow {
+      width: 20px;
+      height: 20px;
+    }
+  
+    .mainTitle {
+      font-size: 24px;
+      line-height: 36px;
+    }
+  
+    .sectionTitle {
+      font-size: 18px;
+      line-height: 26px;
+    }
+  
+    .appendixTitle {
+      font-size: 28px;
+      line-height: 38px;
+    }
+  
+    .heroImage {
+      max-width: 150px;
+    }
+  
+    .heroImageWrapper {
+      margin-bottom: 30px;
+    }
+  
+    .introSection {
+      padding: 0 12px;
+    }
+  
+    .content {
+      padding: 0 12px;
+    }
+  
+    .container {
+      padding: 0 12px;
+    }
+  
+    .orderedList {
+      padding-left: 20px;
+      margin-left: 0;
+    }
+  
+    .orderedListRoman,
+    .orderedListAlpha {
+      padding-left: 20px;
+    }
+  }
+  

@@ -1,0 +1,3698 @@
+/* RecognizedGlobally.module.css */
+
+/* ========================================
+ * SECTION 1: Our impact is being recognised globally
+ * ========================================*/
+
+/* Main Section Styles */
+.container {
+  height: 100vh;
+  min-height: 100vh;
+  max-height: 100vh;
+  padding: clamp(40px, 5vh, 80px) 20px clamp(40px, 5vh, 80px) 20px;
+  background-color: #ffffff;
+  overflow-y: auto;
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100vw;
+  box-sizing: border-box;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+@media (min-width: 1441px) {
+  .container {
+    height: 100vh;
+    min-height: 100vh;
+    max-height: 100vh;
+    padding: clamp(60px, 6vh, 100px) 20px clamp(60px, 6vh, 100px) 20px;
+    /* Maintain 100vh with equal spacing */
+  }
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: calc(100vh - clamp(80px, 10vh, 160px));
+  /* height: 70vh; */
+}
+
+@media (min-width: 1441px) {
+  .content {
+    max-width: 90%;
+  }
+}
+
+/* Top Decoration (Trees and Deer) */
+.topDecoration {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 40px;
+  margin-top: 0;
+  padding-top: 0;
+  flex-shrink: 0;
+}
+
+@media (min-width: 1441px) {
+  .topDecoration {
+    margin-bottom: 40px;
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  /* Wild Tech Section - Right Side for Large Screens */
+  .wildTechRight {
+    padding: clamp(60px, 6vh, 100px) 50px clamp(60px, 6vh, 100px) 50px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  .wildTechIcons {
+    margin-top: 0;
+    padding-top: 0;
+    flex-shrink: 0;
+  }
+
+  .wildTechList {
+    margin-bottom: clamp(20px, 3vh, 40px);
+    flex-shrink: 0;
+  }
+}
+
+/* Fix spacing for medium screens like 1536x960 */
+@media (min-width: 1200px) and (max-width: 1440px) {
+  .topDecoration {
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 30px;
+  }
+
+  .container {
+    padding: clamp(40px, 5vh, 60px) 20px clamp(40px, 5vh, 60px) 20px;
+  }
+
+  .carouselNavigation {
+    margin-top: 80px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    flex-shrink: 0;
+  }
+
+  /* Wild Tech Section - Right Side */
+  .wildTechRight {
+    padding: clamp(30px, 4vh, 60px) 50px clamp(30px, 4vh, 60px) 50px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  .wildTechIcons {
+    margin-top: clamp(15px, 2vh, 30px);
+    padding-top: 0;
+    flex-shrink: 0;
+  }
+
+  .wildIcon {
+    height: clamp(55px, 6.5vh, 75px);
+  }
+
+  .wildTechList {
+    margin-bottom: clamp(20px, 3vh, 40px);
+    flex-shrink: 0;
+  }
+}
+
+/* Fix spacing for short height screens */
+@media (min-width: 1024px) and (min-height: 800px) and (max-height: 1000px) {
+  .topDecoration {
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 25px;
+  }
+
+  .container {
+    padding: clamp(30px, 4vh, 50px) 20px clamp(30px, 4vh, 50px) 20px;
+  }
+
+  .heading {
+    margin-bottom: 60px;
+  }
+
+  .carouselNavigation {
+    margin-top: 50px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    flex-shrink: 0;
+  }
+
+  /* Wild Tech Section - Right Side */
+  .wildTechRight {
+    padding: clamp(25px, 3.5vh, 50px) 50px clamp(25px, 3.5vh, 50px) 50px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  .wildTechIcons {
+    margin-top: clamp(12px, 1.8vh, 25px);
+    padding-top: 0;
+    flex-shrink: 0;
+  }
+
+  .wildIcon {
+    height: clamp(50px, 6vh, 70px);
+  }
+
+  .wildTechList {
+    margin-bottom: clamp(20px, 3vh, 40px);
+    flex-shrink: 0;
+  }
+}
+
+/* Specific fix for 1536x960 and similar screens */
+@media (min-width: 1536px) and (max-width: 1600px) and (min-height: 900px) and (max-height: 1000px) {
+  .container {
+    padding: clamp(50px, 5vh, 80px) 20px clamp(50px, 5vh, 80px) 20px;
+  }
+
+  .topDecoration {
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 35px;
+  }
+
+  .heading {
+    margin-bottom: clamp(70px, 7vh, 100px);
+  }
+
+  .carouselNavigation {
+    margin-top: clamp(70px, 7vh, 100px);
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  /* Wild Tech Section - Right Side */
+  .wildTechRight {
+    padding: clamp(40px, 4.5vh, 70px) 50px clamp(40px, 4.5vh, 70px) 50px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  .wildTechIcons {
+    margin-top: clamp(18px, 2.2vh, 35px);
+    padding-top: 0;
+    flex-shrink: 0;
+  }
+
+  .wildIcon {
+    height: clamp(60px, 7vh, 80px);
+  }
+
+  .wildTechList {
+    margin-bottom: clamp(20px, 3vh, 40px);
+    flex-shrink: 0;
+  }
+}
+
+.treeIcon,
+.deerIcon {
+  height: 80px;
+  width: 300px;
+}
+
+/* Heading */
+.heading {
+  font-family: 'Montserrat';
+  font-size: 40px;
+  font-weight: 600;
+  color: #03303D;
+  margin-bottom: clamp(60px, 8vh, 132px);
+  margin-top: 0;
+  line-height: 100%;
+  letter-spacing: 0%;
+  flex-shrink: 0;
+}
+
+/* Cards Layout */
+.recognitionCards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Individual Card */
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 20px;
+  position: relative;
+  justify-content: flex-start;
+  min-height: 400px;
+}
+
+/* Card Header (Logo Area) */
+.cardHeader {
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+/* Logo Container (The Curved Bracket/Parentheses) */
+.logoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 200px;
+  height: 250px;
+  /* padding: 20px; */
+}
+
+@media (max-width: 768px) {
+  .logoContainer {
+
+    width: 180px !important;
+    /* padding: 20px; */
+  }
+}
+
+
+/* Curved Brackets using SVG Background Images */
+.logoContainer::before,
+.logoContainer::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 40px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Left Curve - Using left_border.svg */
+.logoContainer::before {
+  left: -40px;
+  background-image: url('/src/assets/left_border.svg');
+}
+
+/* Right Curve - Using right_border.svg */
+.logoContainer::after {
+  right: -40px;
+  background-image: url('/src/assets/right_border.svg');
+}
+
+.mainLogo {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.recognitionCards a:nth-child(4) .mainLogo {
+  width: 255px;
+  height: 210px;
+}
+
+.recognitionCards a:nth-child(6) .mainLogo {
+  width: 244px;
+  height: 201px;
+}
+
+/* Card Description */
+.cardDescription {
+  font-family: 'Montserrat';
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 130%;
+  color: #03303D;
+  text-align: center;
+  max-width: 280px;
+  margin: 0 auto;
+  letter-spacing: 0%;
+}
+
+.cardDescription strong {
+  color: #03303D;
+}
+
+/* Carousel Navigation Container */
+.carouselNavigation {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  margin-top: clamp(60px, 8vh, 131px);
+  padding-right: 20px;
+  width: 100%;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  flex-shrink: 0;
+}
+
+@media (min-width: 1441px) {
+  .carouselNavigation {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+}
+
+/* Carousel Navigation Buttons */
+.prevButton,
+.nextButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 10;
+  transition: transform 0.2s ease;
+}
+
+.prevButton:hover,
+.nextButton:hover {
+  transform: scale(1.1);
+}
+
+.prevButton svg,
+.nextButton svg {
+  width: 40px;
+  height: 40px;
+  color: #03303D;
+}
+
+.nextArrow {
+  width: 50px;
+  height: 50px;
+  color: #03303D;
+  transition: transform 0.2s ease;
+}
+
+/* Mobile Carousel Styles */
+.mobileCarouselContainer {
+  display: none;
+}
+
+.mobileWrapper {
+  display: none;
+  /* Hidden on desktop */
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 20px 20px;
+    /* Further reduced padding */
+    min-height: auto;
+    /* Remove min-height to fit content */
+  }
+
+  .topDecoration,
+  .heading,
+  .recognitionCards,
+  .carouselNavigation {
+    display: none;
+  }
+
+  .mobileWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 0;
+    /* Remove gap */
+  }
+
+  .mobileCarouselContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    padding: 0 10px;
+  }
+
+  .mobileArrow {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mobileArrow img {
+    width: 32px;
+    /* Increased for bolder appearance */
+    height: 32px;
+    /* #59C09A color */
+  }
+
+  @media (max-width: 768px) {
+    .mobileArrow img {
+      position: absolute;
+      top: 25vw;
+
+    }
+  }
+
+  .mobileCardWrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+
+  .mobileCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 320px;
+    text-decoration: none;
+  }
+
+  .topDecorationMobile {
+    margin-bottom: 15px;
+    /* Reduced margin */
+  }
+
+  .treeIconMobile {
+    height: 60px;
+    /* Increased size */
+    width: auto;
+  }
+
+  .headingMobile {
+    font-family: 'Montserrat';
+    font-size: 28px;
+    font-weight: 600;
+    color: #03303D;
+    line-height: 1.2;
+    margin-bottom: 15px;
+    /* Added bottom margin as requested */
+    text-align: center;
+  }
+
+  .mobileCardHeader {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .mobileCardDescription {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #03303D;
+    text-align: center;
+    max-width: 280px;
+  }
+}
+
+/* ========================================
+ * SECTION 2: Sacred Groves Seal of Trust Section
+ * ========================================*/
+
+.sealOfTrustSection {
+  position: relative;
+  overflow: hidden;
+  background-color: #B8E0D3;
+  min-height: 100vh;
+  padding: 60px 0;
+  display: flex;
+  padding-right: 60px;
+  justify-content: center;
+  align-items: center;
+}
+
+.sealBackground {
+  position: absolute;
+  top: 52%;
+  left: 20px;
+  transform: translateY(-50%);
+  width: 70%;
+  height: 80%;
+  z-index: 0;
+  opacity: 1;
+
+}
+
+@media (min-width: 1441px) {
+  .sealBackground {
+    position: absolute;
+    top: 52%;
+    left: -50px;
+    transform: translateY(-50%);
+    width: 75%;
+    height: 90%;
+    z-index: 0;
+    opacity: 1;
+  }
+}
+
+.sealContent {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 1400px;
+  display: flex;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.sealLeft {
+  position: relative;
+  flex: 1;
+  padding-right: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  height: 100%;
+}
+
+.sealTreeIcon {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+  margin-left: 40px;
+}
+
+.sealTreeIcon .treeIcon {
+  width: auto;
+  height: 120px;
+}
+
+.sealTitle {
+  font-family: 'Montserrat';
+  font-size: 48px;
+  font-weight: 500;
+  color: #03303D;
+  line-height: 130%;
+  text-align: left;
+  margin: 0 0 30px 80px;
+  max-width: 365px;
+  order: -1;
+  position: absolute;
+  bottom: 26vh;
+  left: 12vw;
+}
+
+.sealLogoArea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+  width: 100%;
+}
+
+.sealLogo {
+  width: 100%;
+  max-width: 862px;
+  height: auto;
+  object-fit: contain;
+}
+
+.sealRight {
+  flex: 1;
+  padding-left: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  height: 100%;
+  min-height: 500px;
+}
+
+.trustPointsList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-left: auto;
+  width: auto;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  align-items: flex-end;
+}
+
+.trustPointItem {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  border-bottom: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  overflow: visible;
+  max-width: 75%;
+  width: 100%;
+  /* Ensure arrow is not cut off */
+}
+
+/* Removed hover background */
+
+.trustItemHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  width: 100%;
+  max-width: 100%;
+  gap: 23px;
+  /* Add gap to prevent arrow cutoff */
+}
+
+.trustText {
+  font-family: 'Montserrat';
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: 0%;
+  color: #03303D;
+  text-transform: none;
+  font-variant: small-caps;
+  text-align: right;
+  flex: 1;
+  display: inline-block;
+  max-width: 600px;
+  white-space: nowrap;
+}
+
+.trustArrow {
+  width: auto;
+  /* height: 40px; */
+  min-height: 27.11px;
+  flex-shrink: 0;
+  filter: none;
+  transition: transform 0.3s ease;
+  align-self: flex-start;
+  margin-top: 0;
+}
+
+.trustItemDescription {
+  margin-top: 15px;
+  padding-top: 15px;
+  font-family: 'Montserrat';
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: 0%;
+  color: #03303D;
+  animation: fadeIn 0.3s ease-out;
+  background: transparent;
+  max-width: 160px;
+  width: 100%;
+  text-align: right;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  margin-left: auto;
+}
+
+.trustPointItem.expanded {
+  padding: 20px;
+  /* Add padding for better look with background */
+  background: #B8E0D3;
+  /* Match section background to cover grid */
+  position: relative;
+  z-index: 10;
+  border-radius: 8px;
+  margin-right: 40px;
+  /* Optional: adds nice touch */
+  /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); */
+  /* Optional: adds depth */
+}
+
+.trustPointItem.expanded .trustItemHeader {
+  flex-direction: row;
+  /* Keep arrow on right */
+  justify-content: space-between;
+  /* Space out text and arrow */
+  align-items: center;
+}
+
+.trustPointItem.expanded .trustText {
+  text-align: left;
+  padding-right: 20px;
+  /* Space between text and arrow */
+}
+
+.trustPointItem.expanded .trustItemDescription {
+  text-align: left;
+  margin-left: 0;
+  margin-right: auto;
+  max-width: 350px;
+  /* Reduced width for better text wrapping into 5-6 lines */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile Seal of Trust Carousel */
+.mobileSealWrapper {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .sealOfTrustSection {
+    padding: 40px 20px;
+    min-height: auto;
+  }
+
+  .sealBackground,
+  .sealContent {
+    display: none;
+  }
+
+  .mobileSealWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 30px;
+  }
+
+  .mobileSealCarousel {
+    width: 100%;
+    max-width: 350px;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mobileSealSlide {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .mobileSealIntroSlide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .mobileSealImageWrapper {
+    position: relative;
+    width: 90vw;
+    /* Increased to 90vw */
+    max-width: 400px;
+    /* Max width constraint */
+    height: auto;
+    aspect-ratio: 1;
+    /* Maintain square aspect */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    /* Center horizontally */
+  }
+
+  .mobileSealBackground {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    z-index: 0;
+  }
+
+  .mobileSealImage {
+    position: relative;
+    width: 85%;
+    /* Relative to wrapper */
+    height: auto;
+    z-index: 1;
+  }
+
+  .mobileSealTitle {
+    display: none;
+    /* Hidden as title is in the image */
+  }
+
+  .mobileTrustPoint {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .mobileTrustSeparator {
+    width: 100%;
+    height: 1px;
+    background-color: #59C09A;
+    margin: 20px 0;
+  }
+
+  .mobileTrustPointTitle {
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-weight: 600;
+    color: #03303D;
+    line-height: 1.3;
+    text-align: left;
+    text-transform: uppercase;
+    font-variant: small-caps;
+  }
+
+  .mobileTrustPointDescription {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #03303D;
+    text-align: left;
+  }
+
+  .mobileSealDots {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .mobileSealDot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 2px solid #03303D;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 0;
+  }
+
+  .mobileSealDotActive {
+    background-color: #03303D;
+  }
+}
+
+/* ========================================
+ * SECTION 3: Built with Wild Tech Section
+ * ========================================*/
+
+.wildTechSection {
+  position: relative;
+  overflow: hidden;
+  background-color: #03303D;
+  height: 100vh;
+  padding: 0;
+  width: 100%;
+  max-width: 100vw;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+
+.wildTechContent {
+  display: flex;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/* Left Side - Forest Image */
+.wildTechLeft {
+  position: relative;
+  flex: 0 0 60%;
+  width: 60%;
+  overflow: visible;
+}
+
+.wildTechImage {
+  width: 864px;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 1801px) {
+  .wildTechImage {
+    width: 60vw;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Location Text Overlay */
+.wildTechLocationText {
+  position: absolute;
+  bottom: 20px;
+  left: 60px;
+  color: #FFFFFF;
+  font-family: 'Montserrat';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 130%;
+  z-index: 15;
+}
+
+/* Tech Bubbles Container */
+.techBubbles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.techBubble {
+  position: absolute;
+  background-color: #FFFFFF;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  z-index: 3;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.techBubble:hover {
+  transform: scale(1.05);
+}
+
+.techBubble img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  filter: brightness(0);
+  display: block;
+  transition: filter 0.3s ease;
+}
+
+/* Active State for Bubbles */
+.techBubble.bubbleActive {
+  background-color: #59C09A;
+  box-shadow: 0 4px 20px rgba(89, 192, 154, 0.4);
+}
+
+.techBubble.bubbleActive img {
+  filter: brightness(0) invert(1);
+}
+
+/* Individual Bubble Positions - Aligned with technology list items */
+/* Zigzag pattern: Bubble 1, 3, 5 on one side; Bubble 2, 4 on the other */
+
+/* Bubble 1 - Blockchain (Top) */
+.bubble1 {
+  /* bottom: calc(32.6% - 31.5px); */
+  bottom: calc(35.6% - 85px);
+  left: 65%;
+  width: 119px;
+  height: 53px;
+}
+
+.bubble1::after {
+  content: '';
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  width: calc(39vw - 48px);
+  /* (60vw + 60px padding) - (21vw position + 108px bubble) */
+  height: 1px;
+  background-color: #FFFFFF;
+  opacity: 0.9;
+  transform: translateY(-50%);
+  transform-origin: left center;
+  z-index: -1;
+  transition: all 0.3s ease;
+}
+
+.bubble1.bubbleActive::after {
+  background-color: #59C09A;
+  opacity: 1;
+  height: 3px;
+}
+
+/* Bubble 2 - Cloud (Zigzag - positioned between 1 and 3) */
+.bubble2 {
+  /* bottom: calc(28.3% - 31.5px); */
+  bottom: calc(35.3% - 125px);
+  left: 50%;
+  width: 119px;
+  height: 53px;
+}
+
+.bubble2::after {
+  content: '';
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  width: calc(48vw - 48px);
+  /* (60vw + 60px padding) - (12vw position + 108px bubble) */
+  height: 1px;
+  background-color: #FFFFFF;
+  opacity: 0.9;
+  transform: translateY(-50%);
+  transform-origin: left center;
+  z-index: -1;
+  transition: all 0.3s ease;
+}
+
+.bubble2.bubbleActive::after {
+  background-color: #59C09A;
+  opacity: 1;
+  height: 3px;
+}
+
+/* Bubble 3 - Virtual Visits */
+.bubble3 {
+  /* bottom: calc(24.0% - 31.5px); */
+  bottom: calc(35.3% - 170px);
+  left: 80%;
+  width: 119px;
+  height: 53px;
+}
+
+.bubble3::after {
+  content: '';
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  width: calc(39vw - 48px);
+  height: 1px;
+  background-color: #FFFFFF;
+  opacity: 0.9;
+  transform: translateY(-50%);
+  transform-origin: left center;
+  z-index: -1;
+  transition: all 0.3s ease;
+}
+
+.bubble3.bubbleActive::after {
+  background-color: #59C09A;
+  opacity: 1;
+  height: 3px;
+}
+
+/* Bubble 4 - Advanced Analytics (Zigzag - positioned between 3 and 5) */
+.bubble4 {
+  /* bottom: calc(19.6% - 31.5px); */
+  bottom: calc(35.3% - 220px);
+  left: 65%;
+  width: 119px;
+  height: 53px;
+}
+
+.bubble4::after {
+  content: '';
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  width: calc(48vw - 48px);
+  height: 1px;
+  background-color: #FFFFFF;
+  opacity: 0.9;
+  transform: translateY(-50%);
+  transform-origin: left center;
+  z-index: -1;
+  transition: all 0.3s ease;
+}
+
+.bubble4.bubbleActive::after {
+  background-color: #59C09A;
+  opacity: 1;
+  height: 3px;
+}
+
+/* Bubble 5 - Satellites (Bottom) */
+.bubble5 {
+  /* bottom: calc(15.3% - 31.5px); */
+  bottom: calc(35.3% - 265px);
+  left: 80%;
+  width: 119px;
+  height: 53px;
+}
+
+.bubble5::after {
+  content: '';
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  width: calc(39vw - 48px);
+  height: 1px;
+  background-color: #FFFFFF;
+  opacity: 0.9;
+  transform: translateY(-50%);
+  transform-origin: left center;
+  z-index: -1;
+  transition: all 0.3s ease;
+}
+
+.bubble5.bubbleActive::after {
+  background-color: #59C09A;
+  opacity: 1;
+  height: 3px;
+}
+
+/* Right Side - Content */
+.wildTechRight {
+  flex: 0 0 40%;
+  width: 40%;
+  background-color: #03303D;
+  padding: clamp(30px, 4vh, 60px) 50px clamp(30px, 4vh, 60px) 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  position: relative;
+  z-index: 2;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+/* Icon Row at Top */
+.wildTechIcons {
+  display: flex;
+  gap: 15px;
+  margin-top: clamp(20px, 2.5vh, 40px);
+  margin-bottom: clamp(20px, 2.5vh, 30px);
+  padding-top: 0;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.wildIcon {
+  height: clamp(60px, 7vh, 80px);
+  width: auto;
+  filter: brightness(0) invert(1);
+}
+
+/* Headings */
+.wildTechHeading {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: clamp(15px, 2vh, 20px);
+}
+
+.wildTechSubheading {
+  font-family: 'Montserrat';
+  font-size: clamp(26px, 3vh, 32px);
+  font-weight: 700;
+  font-style: italic;
+  color: #44D09F;
+  margin-bottom: clamp(3px, 0.5vh, 5px);
+  line-height: clamp(28px, 3.2vh, 32px);
+  letter-spacing: 0%;
+}
+
+.wildTechTitle {
+  font-family: 'Montserrat';
+  font-size: clamp(42px, 5vh, 55px);
+  font-weight: 700;
+  color: #FFFFFF;
+  line-height: clamp(46px, 5.5vh, 60px);
+  margin-bottom: clamp(8px, 1vh, 10px);
+  letter-spacing: 0%;
+}
+
+.wildTechTagline {
+  font-family: 'Montserrat';
+  font-size: clamp(26px, 3vh, 32px);
+  font-weight: 500;
+  color: #FFFFFF;
+  margin-bottom: clamp(20px, 2.5vh, 30px);
+  line-height: clamp(30px, 3.5vh, 37px);
+  letter-spacing: 0%;
+}
+
+.wildTechDescription {
+  font-family: 'Montserrat';
+  font-size: clamp(16px, 1.8vh, 18px);
+  font-weight: 500;
+  line-height: 130%;
+  margin-bottom: clamp(10px, 1.2vh, 12px);
+  color: #FFFFFF;
+  letter-spacing: 0%;
+  max-width: 550px;
+}
+
+.wildTechDescription strong {
+  color: #FFFFFF;
+  font-weight: 700;
+}
+
+/* Tech List */
+.wildTechList {
+  list-style: none;
+  padding: 0;
+  margin: clamp(30px, 3.5vh, 40px) 0 clamp(20px, 3vh, 40px) 0;
+  flex-shrink: 0;
+  gap: clamp(4px, 0.5vh, 8px);
+  display: flex;
+  flex-direction: column;
+}
+
+.wildTechItem {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: clamp(10px, 1.2vh, 14px) 0;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-height: 24px;
+  background: transparent;
+}
+
+.wildTechItem:hover {
+  transform: translateX(5px);
+}
+
+.wildTechItem.active {
+  /* Removed background-color and padding changes */
+  transform: translateX(5px);
+}
+
+.wildTechItem.active .techLabel {
+  color: #ffffff;
+}
+
+.wildTechItem:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.techLabel {
+  font-family: 'Montserrat';
+  font-size: clamp(16px, 1.8vh, 18px);
+  font-weight: 700;
+  line-height: 130%;
+  color: #44D09F;
+  user-select: none;
+  transition: color 0.3s ease;
+  letter-spacing: 0%;
+}
+
+.techIcon {
+  width: 30px;
+  height: 30px;
+  filter: brightness(0) invert(1);
+}
+
+/* Inline Tech Card Styles - DEPRECATED but kept for safety if needed, can be removed later */
+.inlineTechCard {
+  background-color: #59C09A;
+  border-radius: 16px;
+  padding: 40px;
+  margin-top: 40px;
+  position: relative;
+  color: #03303D;
+  animation: fadeIn 0.3s ease-out;
+}
+
+.inlineTechCardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.inlineTechCardTitle {
+  font-size: 30px;
+  font-weight: 700;
+  color: #03303D;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.inlineTechCardSubtitle {
+  display: block;
+  font-size: 20px;
+  font-weight: 500;
+  font-style: italic;
+  color: #03303D;
+  margin-top: 5px;
+}
+
+.inlineTechCardClose {
+  background: transparent;
+  border: none;
+  color: #03303D;
+  font-size: 30px;
+  cursor: pointer;
+  padding: 0;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  transition: all 0.3s ease;
+}
+
+.inlineTechCardClose:hover {
+  transform: rotate(90deg);
+  opacity: 0.7;
+}
+
+.inlineTechCardDescription {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.6;
+  color: #03303D;
+  margin: 0;
+}
+
+/* ========================================
+ * NEW Detail Card Overlay Styles
+ * ========================================*/
+
+.detailCardOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  /* Optional: slight dimming of the background image if desired, or transparent */
+  /* background-color: rgba(0, 0, 0, 0.1); */
+  /* backdrop-filter: blur(2px); */
+  padding: 20px;
+  box-sizing: border-box;
+  pointer-events: none;
+}
+
+.detailCard {
+  background-color: #59C09A;
+  border-radius: 40px;
+  padding: 60px 50px;
+  width: 100%;
+  max-width: 600px;
+  min-height: 650px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  pointer-events: auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  animation: scaleIn 0.3s ease-out;
+  cursor: default;
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Close button removed - card closes on outside click */
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.cardTitle {
+  font-family: 'Montserrat';
+  font-size: 40px;
+  font-weight: 700;
+  color: #03303D;
+  margin: 0 0 10px 0;
+  line-height: 1.2;
+  letter-spacing: 0%;
+}
+
+.cardSubtitle {
+  font-family: 'Montserrat';
+  font-size: 24px;
+  font-weight: 500;
+  font-style: italic;
+  color: #03303D;
+  margin-bottom: 40px;
+  line-height: 130%;
+  letter-spacing: 0%;
+}
+
+.cardIconWrapper {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 280px;
+  height: 280px;
+}
+
+.cardMainIcon {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  /* Removed filter to show original icon colors/transparency */
+}
+
+.cardDescription {
+  font-family: 'Montserrat';
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 130%;
+  color: #03303D;
+  margin: 0;
+  max-width: 80%;
+  letter-spacing: 0%;
+  object-fit: contain;
+}
+
+/* Mobile Wild Tech Styles */
+.mobileWildTechWrapper {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .wildTechContent {
+    display: none;
+  }
+
+  .wildTechSection {
+    min-height: auto;
+    /* Remove fixed height on mobile */
+    padding: 0;
+  }
+
+  .mobileWildTechWrapper {
+    display: block;
+    width: 100%;
+    min-height: auto;
+    /* Content-based height */
+    position: relative;
+  }
+
+  /* Screen 1: Intro */
+  .mobileWildTechIntro {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    min-height: auto;
+    padding: 40px 80px 40px 40px;
+    /* Further reduced padding */
+    position: relative;
+  }
+
+  .mobileWildTechContent {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    /* Increased gap */
+    max-width: 100%;
+    flex: 1;
+  }
+
+  .mobileWildTechIcon {
+    margin-bottom: 15px;
+  }
+
+  .mobileWildTechIcon img {
+    width: 160px;
+    /* Increased from 100px */
+    height: auto;
+    filter: brightness(0) invert(1);
+  }
+
+  .mobileWildTechSubheading {
+    font-family: 'Montserrat';
+    font-size: 18px;
+    /* Increased from 14px */
+    font-weight: 500;
+    font-style: italic;
+    color: #59C09A;
+    text-transform: none;
+    letter-spacing: 0;
+  }
+
+  .mobileWildTechTitle {
+    font-family: 'Montserrat';
+    font-size: 26px;
+    font-weight: 700;
+    font-style: italic;
+    color: #FFFFFF;
+    line-height: 1.2;
+  }
+
+  .mobileWildTechTagline {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 700;
+    color: #FFFFFF;
+    line-height: 1.4;
+    margin-top: 5px;
+  }
+
+  .mobileWildTechDescription {
+    font-family: 'Montserrat';
+    font-size: 15px;
+    /* Increased from 13px */
+    font-weight: 400;
+    line-height: 1.7;
+    /* Increased line height */
+    color: #FFFFFF;
+    margin: 0;
+  }
+
+
+
+  .mobileWildTechRightArrow {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 10;
+  }
+
+  .mobileWildTechRightArrow img {
+    width: 50px;
+    height: 50px;
+    /* #59C09A color */
+  }
+
+  /* Screen 2: Overview (Horizontal Bubbles) */
+  .mobileWildTechOverview {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 60px 20px;
+  }
+
+  .mobileWildTechBg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+  }
+
+  .mobileWildTechLeftArrow {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 10;
+  }
+
+  .mobileWildTechLeftArrow img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .mobileWildTechBubbles {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .bubbleRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 60px;
+  }
+
+  .bubbleItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .mobileWildTechBubble {
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    min-width: 100px;
+    /* Prevent shrinking */
+    min-height: 100px;
+    /* Prevent shrinking */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+    aspect-ratio: 1 / 1;
+    /* Enforce square aspect */
+  }
+
+  .mobileWildTechBubble:active {
+    transform: scale(0.95);
+  }
+
+  .mobileWildTechBubble img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+  }
+
+  .bubbleLine {
+    width: 2px;
+    height: 40px;
+    background-color: #FFFFFF;
+    opacity: 0.8;
+  }
+
+  .bubbleLabel {
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 700;
+    /* Bold */
+    color: #59C09A;
+    /* Green */
+    text-align: center;
+    max-width: 120px;
+    line-height: 1.3;
+  }
+
+  /* Screen 3: Detail Carousel */
+  .mobileWildTechDetail {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 30px 80px;
+    overflow: hidden;
+  }
+
+  .mobileWildTechDetailBg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+  }
+
+  .mobileWildTechBackArrow {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 10;
+  }
+
+  .mobileWildTechBackArrow img {
+    width: 20px;
+    height: 20px;
+    /* filter: invert(1); */
+  }
+
+  .mobileWildTechDetailCard {
+    background-color: #59C09A;
+    border-radius: 20px;
+    padding: 40px 30px;
+    max-width: 350px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .mobileDetailCardTitle {
+    font-family: 'Montserrat';
+    font-size: 24px;
+    font-weight: 700;
+    color: #03303D;
+    line-height: 1.2;
+  }
+
+  .mobileDetailCardSubtitle {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 500;
+    color: #03303D;
+    line-height: 1.3;
+  }
+
+  .mobileDetailCardIconWrapper {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    margin: 10px 0;
+  }
+
+  .mobileDetailCardIcon {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+  }
+
+  .mobileDetailCardDescription {
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #03303D;
+  }
+
+  .mobileWildTechDots {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .mobileWildTechDot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 0;
+  }
+
+  .mobileWildTechDotActive {
+    background-color: #59C09A;
+  }
+}
+
+/* ========================================
+ * SECTION 4: You Can Do Something Section
+ * ========================================*/
+
+.youCanDoSection {
+  background-color: #BACFA5;
+  padding: 0;
+  overflow: hidden;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .youCanDoSection {
+    background-color: #ffffff;
+    /* Override to white on mobile */
+    min-height: auto;
+  }
+}
+
+.mobileActionWrapper {
+  display: none;
+  /* Hidden on desktop */
+}
+
+.youCanDoContent {
+  max-width: 1281px;
+  margin: 0 auto;
+  display: flex;
+  gap: 80px;
+  align-items: center;
+  width: 100%;
+  padding: 80px 40px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .youCanDoContent {
+    display: none;
+    /* Hide desktop content on mobile */
+  }
+}
+
+.mobileAlignedWrapper {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .mobileAlignedWrapper {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  /* Mobile Aligned Sections - Match CommonSections exactly */
+  .mobileAlignedSDG {
+    background-color: #B8E0D3 !important;
+    padding: 60px 20px !important;
+    text-align: left !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+
+  .mobileAlignedSDG h2,
+  .mobileAlignedSDG .mobileSDGHeading,
+  .mobileSDGHeading {
+    font-family: 'Montserrat' !important;
+    font-size: 32px !important;
+    font-weight: 500 !important;
+    color: #03303D !important;
+    line-height: 1.2 !important;
+    margin: 0 0 40px 0 !important;
+    text-align: left !important;
+    width: 100% !important;
+    display: block !important;
+  }
+
+  .mobileSDGGrid {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 20px !important;
+    width: 100% !important;
+    margin-bottom: 40px !important;
+  }
+
+  .mobileSDGIcon {
+    width: 100% !important;
+    height: auto !important;
+    object-fit: contain !important;
+  }
+}
+
+/* Left Side - Text Content */
+.youCanDoLeft {
+  flex: 0 0 45%;
+  padding-right: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.youCanDoIcons {
+  margin-bottom: 40px;
+}
+
+.natureIcons {
+  height: 80px;
+  width: 300px;
+}
+
+.youCanDoHeading {
+  font-family: 'Montserrat';
+  font-size: 32px;
+  font-weight: 500;
+  color: #03303D;
+  line-height: 36px;
+  margin-bottom: 30px;
+  letter-spacing: 0%;
+}
+
+.youCanDoDescription {
+  font-family: 'Montserrat';
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 130%;
+  color: #03303D;
+  margin-bottom: 12px;
+  letter-spacing: 0%;
+}
+
+/* Right Side - Action Cards */
+.youCanDoRight {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 75px;
+}
+
+.actionCard {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  background: transparent;
+}
+
+.actionCardLeft {
+  flex: 1;
+}
+
+.actionTitle {
+  font-family: 'Montserrat';
+  font-size: 32px;
+  font-weight: 400;
+  color: #03303D;
+  margin-bottom: 8px;
+  /* font-style: italic; */
+  line-height: 130%;
+  letter-spacing: 0%;
+  white-space: nowrap;
+}
+
+.actionSubtitle {
+  /* font-style: italic; */
+  font-weight: 400;
+}
+
+.actionDescription {
+  font-family: 'Montserrat';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 130%;
+  color: #03303D;
+  letter-spacing: 0%;
+}
+
+.actionCardRight {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.actionImageButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: transform 0.3s ease;
+}
+
+.actionImageButton:hover {
+  transform: scale(1.05);
+}
+
+.actionImage {
+  width: 85px;
+  height: 85px;
+  min-width: 85px;
+  min-height: 85px;
+  max-width: 85px;
+  max-height: 85px;
+  object-fit: cover;
+  border-radius: 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: block;
+}
+
+.actionArrow {
+  font-size: 48px;
+  color: #03303D;
+  font-weight: 300;
+}
+
+/* Modal Styles */
+/* Modal Styles */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Dull background */
+  backdrop-filter: blur(10px);
+  /* Blur effect */
+}
+
+.modalContent {
+  position: relative;
+  max-width: 90vw;
+  max-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modalImage {
+  width: 600px;
+  /* Fixed larger size */
+  height: 600px;
+  border-radius: 16px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+  object-fit: cover;
+}
+
+/* Mobile Action Carousel */
+@media (max-width: 768px) {
+  .mobileActionWrapper {
+    display: block;
+    width: 100%;
+    padding: 80px 20px;
+    background-color: #ffffff;
+    /* Match section background */
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .mobileActionCarousel {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Intro Slide */
+  .mobileActionIntro {
+    text-align: left;
+    padding: 0 20px;
+  }
+
+  .mobileActionIcons {
+    margin-bottom: 30px;
+  }
+
+  .mobileActionIcons img {
+    height: 50px;
+    width: auto;
+  }
+
+  .mobileActionHeading {
+    font-family: 'Montserrat';
+    font-size: 32px;
+    font-weight: 500;
+    color: #03303D;
+    line-height: 1.2;
+    margin-bottom: 30px;
+  }
+
+  .mobileActionText {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #03303D;
+    margin-bottom: 20px;
+  }
+
+  /* Card Slides */
+  .mobileActionCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .mobileActionImagesContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    height: 300px;
+    /* Increased height */
+    position: relative;
+    width: 240px;
+    /* Fixed width for borders */
+    padding: 20px;
+  }
+
+  /* Curved Borders using SVG Background Images */
+  .mobileActionImagesContainer::before,
+  .mobileActionImagesContainer::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  /* Left Curve */
+  .mobileActionImagesContainer::before {
+    left: -40px;
+    background-image: url('/src/assets/left_border.svg');
+  }
+
+  /* Right Curve */
+  .mobileActionImagesContainer::after {
+    right: -40px;
+    background-image: url('/src/assets/right_border.svg');
+  }
+
+  /* Birds Icon */
+  /* Birds Icon */
+  .mobileActionBirds {
+    position: absolute;
+    top: -20px;
+    right: -60px;
+    /* Positioned near right border top */
+    left: auto;
+    width: 60px;
+    height: auto;
+    z-index: 1;
+    transform: scaleX(-1);
+    /* Flip horizontally to face inward if needed, or just to match design */
+  }
+
+  .mobileActionImages {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mobileActionImageWrapper {
+    width: 140px;
+    /* Increased size */
+    height: 140px;
+    /* Increased size */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .mobileActionImageWrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .mobileActionTitle {
+    font-family: 'Montserrat';
+    font-size: 32px;
+    font-weight: 400;
+    color: #03303D;
+    margin-bottom: 15px;
+  }
+
+  .mobileActionDescription {
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #03303D;
+    padding: 0 20px;
+  }
+
+  /* Dots */
+  .mobileActionDots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 40px;
+  }
+
+  .mobileActionDot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(3, 48, 61, 0.3);
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .mobileActionDotActive {
+    background-color: #03313E;
+    /* Active dot color requested */
+    transform: scale(1.2);
+  }
+
+  /* Section 2: LinkedIn Carousel */
+  .mobileAlignedCarousel {
+    background-color: #03313E;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+
+  .mobileLinkedInSlider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+    margin-bottom: 40px;
+  }
+
+  .mobileSliderArrowLeft,
+  .mobileSliderArrowRight {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mobilePostCard {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 20px;
+    width: 100%;
+    max-width: 320px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .mobilePostHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .mobilePostLogo {
+    height: 30px;
+    width: auto;
+  }
+
+  .mobileLinkedinIcon {
+    height: 24px;
+    width: auto;
+  }
+
+  .mobilePostTitle {
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 600;
+    color: #03303D;
+    line-height: 1.4;
+    text-align: left;
+  }
+
+  .mobileReadMore {
+    font-family: 'Montserrat';
+    font-size: 12px;
+    color: #666666;
+    text-decoration: none;
+    text-align: left;
+    display: block;
+  }
+
+  .mobilePostImageContainer {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .mobilePostImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .mobilePostOverlay {
+    display: none;
+    /* Hide overlay for now as per simple card design */
+  }
+
+  .mobilePostFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+  }
+
+  .mobilePostStats {
+    display: flex;
+    gap: 15px;
+  }
+
+  .mobilePostStat {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-family: 'Montserrat';
+    font-size: 12px;
+    color: #666666;
+  }
+
+  .mobileShareButton {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background: none;
+    border: none;
+    font-family: 'Montserrat';
+    font-size: 12px;
+    color: #666666;
+    cursor: pointer;
+  }
+
+  .mobileFollowButton {
+    background-color: #44D09F;
+    color: #03303D;
+    /* Green button color */
+    /* color: #ffffff; */
+    font-weight: 700;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    /* font-weight: 600; */
+    padding: 12px 30px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-top: 14px;
+    margin-bottom: 34px;
+  }
+}
+
+/* ========================================
+ * SECTION 5: Aligned with UN SDGs Section
+ * ========================================*/
+
+.alignedSection {
+  background-color: #ffffff;
+  padding: 50px 20px 25px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 100vw;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .alignedSection {
+    display: none;
+  }
+}
+
+.alignedContainer {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Top Row - Heading and SDG Icons (Centered) */
+.alignedTopRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 48px;
+  gap: 80px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+/* Left Side - Heading */
+.alignedLeft {
+  flex: 0 0 auto;
+  text-align: left;
+}
+
+.alignedHeading {
+  font-family: 'Montserrat';
+  font-size: 20.21px;
+  font-weight: 500;
+  color: #03303D;
+  line-height: 130%;
+  letter-spacing: 0%;
+  text-align: left;
+  margin: 0;
+}
+
+/* Right Side - SDG Icons */
+.alignedTopRight {
+  flex: 0 0 auto;
+}
+
+.sdgIcons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.sdgIcon {
+  width: 123.88px;
+  height: 125.85px;
+  object-fit: contain;
+}
+
+/* Bottom Row - LinkedIn Slider (Full Width) */
+.alignedBottomRow {
+  width: 100%;
+}
+
+.sliderContainer {
+  position: relative;
+  width: 100%;
+  padding: 0 60px;
+  max-width: 930px;
+  margin: 0 auto;
+}
+
+.sliderArrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+  transition: opacity 0.3s ease;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sliderArrow img {
+  width: 40px;
+  height: 40px;
+  display: block;
+}
+
+.sliderArrow:hover {
+  opacity: 0.7;
+}
+
+.sliderArrowLeft {
+  left: 10px;
+}
+
+.sliderArrowRight {
+  right: 10px;
+}
+
+.postsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-bottom: 0;
+  /* width: 100%; */
+  max-width: 730px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Individual Post Card */
+.postCard {
+  background: #F8F8F8;
+  border: none;
+  border-radius: 21.32px;
+  overflow: hidden;
+  box-shadow: none;
+  display: flex;
+  flex-direction: column;
+  width: 230.26px;
+  height: 275.57px;
+}
+
+.postHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 15px;
+  gap: 10px;
+  border-bottom: none;
+}
+
+.postLogo {
+  width: auto;
+  height: 20px;
+  object-fit: contain;
+}
+
+.postMeta {
+  flex: 1;
+}
+
+.postAuthor {
+  font-size: 14px;
+  font-weight: 600;
+  color: #03303D;
+  margin: 0;
+  font-family: Montserrat;
+}
+
+.postTime {
+  font-size: 12px;
+  color: #666;
+  margin: 2px 0 0 0;
+  font-family: Montserrat;
+}
+
+.linkedinIcon {
+  width: 24px;
+  height: 24px;
+}
+
+.postContent {
+  padding: 12px 15px 8px 15px;
+}
+
+.postTitle {
+  font-family: 'Montserrat';
+  font-size: 9.59px;
+  font-weight: 600;
+  color: #1C1B1F;
+  margin: 0 0 4px 0;
+  line-height: 130%;
+  letter-spacing: 0%;
+}
+
+.readMore {
+  font-family: 'Montserrat';
+  font-size: 9.59px;
+  font-weight: 600;
+  color: #4E4E4E;
+  text-decoration: none;
+  line-height: 130%;
+  letter-spacing: 0%;
+}
+
+
+.postImageContainer {
+  position: relative;
+  width: 100%;
+  height: 240px;
+  overflow: hidden;
+  background: #f0f0f0;
+}
+
+.postImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.newBadge {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background-color: #ff4444;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 700;
+  font-family: Montserrat;
+  letter-spacing: 0.5px;
+}
+
+.postFooter {
+  padding: 10px 15px 12px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: none;
+}
+
+.postStats {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.postLikes,
+.postComments {
+  font-size: 13px;
+  color: #666;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-family: Montserrat;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.shareButton {
+  background: none;
+  border: none;
+  color: #4E4E4E;
+  font-family: 'Montserrat';
+  font-size: 9.59px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  transition: opacity 0.3s ease;
+  padding: 0;
+  line-height: 130%;
+  letter-spacing: 0%;
+}
+
+.shareButton:hover {
+  opacity: 0.7;
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+  display: block;
+}
+
+
+/* ========================================
+ * RESPONSIVE DESIGN
+ * ========================================*/
+
+@media (max-width: 992px) {
+
+  /* Section 1 Responsiveness */
+  .recognitionCards {
+    grid-template-columns: 1fr;
+  }
+
+  .cardDescription {
+    max-width: none;
+  }
+
+  .nextButton {
+    right: 50%;
+    transform: translateX(50%);
+    bottom: -30px;
+  }
+
+  .container {
+    padding: clamp(40px, 5vh, 60px) 20px clamp(40px, 5vh, 60px) 20px;
+  }
+
+  .topDecoration {
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 30px;
+  }
+
+  .carouselNavigation {
+    margin-top: clamp(50px, 6vh, 80px);
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .content {
+    padding-bottom: 0;
+  }
+
+  /* Section 2 Responsiveness */
+  .sealOfTrustSection {
+    padding: 40px 0;
+    min-height: auto;
+  }
+
+  .sealContent {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  .sealLeft,
+  .sealRight {
+    padding: 0;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .sealDecoration {
+    display: none;
+  }
+
+  .sealLogoArea {
+    padding-top: 0;
+    align-items: center;
+  }
+
+  .sealTitle {
+    font-size: 2.5rem;
+    padding-left: 0;
+    margin-bottom: 30px;
+  }
+
+  .sealLogo {
+    width: 90%;
+    margin-left: 0;
+    margin-bottom: 40px;
+  }
+
+  .sealRight {
+    min-height: auto;
+    width: 100%;
+  }
+
+  /* Section 3 Responsiveness */
+  .wildTechContent {
+    flex-direction: column;
+  }
+
+  .wildTechLeft,
+  .wildTechRight {
+    width: 100%;
+  }
+
+  .wildTechLeft {
+    min-height: 400px;
+  }
+
+  .wildTechRight {
+    padding: clamp(30px, 4vh, 50px) 20px clamp(30px, 4vh, 50px) 20px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  .wildTechIcons {
+    margin-top: clamp(12px, 1.8vh, 25px);
+    padding-top: 0;
+    flex-shrink: 0;
+  }
+
+  .wildIcon {
+    height: clamp(50px, 6vh, 70px);
+  }
+
+  .wildTechList {
+    margin-bottom: clamp(20px, 3vh, 40px);
+    flex-shrink: 0;
+  }
+
+  .wildTechTitle {
+    font-size: 3rem;
+  }
+
+  .techBubbles {
+    display: none;
+  }
+
+  .wildTechItem {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .techModalOverlay {
+    padding: 10px;
+  }
+
+  .techModalContent {
+    max-width: 100%;
+  }
+
+  .techCard {
+    padding: 25px;
+  }
+
+  .techCardTitle {
+    font-size: 22px;
+  }
+
+  .techCardDescription {
+    font-size: 16px;
+  }
+
+  .techCardIcon {
+    min-height: 80px;
+    margin-bottom: 20px;
+  }
+
+  .techCardIconImage {
+    max-width: 120px;
+    max-height: 80px;
+  }
+
+  /* Section 4 Responsiveness */
+  .youCanDoContent {
+    flex-direction: column;
+    gap: 40px;
+    min-height: auto;
+  }
+
+  .youCanDoLeft {
+    padding-right: 0;
+  }
+
+  .youCanDoHeading {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  .youCanDoDescription {
+    font-size: 16px;
+  }
+
+  .actionCard {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .actionTitle {
+    font-size: 24px;
+  }
+
+  .actionDescription {
+    font-size: 14px;
+  }
+
+  .modalContent {
+    padding: 40px 20px;
+  }
+
+  .modalCloseButton {
+    top: 10px;
+    right: 10px;
+  }
+
+  /* Detail Card Mobile Styles */
+  .detailCard {
+    padding: 40px 30px;
+    width: 90%;
+    max-width: 550px;
+    max-height: 80vh;
+    overflow-y: auto;
+  }
+
+  .cardTitle {
+    font-size: 32px;
+  }
+
+  .cardSubtitle {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+
+  .cardIconWrapper {
+    width: 220px;
+    height: 220px;
+    margin-bottom: 30px;
+  }
+
+  .cardDescription {
+    font-size: 16px;
+  }
+
+  /* Section 5 Responsiveness */
+  .alignedTopRow {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 40px;
+    gap: 30px;
+  }
+
+  .alignedHeading {
+    font-size: 28px;
+  }
+
+  .sdgIcons {
+    justify-content: center;
+  }
+
+  .sdgIcon {
+    width: 80px;
+    height: 80px;
+  }
+
+  .sliderContainer {
+    padding: 0 40px;
+  }
+
+  .postsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .sliderArrow {
+    font-size: 36px;
+  }
+
+  .sliderArrow img {
+    width: 36px;
+    height: 36px;
+  }
+
+  .sliderArrowLeft {
+    left: -10px;
+  }
+
+  .sliderArrowRight {
+    right: -10px;
+  }
+}
+
+/* ============================================ */
+/* LARGE SCREEN FIXES (>1440px) */
+/* ============================================ */
+@media (min-width: 1441px) {
+
+  /* Fix Carousel Arrow Spacing */
+  .carouselNavigation {
+    margin-top: clamp(60px, 8vh, 131px);
+    /* Increase space between cards and arrows */
+    padding-right: 5vw;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    /* Bottom spacing handled by container padding */
+  }
+
+  /* Fix Aligned Section Width */
+  .alignedSection {
+    max-width: none;
+    width: 100%;
+    padding: 3vw 2vw;
+  }
+
+  .alignedContainer {
+    max-width: 90%;
+    /* Allow it to grow */
+  }
+
+  .alignedTopRow {
+    max-width: 90%;
+    gap: 5vw;
+  }
+
+  .sliderContainer {
+    max-width: 70%;
+    /* Scale slider width */
+  }
+
+  .postsGrid {
+    max-width: 100%;
+    gap: 2vw;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .sliderArrowLeft {
+    left: 30px;
+  }
+
+  .sliderArrowRight {
+    right: 30px;
+  }
+
+  .postCard {
+    width: 100%;
+    /* Fill grid cell */
+    height: auto;
+    min-height: 300px;
+  }
+}
+
+/* ============================================ */
+/* TABLET RESPONSIVENESS (768px - 1023px) */
+/* ============================================ */
+@media (min-width: 768px) and (max-width: 1023px) {
+
+  /* Section 1 - Recognition Cards */
+  .container {
+    padding: 40px 30px;
+    min-height: auto;
+    height: auto;
+  }
+
+  .heading {
+    font-size: 32px;
+    margin-bottom: 60px;
+  }
+
+  .recognitionCards {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 100%;
+  }
+
+  .logoContainer {
+    width: 100px;
+    height: 100px;
+  }
+
+  .mainLogo {
+    max-width: 80%;
+  }
+
+  .cardDescription {
+    font-size: 14px;
+  }
+
+  /* Section 2 - Seal of Trust */
+  .sealOfTrustSection {
+    padding: 50px 30px;
+    min-height: auto;
+    padding-right: 30px;
+  }
+
+  .sealContent {
+    padding: 0 20px;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .sealLeft {
+    padding-right: 0;
+  }
+
+  .sealRight {
+    padding-left: 0;
+    min-height: auto;
+    align-items: center;
+  }
+
+  .sealTitle {
+    font-size: 36px;
+    position: relative;
+    bottom: auto;
+    left: auto;
+    margin: 0 0 20px 0;
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .sealLogo {
+    max-width: 600px;
+  }
+
+  .trustPointsList {
+    align-items: center;
+    gap: 40px;
+  }
+
+  .trustPointItem {
+    max-width: 100%;
+  }
+
+  .trustText {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  /* Section 3 - Wild Tech */
+  .wildTechSection {
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .wildTechContent {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .wildTechLeft {
+    flex: 1;
+    width: 100%;
+    height: 50vh;
+  }
+
+  .wildTechImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .techBubbles {
+    display: none;
+  }
+
+  .wildTechRight {
+    flex: 1;
+    width: 100%;
+    padding: clamp(30px, 4vh, 50px) 30px clamp(30px, 4vh, 50px) 30px;
+    height: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  .wildTechIcons {
+    margin-top: clamp(12px, 1.8vh, 25px);
+    padding-top: 0;
+    flex-shrink: 0;
+  }
+
+  .wildIcon {
+    height: clamp(50px, 6vh, 70px);
+  }
+
+  .wildTechList {
+    margin-bottom: clamp(20px, 3vh, 40px);
+    flex-shrink: 0;
+  }
+
+  .wildTechTitle {
+    font-size: 40px;
+    line-height: 1.2;
+  }
+
+  .wildTechSubheading {
+    font-size: 24px;
+  }
+
+  .wildTechTagline {
+    font-size: 24px;
+    line-height: 1.3;
+  }
+
+  .wildTechDescription {
+    font-size: 16px;
+    max-width: 100%;
+  }
+
+  /* Section 5 - Aligned with UN SDGs */
+  .alignedSection {
+    padding: 50px 30px;
+  }
+
+  .alignedTopRow {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .alignedHeading {
+    font-size: 32px;
+  }
+
+  .sdgIcons {
+    justify-content: center;
+  }
+
+  .sdgIcon {
+    width: 70px;
+    height: 70px;
+  }
+
+  .sliderContainer {
+    padding: 0 50px;
+  }
+
+  .postsGrid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .postCard {
+    min-height: 250px;
+  }
+}
+
+/* ============================================ */
+/* LARGE TABLET (820px - 912px) */
+/* ============================================ */
+@media (min-width: 820px) and (max-width: 912px) {
+  .heading {
+    font-size: 30px;
+    margin-bottom: 50px;
+  }
+
+  .recognitionCards {
+    gap: 20px;
+  }
+
+  .logoContainer {
+    width: 90px;
+    height: 90px;
+  }
+
+  .cardDescription {
+    font-size: 13px;
+  }
+
+  .sealTitle {
+    font-size: 32px;
+  }
+
+  .trustText {
+    font-size: 18px;
+  }
+
+  .wildTechTitle {
+    font-size: 36px;
+  }
+
+  .wildTechSubheading {
+    font-size: 22px;
+  }
+
+  .wildTechTagline {
+    font-size: 22px;
+  }
+
+  .alignedHeading {
+    font-size: 28px;
+  }
+
+  .sdgIcon {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+/* ============================================ */
+/* SMALL MOBILE (414px and below) */
+/* ============================================ */
+@media (max-width: 414px) {
+
+  /* Section 1 - Recognition Cards */
+  .container {
+    padding: 30px 15px;
+    min-height: auto;
+  }
+
+  .topDecoration {
+    margin-bottom: 15px;
+  }
+
+  .treeIcon {
+    height: 50px;
+  }
+
+  .headingMobile {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .mobileCardDescription {
+    font-size: 14px;
+    max-width: 260px;
+  }
+
+  .mobileCarouselContainer {
+    min-height: 350px;
+  }
+
+  .mobileCard {
+    max-width: 280px;
+  }
+
+  /* Section 2 - Seal of Trust */
+  .sealOfTrustSection {
+    padding: 30px 15px;
+  }
+
+  .mobileSealWrapper {
+    gap: 25px;
+  }
+
+  .mobileSealCarousel {
+    max-width: 320px;
+    min-height: 350px;
+  }
+
+  .mobileSealImageWrapper {
+    width: 85vw;
+    max-width: 350px;
+  }
+
+  .mobileTrustPointTitle {
+    font-size: 16px;
+  }
+
+  .mobileTrustPointDescription {
+    font-size: 14px;
+  }
+
+  .mobileSealDot {
+    width: 10px;
+    height: 10px;
+  }
+
+  /* Section 3 - Wild Tech - Mobile */
+  .mobileWildTechWrapper .mobileWildTechHeading .wildTechTitle {
+    font-size: 32px;
+    line-height: 1.2;
+  }
+
+  .mobileWildTechWrapper .mobileWildTechHeading .wildTechSubheading {
+    font-size: 20px;
+  }
+
+  .mobileWildTechWrapper .mobileWildTechHeading .wildTechTagline {
+    font-size: 20px;
+  }
+
+  .mobileWildTechWrapper .wildTechDescription {
+    font-size: 14px;
+  }
+
+  /* Section 5 - Aligned with UN SDGs - Mobile */
+  .alignedHeading {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+  .sdgIcons {
+    gap: 8px;
+  }
+
+  .sdgIcon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .sliderContainer {
+    padding: 0 35px;
+  }
+
+  .sliderArrow img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .postCard {
+    min-height: 220px;
+  }
+
+  .postCardTitle {
+    font-size: 14px;
+  }
+}
+
+/* ============================================ */
+/* EXTRA SMALL MOBILE (375px and below) */
+/* ============================================ */
+@media (max-width: 375px) {
+  .container {
+    padding: 25px 12px;
+  }
+
+  .treeIconMobile {
+    height: 50px;
+  }
+
+  .headingMobile {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+
+  .mobileCardDescription {
+    font-size: 13px;
+    max-width: 240px;
+  }
+
+  .mobileCard {
+    max-width: 260px;
+  }
+
+  .mobileCarouselContainer {
+    min-height: 320px;
+  }
+
+  .mobileSealImageWrapper {
+    width: 80vw;
+    max-width: 320px;
+  }
+
+  .mobileTrustPointTitle {
+    font-size: 15px;
+  }
+
+  .mobileTrustPointDescription {
+    font-size: 13px;
+  }
+
+  .mobileSealDot {
+    width: 9px;
+    height: 9px;
+  }
+
+  .alignedHeading {
+    font-size: 22px;
+  }
+
+  .sdgIcon {
+    width: 45px;
+    height: 45px;
+  }
+
+  .sliderArrow img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .postCard {
+    min-height: 200px;
+  }
+
+  .postCardTitle {
+    font-size: 13px;
+  }
+}
+
+/* ============================================ */
+/* MINIMUM MOBILE (320px and below) */
+/* ============================================ */
+@media (max-width: 320px) {
+  .container {
+    padding: 20px 10px;
+  }
+
+  .topDecorationMobile {
+    margin-bottom: 12px;
+  }
+
+  .treeIconMobile {
+    height: 45px;
+  }
+
+  .headingMobile {
+    font-size: 20px;
+    line-height: 1.3;
+    margin-bottom: 12px;
+  }
+
+  .mobileCardHeader {
+    margin-bottom: 15px;
+  }
+
+  .mobileCardDescription {
+    font-size: 12px;
+    max-width: 220px;
+    line-height: 1.4;
+  }
+
+  .mobileCard {
+    max-width: 240px;
+  }
+
+  .mobileCarouselContainer {
+    min-height: 300px;
+  }
+
+  /* Seal of Trust - Extra Small */
+  .sealOfTrustSection {
+    padding: 25px 10px;
+  }
+
+  .mobileSealWrapper {
+    gap: 20px;
+  }
+
+  .mobileSealCarousel {
+    max-width: 280px;
+    min-height: 320px;
+  }
+
+  .mobileSealImageWrapper {
+    width: 75vw;
+    max-width: 280px;
+  }
+
+  .mobileSealSlide {
+    gap: 20px;
+  }
+
+  .mobileTrustSeparator {
+    margin: 15px 0;
+  }
+
+  .mobileTrustPointTitle {
+    font-size: 14px;
+  }
+
+  .mobileTrustPointDescription {
+    font-size: 12px;
+    line-height: 1.4;
+  }
+
+  .mobileSealDots {
+    gap: 8px;
+  }
+
+  .mobileSealDot {
+    width: 8px;
+    height: 8px;
+  }
+
+  /* Aligned Section - Extra Small */
+  .alignedHeading {
+    font-size: 20px;
+    line-height: 1.3;
+  }
+
+  .sdgIcons {
+    gap: 6px;
+  }
+
+  .sdgIcon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .sliderContainer {
+    padding: 0 30px;
+  }
+
+  .sliderArrow img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .sliderArrowLeft {
+    left: -8px;
+  }
+
+  .sliderArrowRight {
+    right: -8px;
+  }
+
+  .postCard {
+    min-height: 180px;
+  }
+
+  .postCardTitle {
+    font-size: 12px;
+  }
+
+  .postCardDate {
+    font-size: 10px;
+  }
+}
+
+/* ============================================ */
+/* LAPTOP SHORT HEIGHT (1024×768, 1280×800, 1366×768) */
+/* ============================================ */
+@media (min-width: 1024px) and (max-height: 800px) {
+  .container {
+    padding: 30px 40px;
+    min-height: auto;
+    height: auto;
+  }
+
+  .heading {
+    font-size: 32px;
+    margin-bottom: 60px;
+  }
+
+  .sealOfTrustSection {
+    min-height: auto;
+    padding: 40px 40px;
+  }
+
+  .wildTechSection {
+    height: auto;
+    min-height: auto;
+  }
+
+  .wildTechRight {
+    padding: clamp(25px, 3.5vh, 45px) 40px clamp(25px, 3.5vh, 45px) 40px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  .wildTechIcons {
+    margin-top: clamp(10px, 1.5vh, 20px);
+    padding-top: 0;
+    flex-shrink: 0;
+  }
+
+  .wildIcon {
+    height: clamp(45px, 5.5vh, 65px);
+  }
+
+  .wildTechList {
+    margin-bottom: clamp(20px, 3vh, 40px);
+    flex-shrink: 0;
+  }
+
+  .wildTechTitle {
+    font-size: 40px;
+    line-height: 1.2;
+  }
+
+  .wildTechTagline {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .alignedSection {
+    padding: 40px 40px;
+  }
+
+  .postCard {
+    min-height: 220px;
+  }
+}

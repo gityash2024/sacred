@@ -1,0 +1,26 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+src/assets
+
+# Video files only
+*.mp4
+*.mov
+
+server.js
+
+server/
+
+# OS files
+.DS_Store
+
+# Environment files
+.env.local
+.env
+
+# Editor directories
+.vscode/
+.idea/

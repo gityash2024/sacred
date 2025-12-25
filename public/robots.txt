@@ -1,0 +1,63 @@
+# Sacred Groves - robots.txt
+# https://sacredgroves.earth
+
+# Allow all crawlers to access all content
+User-agent: *
+Allow: /
+
+# Disallow admin and internal paths
+Disallow: /api/
+Disallow: /admin/
+Disallow: /_next/
+Disallow: /private/
+
+# Crawl delay for polite crawling
+Crawl-delay: 1
+
+# Specific bot directives
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 1
+
+User-agent: DuckDuckBot
+Allow: /
+Crawl-delay: 1
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+# Block bad bots
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+# Sitemap location
+Sitemap: https://sacredgroves.earth/sitemap.xml
+
+# Host preference
+Host: https://sacredgroves.earth

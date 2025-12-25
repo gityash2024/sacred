@@ -1,0 +1,2 @@
+export { MediaCentre } from './MediaCentre'
+

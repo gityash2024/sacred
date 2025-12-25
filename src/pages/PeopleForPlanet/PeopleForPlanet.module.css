@@ -1,0 +1,1797 @@
+.pageWrapper {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* HERO SECTION */
+.heroSection {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: top center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heroOverlay {
+  position: absolute;
+  inset: 0;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 2;
+  padding: 0 40px;
+  text-align: center;
+}
+
+.heroTitle {
+  font-family: 'Montserrat';
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 111%;
+  color: #ffffff;
+  white-space: pre-line;
+  text-align: center;
+}
+
+/* SECTION 2 — Guardian */
+.guardianSection {
+  width: 100%;
+  min-height: 100vh;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.guardianGrid {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 760px 1fr;
+  gap: 60px;
+  padding: 0 80px;
+  min-height: 100vh;
+  align-items: center;
+}
+
+.guardianLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  align-items: flex-start;
+  justify-content: center;
+  height: 100%;
+}
+
+@media (min-width: 769px) {
+  .guardianLeft {
+    min-height: 100vh;
+  }
+}
+
+.imgWrapper {
+  position: relative;
+  width: 760px;
+  height: 50vh;
+  min-height: 50vh;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.mainImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.iconTop {
+  position: absolute;
+  top: 62px;
+  right: 300px;
+  width: 168px;
+}
+
+.iconBottom {
+  position: absolute;
+  bottom: 100px;
+  right: 300px;
+  width: 168px;
+}
+
+.guardianRight {
+  padding-top: 0;
+  padding-left: 34px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.guardianLogo {
+  width: 290px;
+  height: 80px;
+  margin-bottom: 40px;
+  object-fit: contain;
+
+}
+
+.guardianTitle {
+  font-family: 'Montserrat';
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 36px;
+  color: #03303d;
+  margin-bottom: 40px;
+  white-space: pre-line;
+}
+
+.guardianTitleItalic {
+  font-style: italic;
+}
+
+.guardianText {
+  font-family: 'Montserrat';
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 130%;
+  color: #03303d;
+  margin-bottom: 12px;
+}
+
+.btnGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.guardianBtn {
+  height: 58px;
+  border-radius: 40px;
+  border: 1px solid #44d09f;
+  background: #ffffff;
+  font-family: 'Montserrat';
+  font-size: 18px;
+  font-weight: 700;
+  color: #03303d;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 26px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.guardianBtn:first-child {
+  width: 293.08px;
+  margin-top: 30px;
+}
+
+.guardianBtn:last-child {
+  width: 337.8px;
+}
+
+.guardianBtn:hover {
+  background: #59C09A;
+  color: #ffffff;
+}
+
+.guardianBtn:hover img {
+  filter: brightness(0) invert(1);
+}
+
+.guardianBtn span {
+  flex: 1;
+  text-align: center;
+}
+
+/* SECTION 3 — Wild Tech */
+.wildSection {
+  width: 100%;
+  min-height: 100vh;
+  padding: 0;
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wildWrapper {
+  width: 100%;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  gap: 0;
+  padding: 0;
+  min-height: 100vh;
+  align-items: stretch;
+}
+
+/* LEFT 2x2 GRID */
+.leftGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  height: 100%;
+  min-height: 100vh;
+}
+
+.gridCard {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+  padding-left: 80px;
+  overflow: hidden;
+  border-right: 2.5px solid rgba(255, 255, 255, 1);
+  border-bottom: 2.5px solid rgba(255, 255, 255, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.gridCard:nth-child(2),
+.gridCard:nth-child(4) {
+  border-right: none;
+}
+
+.gridCard:nth-child(3),
+.gridCard:nth-child(4) {
+  border-bottom: none;
+}
+
+.cardBg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(2px) brightness(85%);
+}
+
+.cardIcon {
+  position: relative;
+  z-index: 3;
+  object-fit: contain;
+}
+
+.cardIcon1 {
+  width: 179.03px;
+  height: 62px;
+}
+
+.cardIcon2 {
+  width: 80px;
+  height: 65px;
+}
+
+.cardIcon3 {
+  width: 59px;
+  height: 34.82px;
+}
+
+.cardIcon4 {
+  width: 57px;
+  height: 46.16px;
+}
+
+.cardIconRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  z-index: 3;
+}
+
+.poundIcon {
+  width: 20px;
+  height: auto;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+
+.cardNum {
+  margin-top: 16px;
+  font-family: 'Montserrat';
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 130%;
+  color: #ffffff;
+  position: relative;
+  z-index: 3;
+}
+
+.cardText {
+  margin-top: 12px;
+  width: 100%;
+  font-family: 'Montserrat';
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 130%;
+  color: #ffffff;
+  position: relative;
+  z-index: 3;
+  text-align: left;
+  white-space: pre-line;
+}
+
+/* RIGHT SECTION */
+.rightSection {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 80px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.rightContent {
+  position: relative;
+  width: 100%;
+  max-width: 450px;
+  z-index: 3;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.wildTitleContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+  margin-top: 80px;
+  margin-bottom: 0;
+}
+
+.wildTitle {
+  font-family: 'Montserrat';
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 130%;
+  color: #ffffff;
+  text-align: right;
+  margin-bottom: 0;
+  width: 100%;
+  white-space: pre-line;
+}
+
+.wildSubtitle {
+  font-family: 'Montserrat';
+  font-size: 32px;
+  font-weight: 700;
+  font-style: italic;
+  line-height: 130%;
+  color: #59c09a;
+  text-align: right;
+  margin-top: 0;
+  width: 100%;
+  white-space: pre-line;
+}
+
+.builtWith {
+  font-family: 'Montserrat';
+  font-size: 32px;
+  font-weight: 700;
+  font-style: italic;
+  line-height: 130%;
+  color: #59c09a;
+}
+
+.wildTech {
+  font-family: 'Montserrat';
+  font-size: 55px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 60px;
+  color: #ffffff;
+}
+
+/* Step Card */
+.stepCard {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  justify-content: center;
+  flex: 1;
+}
+
+.stepRow {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  justify-content: center;
+}
+
+.stepIcon {
+  width: 67.85px;
+  height: 67.65px;
+  object-fit: contain;
+}
+
+.stepNum {
+  font-family: 'Montserrat';
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 130%;
+  color: #ffffff;
+  margin-top: 12px;
+}
+
+.stepDesc {
+  margin-top: 12px;
+  width: 100%;
+  font-family: 'Montserrat';
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 130%;
+  color: #ffffff;
+  text-align: left;
+  white-space: pre-line;
+}
+
+/* Video Box */
+.videoBox {
+  margin-top: 20px;
+  width: 221px;
+  height: 147.98px;
+  border-radius: 0;
+  overflow: hidden;
+  position: relative;
+  align-self: flex-start;
+}
+
+.videoThumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.playBtn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  transition: transform 0.2s;
+  z-index: 10;
+}
+
+.playBtn:hover {
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.playBtn:hover {
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.playBtn img {
+  width: 78px;
+  height: auto;
+}
+
+/* SECTION 4 — Protect a Habitat (IMPACT COMPASS) */
+.habitatSection {
+  width: 100%;
+  min-height: 100vh;
+  padding: 80px 0;
+  background-color: #daf5ec;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.habitatWrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 0 40px;
+  gap: 40px;
+  min-height: calc(100vh - 160px);
+  height: 100%;
+}
+
+.habitatLeft {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  overflow: visible;
+}
+
+.impactCompassContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: calc(100vh - 160px);
+  overflow: visible;
+  max-width: 100%;
+}
+
+.impactCompassGraphic {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  min-height: calc(100vh - 160px);
+  object-fit: contain;
+  object-position: left center;
+}
+
+.habitatRight {
+  width: 40%;
+  max-width: 450px;
+  padding: 0 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+  justify-content: center;
+  align-self: center;
+}
+
+.habitatIconContainer {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.habitatIcon {
+  width: 250.3px;
+  height: 77.1px;
+  object-fit: contain;
+}
+
+.habitatLogoContainer {
+  margin-bottom: 5px;
+}
+
+.habitatLogo {
+  width: 130px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.habitatTitle {
+  font-family: 'Montserrat';
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 60px;
+  color: #03303d;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: right;
+}
+
+.habitatText {
+  font-family: 'Montserrat';
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 130%;
+  color: #003b3a;
+  margin-bottom: 20px;
+  text-align: right;
+}
+
+.habitatTextMultiLine {
+  font-family: 'Montserrat';
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 130%;
+  color: #003b3a;
+  margin-bottom: 20px;
+  text-align: right;
+  white-space: pre-line;
+}
+
+/* Avatars and Button Styles - ACT NOW Button - Exact Figma specs */
+.actNowBtn {
+  width: 301.25px;
+  height: 58px;
+  border-radius: 50px;
+  border: none;
+  background: #44D09F;
+  color: #ffffff;
+  font-family: 'Montserrat';
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.2189999686347113em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 75px;
+  cursor: pointer;
+  margin-top: 10px;
+  box-shadow: 0px 8px 16px 0px rgba(68, 208, 159, 0.1);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.actNowBtn:hover {
+  background: #03303D;
+  text-decoration: none;
+}
+
+.actNowInnerContent {
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+.actNowAvatars {
+  display: flex;
+  align-items: center;
+}
+
+.actNowAvatar {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  object-fit: cover;
+  margin-left: -5px;
+}
+
+.actNowAvatar:first-child {
+  margin-left: 0;
+}
+
+.actNowArrow {
+  width: 14px;
+  height: 13.57px;
+  filter: brightness(0) invert(1);
+  flex-shrink: 0;
+}
+
+/* Arrow at bottom center */
+.arrowTopContainer {
+  position: absolute;
+  bottom: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.arrowTop {
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Controls at the bottom */
+.controlsSection {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  /* Adjusted bottom value to account for the overall section padding and visually align with the image */
+  bottom: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.controlsWrapper {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 550px;
+  /* Aligned with user's requested width of ~528 */
+  padding: 0 40px;
+}
+
+.controlBox {
+  width: 528px;
+  height: 75px;
+  background: #ffffff;
+  border-radius: 40px;
+  border: 1px solid #003b3a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.controlBox:first-child {
+  flex-direction: row;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+/* NEW: Style for the dark circle around the pound logo */
+.poundLogoCircle {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #03303d;
+  /* FIXED: Dark background color */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+
+.priceContent {
+  display: flex;
+  align-items: center;
+  font-size: 38px;
+  font-weight: 700;
+  color: #003b3a;
+  position: relative;
+  z-index: 2;
+}
+
+.poundLogo {
+  /* Logo inside the dark circle */
+  width: 20px;
+  height: 20px;
+  filter: brightness(0) invert(1);
+  /* Makes the logo white */
+}
+
+.priceValue {
+  color: #03303d;
+}
+
+/* Quantity Box Specific (second controlBox) */
+.controlBox:nth-child(2) {
+  flex-direction: column;
+  justify-content: center;
+}
+
+.qtyBoxCounter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 32px;
+  font-weight: 700;
+  color: #003b3a;
+}
+
+.qtyArrow {
+  width: 20px;
+  height: 20px;
+  margin-bottom: 6px;
+}
+
+.qtyWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.qtyNumber {
+  font-size: 32px;
+  font-weight: 700;
+  color: #003b3a;
+}
+
+.qtyLabel {
+  font-family: 'Montserrat';
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 32px;
+  text-align: center;
+  color: #003b3a;
+  margin-top: 12px;
+}
+
+.qtyBoxText {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 32px;
+  text-align: center;
+  color: #003b3a;
+  margin-top: 10px;
+}
+
+/* 5 section  */
+.giftSection {
+  width: 100%;
+  padding: 80px 0 120px;
+  background: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.giftWrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 520px 1fr;
+  gap: 40px;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.giftLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.giftLogo {
+  width: 300px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.giftTitle {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 130%;
+  color: #03303D;
+  margin: 6px 0;
+}
+
+.giftText {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 130%;
+  color: #03303D;
+  max-width: 460px;
+  white-space: pre-line;
+}
+
+.giftBtn {
+  width: 301.25px;
+  height: 58px;
+  border-radius: 50px;
+  background: #03303d;
+  color: #fff;
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 130%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 0 15px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  margin-top: 20px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.giftBtn:hover {
+  background: #59C09A;
+  text-decoration: none;
+}
+
+.giftBtnArrow {
+  /* FIXED: Style for arrow on dark background */
+  width: 14px;
+  height: 14px;
+  filter: brightness(0) invert(1);
+  /* Makes the arrow white */
+  transform: rotate(0deg);
+  /* Ensure it points right */
+}
+
+.giftRight {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  /* FIXED: Center image horizontally and align to top vertically */
+  align-items: flex-end;
+  justify-content: flex-start;
+  width: 646px;
+  height: 828px;
+  min-height: 828px;
+  overflow: visible;
+  flex-shrink: 0;
+  margin-right: 100px;
+}
+
+.giftBtnAvatars {
+  display: flex;
+  align-items: center;
+  margin-left: 6px;
+}
+
+.giftAvatar {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  margin-left: -8px;
+  object-fit: cover;
+}
+
+/* dotted grid background */
+.dotGrid {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 646px;
+  height: 828px;
+  object-fit: contain;
+  opacity: 1;
+  pointer-events: none;
+  z-index: 1;
+  /* Ensure background maintains container size */
+  min-width: 646px;
+  min-height: 828px;
+}
+
+/* main composed image container */
+.giftImageContainer {
+  position: absolute;
+  width: 639px;
+  height: 511px;
+  max-width: calc(100% - 8px);
+  z-index: 2;
+  display: block;
+  right: 4px;
+  top: 159px;
+  overflow: hidden;
+}
+
+/* Hide container if no image inside */
+.giftImageContainer:empty {
+  display: none;
+}
+
+.giftMainImage {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  clip-path: none;
+  opacity: 1;
+}
+
+/* individual pieces (positioning tuned to match the reference) */
+.giftPiece {
+  position: absolute;
+  width: 220px;
+  height: 180px;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+/* specific piece positions (tweak values if needed) */
+.p1 {
+  left: 160px;
+  top: -20px;
+  transform: rotate(-18deg);
+  width: 260px;
+  height: 170px;
+}
+
+.p2 {
+  left: 320px;
+  top: -40px;
+  transform: rotate(12deg);
+  width: 260px;
+  height: 200px;
+}
+
+.p3 {
+  left: 80px;
+  top: 70px;
+  transform: rotate(-8deg);
+  width: 260px;
+  height: 180px;
+}
+
+.p4 {
+  left: 260px;
+  top: 90px;
+  transform: rotate(2deg);
+  width: 260px;
+  height: 180px;
+}
+
+.p5 {
+  left: 440px;
+  top: 120px;
+  transform: rotate(18deg);
+  width: 260px;
+  height: 170px;
+}
+
+.p6 {
+  left: 160px;
+  top: 230px;
+  transform: rotate(0deg);
+  width: 260px;
+  height: 180px;
+}
+
+.p7 {
+  left: 360px;
+  top: 260px;
+  transform: rotate(-6deg);
+  width: 260px;
+  height: 170px;
+}
+
+/* vertical side icons */
+.sideIcons {
+  position: absolute;
+  right: -100px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  align-items: center;
+  z-index: 4;
+}
+
+.iconItem {
+  object-fit: contain;
+  filter: none;
+}
+
+.icon1 {
+  width: 39.24px;
+  height: 46.9px;
+}
+
+.icon2 {
+  width: 37px;
+  height: 37px;
+}
+
+.icon3 {
+  width: 57px;
+  height: 35.4px;
+}
+
+.icon4 {
+  width: 50px;
+  height: 50px;
+}
+
+.icon5 {
+  width: 89.91px;
+  height: 69.4px;
+}
+
+.icon6 {
+  width: 37px;
+  height: 37px;
+}
+
+.icon7 {
+  width: 33.9px;
+  height: 64.1px;
+}
+
+.icon8 {
+  width: 37px;
+  height: 37px;
+}
+
+/* responsive adjustments */
+@media (max-width: 1200px) {
+  .giftWrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .giftRight {
+    margin-top: 30px;
+  }
+
+  .dotGrid {
+    display: none;
+  }
+
+  .sideIcons {
+    display: none;
+  }
+
+  .giftMainImage,
+  .giftPiece {
+    position: relative;
+    left: 0;
+    top: 0;
+    transform: none;
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* SECTION 6 — Sacred Deeds */
+.sacredSection {
+  width: 100%;
+  padding: 98px 0 90px;
+  background: #59C09A;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sacredWrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 40px;
+}
+
+.sacredLogo {
+  width: 300px;
+  margin: 0 auto 30px;
+  height: 80px;
+}
+
+.sacredTitle {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 50px;
+  color: #03303D;
+  margin-bottom: 7px;
+  text-align: center;
+}
+
+.sacredSubtitle {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 18px;
+  color: #03303D;
+  margin-bottom: 170px;
+  line-height: 130%;
+  text-align: center;
+}
+
+.sacredGrid {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 200px;
+}
+
+.sacredCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* gap: 18px; */
+}
+
+.sacredCardImageWrapper {
+  position: relative;
+  /* width: 420px;
+  height: 320px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.braceLeft,
+.braceRight {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 65px;
+}
+
+.braceLeft {
+  left: -60px;
+}
+
+.braceRight {
+  right: -60px;
+  transform: translateY(-50%) scaleX(-1);
+}
+
+.virtualScreen {
+  width: 350px;
+  height: 272px;
+  position: relative;
+  z-index: 3;
+}
+
+.virtualImageInside {
+  position: absolute;
+  top: 20px;
+  left: 25px;
+  width: 327px;
+  height: 184px;
+  object-fit: cover;
+  border-radius: 4px;
+  z-index: 2;
+}
+
+
+.sacredCardImage {
+  width: 378px;
+  height: 213px;
+  object-fit: contain;
+}
+
+.sacredCardIcon {
+  width: 52px;
+  height: 52px;
+  margin-top: 15px;
+}
+
+
+.sacredCardLabel {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 130%;
+  color: #03303D;
+  margin-top: 15px;
+}
+
+.virtualLabel {
+  margin-top: 15px;
+}
+
+.sacredBtnWrapper {
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+}
+
+.sacredBtn {
+  width: 406px;
+  height: 58px;
+  border-radius: 50px;
+  background: #fff;
+  color: #03303D;
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.sacredBtn:hover {
+  background-color: #03303D;
+  color: #fff;
+  text-decoration: none;
+}
+
+.sacredBtnArrow {
+  width: 14px;
+  height: 14px;
+  transition: all 0.3s ease;
+}
+
+.sacredBtn:hover .sacredBtnArrow {
+  filter: brightness(0) invert(1);
+}
+
+/* =========================================
+   RESPONSIVE MEDIA QUERIES
+   ========================================= */
+
+/* --- Tablet / Smaller Desktop (max-width: 1200px) --- */
+@media (max-width: 1200px) {
+
+  /* Guardian Section */
+  .guardianGrid {
+    grid-template-columns: 1fr;
+    padding: 0 40px;
+    gap: 40px;
+  }
+
+  .guardianLeft {
+    align-items: center;
+  }
+
+  .guardianRight {
+    padding-left: 0;
+    align-items: center;
+    text-align: center;
+  }
+
+  .guardianTitle,
+  .guardianText {
+    text-align: center;
+  }
+
+  .btnGroup {
+    align-items: center;
+  }
+
+  /* Wild Tech Section */
+  .wildWrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .leftGrid {
+    min-height: auto;
+  }
+
+  .rightSection {
+    min-height: 600px;
+    padding: 60px 40px;
+    justify-content: center;
+    background-position: center;
+  }
+
+  .rightContent {
+    align-items: center;
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .wildTitleContainer {
+    align-items: center;
+    text-align: center;
+    margin-top: 0;
+  }
+
+  .wildTitle,
+  .wildSubtitle {
+    text-align: center;
+  }
+
+  .stepCard {
+    align-items: center;
+    text-align: center;
+  }
+
+  .stepDesc {
+    text-align: center;
+  }
+
+  .videoBox {
+    align-self: center;
+  }
+
+  /* Impact Compass / Habitat Section */
+  .habitatWrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    min-height: auto;
+  }
+
+  .habitatLeft,
+  .habitatRight {
+    width: 100%;
+    max-width: 800px;
+    padding: 0;
+  }
+
+  .habitatRight {
+    align-items: center;
+    text-align: center;
+  }
+
+  .impactCompassContainer {
+    min-height: 500px;
+    justify-content: center;
+    overflow: visible;
+  }
+
+  .impactCompassGraphic {
+    min-height: auto;
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .habitatIconContainer {
+    justify-content: center;
+  }
+
+  .habitatTitle,
+  .habitatText,
+  .habitatTextMultiLine {
+    text-align: center;
+  }
+
+  .actNowBtn {
+    margin: 0 auto;
+  }
+
+  /* Sacred Deeds */
+  .sacredGrid {
+    gap: 60px;
+    flex-wrap: wrap;
+  }
+}
+
+/* --- Mobile (max-width: 768px) --- */
+@media (max-width: 768px) {
+
+  /* Hero Section */
+  .heroTitle {
+    font-size: 32px;
+    padding: 0 20px;
+  }
+
+  /* Guardian Section */
+  .guardianSection {
+    margin-bottom: 60px;
+  }
+
+  .guardianGrid {
+    padding: 0 20px;
+    gap: 40px;
+  }
+
+  .imgWrapper {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 800/500;
+    min-height: auto;
+  }
+
+  .iconTop,
+  .iconBottom {
+    width: 80px;
+    right: 5%;
+  }
+
+  .iconTop {
+    top: 20px;
+  }
+
+  .iconBottom {
+    bottom: 20px;
+  }
+
+  .guardianLogo {
+    width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .guardianTitle {
+    font-size: 28px;
+    line-height: 1.3;
+    margin-bottom: 20px;
+  }
+
+  .guardianRight {
+    padding-left: 0;
+    align-items: center;
+    text-align: center;
+  }
+
+  .guardianBtn:first-child,
+  .guardianBtn:last-child {
+    width: 100%;
+    max-width: 340px;
+    height: 50px;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  .btnGroup {
+    width: 100%;
+    align-items: center;
+  }
+
+  /* Wild Tech Section */
+  .wildWrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .leftGrid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    min-height: auto;
+  }
+
+  .gridCard {
+    border-right: none;
+    border-bottom: 2.5px solid rgba(255, 255, 255, 1);
+    padding: 40px 20px;
+    height: auto;
+    min-height: auto;
+    aspect-ratio: auto;
+  }
+
+  .gridCard:last-child {
+    border-bottom: none;
+  }
+
+  .cardNum {
+    font-size: 28px;
+  }
+
+  .cardText {
+    font-size: 16px;
+  }
+
+  .wildTech {
+    font-size: 40px;
+    line-height: 1.2;
+  }
+
+  .rightSection {
+    padding: 60px 20px;
+    min-height: auto;
+  }
+
+  .rightContent {
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .wildTitleContainer {
+    align-items: center;
+    text-align: center;
+    margin-top: 0;
+  }
+
+  .wildTitle,
+  .wildSubtitle {
+    text-align: center;
+  }
+
+  .stepCard {
+    align-items: center;
+    text-align: center;
+  }
+
+  .stepDesc {
+    text-align: center;
+  }
+
+  .videoBox {
+    align-self: center;
+  }
+
+  /* Gift Section */
+  .giftWrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    gap: 20px;
+  }
+
+  .giftLeft,
+  .giftRight {
+    display: contents;
+  }
+
+  .giftLogo {
+    width: 200px;
+    height: auto;
+    order: 1;
+    margin: 0 auto 20px auto;
+  }
+
+  .giftTitle {
+    font-size: 32px;
+    order: 2;
+    text-align: center;
+  }
+
+  /* Image Container (from giftRight) */
+  .giftRight>div,
+  .giftImageContainer {
+    order: 3;
+    width: 100%;
+    height: auto;
+    min-height: auto;
+    margin: 20px auto;
+    aspect-ratio: 639/511;
+    max-width: 350px;
+    position: relative;
+    top: auto;
+    right: auto;
+  }
+
+  .giftText {
+    text-align: center;
+    order: 4;
+    margin-bottom: 20px;
+  }
+
+  .giftBtn {
+    width: 100%;
+    max-width: 300px;
+    /* Adjusted size */
+    height: 50px;
+    font-size: 16px;
+    order: 5;
+    margin: 0 auto;
+  }
+
+  /* Sacred Deeds */
+  .sacredSection {
+    padding: 60px 0;
+  }
+
+  .sacredWrapper {
+    padding: 0 20px;
+  }
+
+  .sacredGrid {
+    flex-direction: column;
+    gap: 80px;
+    /* Increased gap */
+    align-items: center;
+  }
+
+  .sacredCard {
+    width: 100%;
+  }
+
+  .sacredCardImageWrapper {
+    width: 100%;
+    max-width: 260px;
+    /* Reduced further to give space for braces */
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    overflow: visible;
+  }
+
+  /* First card (Certificate) aspect ratio */
+  .sacredCard:first-child .sacredCardImageWrapper {
+    aspect-ratio: 378/213;
+  }
+
+  /* Second card (Virtual Background) aspect ratio */
+  .sacredCard:last-child .sacredCardImageWrapper {
+    aspect-ratio: 350/272;
+  }
+
+  .sacredCardImage {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    position: relative;
+    z-index: 2;
+  }
+
+  .braceLeft,
+  .braceRight {
+    width: 40px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+  }
+
+  .braceLeft {
+    left: -50px;
+    /* Moved further out */
+    transform: translateY(-50%);
+  }
+
+  .braceRight {
+    right: -50px;
+    /* Moved further out */
+    transform: translateY(-50%) scaleX(-1);
+  }
+
+  .virtualScreen {
+    width: 100%;
+    height: 100%;
+    /* Fill the wrapper */
+    object-fit: contain;
+  }
+
+  .virtualImageInside {
+    width: 93%;
+    height: auto;
+    aspect-ratio: 327/184;
+    left: 3.5%;
+    top: 7%;
+  }
+
+  .sacredBtn {
+    width: 100%;
+    max-width: 340px;
+    font-size: 16px;
+    gap: 20px;
+    height: 50px;
+  }
+
+  /* Habitat Section (Protect a Habitat) */
+  .habitatSection {
+    padding: 60px 0;
+  }
+
+  .habitatWrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    gap: 20px;
+    min-height: auto;
+  }
+
+  .habitatLeft,
+  .habitatRight {
+    display: contents;
+  }
+
+  .habitatIconContainer {
+    justify-content: center;
+    order: 1;
+    margin-bottom: 20px;
+  }
+
+  .habitatTitle {
+    text-align: center;
+    font-size: 32px;
+    line-height: 1.2;
+    order: 2;
+  }
+
+  /* GIF/Video Container (from habitatLeft) */
+  .impactCompassContainer {
+    min-height: auto;
+    height: auto;
+    aspect-ratio: 1;
+    width: 100%;
+    max-width: 350px;
+    margin: 20px auto;
+    order: 3;
+  }
+
+  .impactCompassGraphic {
+    min-height: auto;
+    height: 100%;
+    width: 100%;
+  }
+
+  .habitatText,
+  .habitatTextMultiLine {
+    text-align: center;
+    order: 4;
+    margin-bottom: 20px;
+  }
+
+  .actNowBtn {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 300px;
+    /* Adjusted size */
+    padding: 0;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    order: 5;
+  }
+}

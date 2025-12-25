@@ -1,0 +1,399 @@
+/* ========================================
+ * Common Sections Styles
+ * Shared across multiple pages
+ * ========================================*/
+
+/* Aligned with UN SDGs Section */
+.alignedSection {
+  border-top: 0.5px solid #03303D;
+  background-color: #ffffff;
+  padding: 50px 20px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 100vw;
+  box-sizing: border-box;
+}
+
+.alignedContainer {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Top Row - Heading and SDG Icons (Centered) */
+.alignedTopRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 64px;
+  gap: 80px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+/* Left Side - Heading */
+.alignedLeft {
+  flex: 0 0 auto;
+  text-align: left;
+}
+
+.alignedHeading {
+  font-family: 'Montserrat';
+  font-size: 20.21px;
+  font-weight: 500;
+  color: #03303D;
+  line-height: 130%;
+  letter-spacing: 0%;
+  text-align: left;
+  margin: 0;
+}
+
+/* Right Side - SDG Icons */
+.alignedTopRight {
+  flex: 0 0 auto;
+}
+
+.sdgIcons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.sdgIcon {
+  width: 124px;
+  height: 126px;
+  object-fit: contain;
+}
+
+/* Bottom Row - LinkedIn Slider (Full Width) */
+.alignedBottomRow {
+  width: 100%;
+}
+
+/* LinkedIn Posts Slider */
+.sliderContainer {
+  position: relative;
+  width: 100%;
+  padding: 0 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (min-width: 1441px) {
+  .sliderContainer {
+    padding: 0 140px;
+    max-width: 1400px;
+  }
+
+  .postsGrid {
+    gap: 30px;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 60px;
+  }
+
+  .sliderArrowLeft {
+    left: 60px;
+  }
+
+  .sliderArrowRight {
+    right: 60px;
+  }
+}
+
+.sliderArrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+  transition: opacity 0.3s ease;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sliderArrow img {
+  width: 32px;
+  height: 32px;
+  display: block;
+}
+
+.sliderArrow:hover {
+  opacity: 0.7;
+}
+
+.sliderArrowLeft {
+  left: 10px;
+}
+
+.sliderArrowRight {
+  right: 10px;
+}
+
+@media (min-width: 1441px) {
+  .sliderArrowLeft {
+    left: 30px;
+  }
+
+  .sliderArrowRight {
+    right: 30px;
+  }
+
+  .postsGrid {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+.postsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-bottom: 0;
+  width: 100%;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Individual Post Card */
+.postCard {
+  background: #F8F8F8;
+  border: none;
+  border-radius: 21.32px;
+  overflow: hidden;
+  box-shadow: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.postHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 15px;
+  gap: 10px;
+  border-bottom: none;
+}
+
+.postLogo {
+  width: auto;
+  height: 20px;
+  object-fit: contain;
+}
+
+.postMeta {
+  flex: 1;
+}
+
+.linkedinIcon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.postContent {
+  padding: 12px 15px 8px 15px;
+}
+
+.postTitle {
+  font-family: 'Montserrat';
+  font-size: 9.59px;
+  font-weight: 600;
+  color: #1C1B1F;
+  margin: 0 0 4px 0;
+  line-height: 130%;
+  letter-spacing: 0%;
+}
+
+.readMore {
+  font-family: 'Montserrat';
+  font-size: 9.59px;
+  font-weight: 600;
+  color: #4E4E4E;
+  text-decoration: none;
+  line-height: 130%;
+  letter-spacing: 0%;
+}
+
+
+
+.postImageContainer {
+  position: relative;
+  width: 100%;
+  height: 240px;
+  overflow: hidden;
+}
+
+.postImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.newBadge {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: #ff0000;
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.postFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px 12px 15px;
+  border-top: none;
+}
+
+.postStats {
+  display: flex;
+  gap: 12px;
+}
+
+.postLikes,
+.postComments {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 13px;
+  font-weight: 400;
+  color: #666;
+  cursor: pointer;
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+  display: block;
+}
+
+.shareButton {
+  background: none;
+  border: none;
+  color: #4E4E4E;
+  font-family: 'Montserrat';
+  font-size: 9.59px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 0;
+  line-height: 130%;
+  letter-spacing: 0%;
+}
+
+.shareButton:hover {
+  opacity: 0.7;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .alignedSection {
+    padding: 60px 20px;
+  }
+
+  .alignedTopRow {
+    gap: 40px;
+    margin-bottom: 40px;
+  }
+
+  .alignedHeading {
+    font-size: 28px;
+  }
+
+  .sdgIcon {
+    width: 124px;
+    height: 126px;
+  }
+
+  .sliderContainer {
+    padding: 0 40px;
+    max-width: 100%;
+  }
+
+  .postsGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    max-width: 100%;
+  }
+
+  .sliderArrowLeft {
+    left: 10px;
+  }
+
+  .sliderArrowRight {
+    right: 10px;
+  }
+}
+
+/* Mobile Aligned Wrapper - Hidden on desktop */
+.mobileAlignedWrapper {
+  display: none;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .alignedSection {
+    display: none;
+  }
+
+  .mobileAlignedWrapper {
+    display: block !important;
+    width: 100%;
+  }
+
+  /* Section 1: UN SDGs */
+  .mobileAlignedSDG {
+    background-color: #B8E0D3 !important;
+    padding: 60px 20px !important;
+    text-align: left !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+
+  .mobileAlignedSDG h2,
+  .mobileAlignedSDG .mobileSDGHeading,
+  .mobileSDGHeading {
+    font-family: 'Montserrat' !important;
+    font-size: 32px !important;
+    font-weight: 500 !important;
+    color: #03303D !important;
+    line-height: 1.2 !important;
+    margin: 0 0 40px 0 !important;
+    text-align: left !important;
+    width: 100% !important;
+    display: block !important;
+  }
+
+  .mobileSDGGrid {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 20px !important;
+    width: 100% !important;
+    margin-bottom: 40px !important;
+  }
+
+  .mobileSDGIcon {
+    width: 100% !important;
+    height: auto !important;
+    object-fit: contain !important;
+  }
+}

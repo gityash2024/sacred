@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+                            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  
+  <!-- Homepage -->
+  <url>
+    <loc>https://sacredgroves.earth/</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://sacredgroves.earth/og-image.jpg</image:loc>
+      <image:title>Sacred Groves - Protecting Nature Together</image:title>
+    </image:image>
+  </url>
+  
+  <!-- About Us -->
+  <url>
+    <loc>https://sacredgroves.earth/about</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- People for the Planet -->
+  <url>
+    <loc>https://sacredgroves.earth/people-for-the-planet</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://sacredgroves.earth/og-people-for-planet.jpg</image:loc>
+      <image:title>People for the Planet - Protect a Habitat</image:title>
+    </image:image>
+  </url>
+  
+  <!-- Business for the Planet -->
+  <url>
+    <loc>https://sacredgroves.earth/business-for-the-planet</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://sacredgroves.earth/og-business-for-planet.jpg</image:loc>
+      <image:title>Business for the Planet - Corporate Sustainability</image:title>
+    </image:image>
+  </url>
+  
+  <!-- myEarth Point -->
+  <url>
+    <loc>https://sacredgroves.earth/my-earth-point</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Junk to Jungles -->
+  <url>
+    <loc>https://sacredgroves.earth/junk-to-jungles</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Partnership for the Planet -->
+  <url>
+    <loc>https://sacredgroves.earth/partnership-for-the-planet</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- India -->
+  <url>
+    <loc>https://sacredgroves.earth/india</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Stories That Inspire -->
+  <url>
+    <loc>https://sacredgroves.earth/stories-that-inspire</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Our Sacred Groves -->
+  <url>
+    <loc>https://sacredgroves.earth/our-sacred-groves</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://sacredgroves.earth/og-our-groves.jpg</image:loc>
+      <image:title>Our Protected Habitats</image:title>
+    </image:image>
+  </url>
+  
+  <!-- Coed Rhyal -->
+  <url>
+    <loc>https://sacredgroves.earth/coed-rhyal</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://sacredgroves.earth/og-coed-rhyal.jpg</image:loc>
+      <image:title>Coed Rhyal - Ancient Oak Woodland, Wales</image:title>
+    </image:image>
+  </url>
+  
+  <!-- Gigrin Prysg -->
+  <url>
+    <loc>https://sacredgroves.earth/girgin-prysg</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://sacredgroves.earth/og-girgin-prysg.jpg</image:loc>
+      <image:title>Gigrin Prysg - Ancient Oak Woodland, Wales</image:title>
+    </image:image>
+  </url>
+  
+  <!-- Ocean Sanctuary -->
+  <url>
+    <loc>https://sacredgroves.earth/ocean-sanctuary</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://sacredgroves.earth/og-ocean-sanctuary.jpg</image:loc>
+      <image:title>Ocean Sanctuary - Coastal Forest, Nova Scotia</image:title>
+    </image:image>
+  </url>
+  
+</urlset>

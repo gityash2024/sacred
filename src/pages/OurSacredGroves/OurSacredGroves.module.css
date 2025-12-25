@@ -1,0 +1,1015 @@
+/* Our Sacred Groves Page Styles */
+
+.pageWrapper {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.heroSection {
+  width: 100%;
+  height: calc(100vh - 136px);
+  min-height: calc(100vh - 136px);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.heroContent {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding-right: 100px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.heroImage {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  z-index: 2;
+  margin-bottom: 20px;
+}
+
+.heroBottomText {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 14px;
+  color: #FFFFFF;
+  position: absolute;
+  bottom: 20px;
+  right: 40px;
+  margin-bottom: 20px;
+  z-index: 2;
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .heroSection {
+    height: calc(100vh - 136px);
+    min-height: calc(100vh - 136px);
+    background-size: 100% auto;
+    background-position: center top;
+  }
+}
+
+/* Split Section - Using technology, economics, creativity, and science, to let forests grow wild */
+.splitSection {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(90deg, #44D09F 60%, #03303D 60%);
+}
+
+.splitContainer {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+@media (min-width: 1441px) {
+  .splitContainer {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .splitSection {
+    background: linear-gradient(90deg, #44D09F 60%, #03303D 60%);
+  }
+}
+
+/* Left Side - Green Background (#44D09F) - 60% width */
+.greenSection {
+  flex: 0 0 60%;
+  background-color: #44D09F;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 35px;
+  padding-right: 100px;
+  padding-left: 60px;
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  border: none;
+}
+
+@media (min-width: 1441px) {
+  .greenSection {
+    flex: 0 0 60%;
+    padding-left: 120px;
+  }
+}
+
+.iconRow {
+  margin-bottom: 10px;
+}
+
+.technologyIcons {
+  width: 299px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.contentBlock {
+  margin-bottom: 15px;
+}
+
+.splitHeading {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 36px;
+  color: #03303D;
+  margin: 0;
+  font-family: 'Montserrat';
+}
+
+.boldText {
+  font-weight: 700;
+  display: block;
+}
+
+.textBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 450px;
+}
+
+.paragraph {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 100%;
+  color: #03303D;
+  margin: 0;
+  font-family: 'Montserrat';
+}
+
+.paragraph strong {
+  font-weight: 700;
+}
+
+/* Right Side - Dark Background (#03303D) - 40% width */
+.darkSection {
+  flex: 0 0 40%;
+  background-color: #03303D;
+  padding: 60px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin: 0;
+  border: none;
+}
+
+@media (min-width: 1441px) {
+  .darkSection {
+    flex: 0 0 40%;
+  }
+}
+
+.desktopContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.forestLogoWrapper {
+  margin-bottom: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+@media (min-width: 1441px) {
+  .forestLogoWrapper {
+    margin-right: 100px;
+  }
+}
+
+.forestLogo {
+  width: 71.81px;
+  height: auto;
+}
+
+.forestLogoText {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.forestLogoTitle {
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0;
+  line-height: 1.2;
+  font-family: 'Montserrat';
+}
+
+.forestLogoSubtitle {
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffff;
+  margin: 0;
+  line-height: 1.2;
+  font-family: 'Montserrat';
+}
+
+/* Single Map Image Container - Absolute Positioned */
+.habitatMapContainer {
+  position: absolute;
+  top: 50%;
+  left: 69.5%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 1441px) {
+  .habitatMapContainer {
+    max-width: none;
+    width: 72%;
+    left: 67%;
+  }
+}
+
+.habitatMapWrapper {
+  position: relative;
+  width: 741px;
+  height: 564px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.habitatMapFull {
+  width: 741px;
+  height: 564px;
+  max-width: 741px !important;
+  max-height: 564px !important;
+  object-fit: contain;
+  flex-shrink: 0;
+  border-radius: 20px;
+}
+
+.mapArrow {
+  position: absolute;
+  top: 45px;
+  width: 27.26px;
+  height: 27.11px;
+  cursor: pointer;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mapArrow:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
+}
+
+.mapArrow img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.forestDescription {
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.forestText {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #ffffff;
+  margin: 0;
+  /* text-align: center; */
+  max-width: 320px;
+  font-family: 'Montserrat';
+}
+
+/* Responsive Design for Split Section */
+@media (max-width: 1023px) {
+  .splitContainer {
+    flex-direction: column;
+  }
+
+  .greenSection,
+  .darkSection {
+    padding: 50px 60px;
+  }
+
+  .splitHeading {
+    font-size: 38px;
+  }
+
+  .darkSection {
+    align-items: center;
+  }
+
+  .habitatMapContainer {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    margin: 30px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .splitSection {
+    height: 100vh;
+    min-height: 100vh;
+  }
+
+  .splitContainer {
+    height: 100vh;
+  }
+
+  .greenSection,
+  .darkSection {
+    padding: 40px 30px;
+  }
+
+  .technologyIcons,
+  .forestLogo {
+    width: 220px;
+  }
+
+  .splitHeading {
+    font-size: 28px;
+  }
+
+  .splitHeading br,
+  .paragraph br {
+    display: none;
+  }
+
+  .paragraph,
+  .forestText {
+    font-size: 14px;
+  }
+}
+
+/* Art and Science of Conservation Section */
+.artScienceSection {
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  background-color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+  position: relative;
+  overflow: visible;
+}
+
+.artScienceContainer {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0;
+  align-items: start;
+  min-height: calc(100vh - 80px);
+  position: relative;
+  overflow: visible;
+}
+
+@media (min-width: 1441px) {
+  .artScienceContainer {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 80px;
+  }
+}
+
+/* Left Column */
+.artScienceLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding-right: 40px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.artScienceIcon {
+  width: 300px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 40px;
+}
+
+.artScienceHeading {
+  font-family: 'Montserrat';
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 36px;
+  letter-spacing: 0%;
+  color: #03303D;
+  margin: 0 0 40px 0;
+}
+
+.artScienceTextBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 60px;
+  max-width: 475px;
+}
+
+.artScienceParagraph {
+  font-family: 'Montserrat';
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: 0%;
+  color: #03303D;
+  margin: 0;
+}
+
+.advisorSection {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.advisorImage {
+  width: 300px;
+  height: 294px;
+  object-fit: cover;
+  border-radius: 0;
+  flex-shrink: 0;
+}
+
+.advisorText {
+  font-family: 'Montserrat';
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: 0%;
+  color: #03303D;
+  margin: 0;
+  width: 187px;
+}
+
+/* Middle Column */
+.artScienceMiddle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  position: relative;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  padding-left: 0;
+  padding-right: 0;
+  overflow: visible;
+}
+
+.restorativeHeading {
+  font-family: 'Montserrat';
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 36px;
+  letter-spacing: 0%;
+  color: #03303D;
+  margin: 0 40px 40px 0;
+  text-align: right;
+  align-self: flex-end;
+  position: relative;
+  z-index: 2;
+}
+
+
+/* Right Column - Heading and Image */
+.artScienceRight {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+  padding: 0;
+  overflow: visible;
+  padding-right: 80px;
+  min-height: 100vh;
+  width: 100%;
+}
+
+@media (min-width: 1441px) {
+  .artScienceRight {
+    padding-left: 40px;
+    position: relative;
+    overflow: visible;
+  }
+}
+
+.continuumList {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  width: 171px;
+  position: relative;
+  margin-bottom: 0;
+}
+
+.continuumItem {
+  font-family: 'Montserrat';
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: 5%;
+  color: #03303D;
+  padding: 0;
+  padding-bottom: 35px;
+  position: relative;
+  padding-left: 0;
+  border-left: none;
+  min-height: 75px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.continuumItem:last-child {
+  padding-bottom: 0;
+  border-left: none;
+}
+
+.continuumBold {
+  font-weight: 600;
+}
+
+.continuumItemHr {
+  width: 100%;
+  border: none;
+  border-top: 1px solid #000000;
+  margin: 10px 0 0 0;
+  align-self: flex-start;
+}
+
+.continuumImage {
+  /* width: 822px;
+  height: 750px; */
+  object-fit: contain;
+  position: relative;
+  z-index: 1;
+  pointer-events: none;
+  display: block;
+  /* max-width: 100%; */
+  min-width: auto;
+  width: 650px;
+  height: auto;
+  visibility: visible;
+  opacity: 1;
+}
+
+@media (min-width: 1441px) {
+  .artScienceRight {
+    position: relative;
+    overflow: visible;
+    padding-left: 40px;
+  }
+
+  .continuumImage {
+    position: absolute;
+    right: calc((100vw - 1276px) / 2 * -1);
+    top: 50%;
+    transform: translateY(-50%);
+    width: auto;
+    height: auto;
+    max-width: none;
+    z-index: 1;
+  }
+
+  .restorativeHeading {
+    position: absolute;
+    top: 0;
+    right: calc((100vw - 1276px) / 2 * -1);
+    margin: 120px 120px 0 0;
+    padding: 0;
+    z-index: 3;
+    text-align: right;
+    width: auto;
+  }
+}
+
+/* UN Section */
+.unSection {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #44D09F;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.unContainer {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 118px;
+  min-height: 100vh;
+}
+
+.unLeft {
+  flex: 0 0 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.unLeftImage {
+  width: 624px;
+  max-width: 624px;
+  height: 624px;
+  object-fit: cover;
+}
+
+.unRight {
+  flex: 0 0 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 40px;
+  margin-left: 0;
+}
+
+.unRightIcon {
+  width: 300px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.unTextBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.unHeading {
+  font-family: 'Montserrat';
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: 0%;
+  color: #03303D;
+  margin: 0;
+  text-align: left;
+}
+
+.unText {
+  font-family: 'Montserrat';
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: 0%;
+  color: #03303D;
+  margin: 0;
+  text-align: left;
+}
+
+/* Section 7 - The Sacred Groves is a Community Interest Company */
+.section7 {
+  width: 100%;
+  min-height: 900px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.sec7Content {
+  width: 100%;
+  min-height: 1056px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 120px;
+}
+
+.sec7Left {
+  width: 50%;
+  color: white;
+  z-index: 2;
+}
+
+.sec7Logo {
+  width: 300px;
+  height: 80px;
+  margin-bottom: 40px;
+}
+
+.sec7Heading {
+  font-family: 'Montserrat';
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 140%;
+  color: white;
+  margin-bottom: 40px;
+}
+
+.sec7Para {
+  font-family: 'Montserrat';
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 160%;
+  color: white;
+}
+
+.sec7Para strong {
+  font-weight: 700;
+}
+
+/* Responsive Design */
+@media (max-width: 1440px) {
+  .artScienceContainer {
+    padding: 0 60px;
+  }
+
+  .continuumImage {
+    right: -100px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .artScienceContainer {
+    grid-template-columns: 1fr;
+    gap: 60px;
+    padding: 0 40px;
+  }
+
+  .artScienceRight {
+    align-items: flex-start;
+  }
+
+  .restorativeHeading {
+    text-align: left;
+    width: 100%;
+  }
+
+  .continuumImage {
+    position: relative;
+    right: auto;
+    top: auto;
+    transform: none;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .artScienceSection {
+    padding: 60px 0;
+  }
+
+  .artScienceContainer {
+    padding: 0 30px;
+    gap: 40px;
+  }
+
+  .artScienceIcon {
+    width: 250px;
+    height: auto;
+  }
+
+  .artScienceHeading,
+  .restorativeHeading {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  .artScienceParagraph,
+  .advisorText {
+    font-size: 16px;
+  }
+
+  .advisorSection {
+    flex-direction: column;
+  }
+
+  .advisorImage {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  .advisorText {
+    max-width: 100%;
+  }
+
+  .continuumItem {
+    font-size: 20px;
+    padding-left: 30px;
+  }
+
+  .continuumImage {
+    max-width: 100%;
+  }
+}
+
+/* Section 6 - Video Icons Section */
+.section6 {
+  width: 100%;
+  background-color: #03303D;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 0;
+}
+
+.section6Container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 80px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  gap: 40px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.section6IconLeft {
+  width: 300px;
+  height: 80px;
+  object-fit: contain;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 2;
+}
+
+.section6Center {
+  width: 636px;
+  height: 342px;
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.section6Video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 20px;
+  pointer-events: none;
+  /* Prevent video's default click behavior */
+  display: block;
+  background-color: #000;
+}
+
+.playButton {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.playButton:hover {
+  background: rgba(255, 255, 255, 1);
+  transform: translate(-50%, -50%) scale(1.1);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+.playButton:active {
+  transform: translate(-50%, -50%) scale(0.95);
+}
+
+.playIcon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  margin-left: 4px;
+  /* Slight offset to center the play icon visually */
+}
+
+.section6IconRight {
+  width: 300px;
+  height: 80px;
+  object-fit: contain;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 2;
+}
+
+@media (max-width: 1024px) {
+  .section6Container {
+    padding: 0 40px;
+    gap: 30px;
+  }
+
+  .section6IconLeft,
+  .section6IconRight {
+    width: 250px;
+    height: 67px;
+  }
+
+  .section6Center {
+    width: 100%;
+    max-width: 636px;
+    height: auto;
+    aspect-ratio: 636 / 342;
+  }
+}
+
+@media (max-width: 768px) {
+  .section6 {
+    padding: 60px 0;
+  }
+
+  .section6Container {
+    padding: 0 20px;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .section6IconLeft,
+  .section6IconRight {
+    width: 200px;
+    height: 53px;
+  }
+
+  .section6Center {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 636 / 342;
+  }
+
+  .playButton {
+    width: 60px;
+    height: 60px;
+  }
+
+  .playIcon {
+    width: 30px;
+    height: 30px;
+  }
+}

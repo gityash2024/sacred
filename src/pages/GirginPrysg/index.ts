@@ -1,0 +1,1 @@
+export { GirginPrysg } from './GirginPrysg'

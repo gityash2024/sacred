@@ -1,0 +1,220 @@
+/**
+ * 404 Not Found Page Styles
+ */
+
+.container {
+  min-height: calc(100vh - 200px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  background: linear-gradient(180deg, #f8faf8 0%, #eef5ee 100%);
+}
+
+.content {
+  max-width: 600px;
+  text-align: center;
+  position: relative;
+}
+
+/* Forest Decoration */
+.forestDecoration {
+  position: absolute;
+  top: -80px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 120px;
+  pointer-events: none;
+}
+
+.treeSvg {
+  width: 100%;
+  height: 100%;
+  color: #0a4d2e;
+}
+
+/* Error Code */
+.errorCode {
+  font-size: clamp(100px, 20vw, 180px);
+  font-weight: 700;
+  color: #0a4d2e;
+  line-height: 1;
+  margin-bottom: 16px;
+  opacity: 0.15;
+  margin-top: 40px;
+}
+
+/* Title */
+.title {
+  font-size: clamp(24px, 5vw, 36px);
+  font-weight: 600;
+  color: #0a4d2e;
+  margin-bottom: 16px;
+  line-height: 1.3;
+}
+
+/* Description */
+.description {
+  font-size: 16px;
+  color: #4a5568;
+  line-height: 1.7;
+  margin-bottom: 32px;
+  max-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Navigation Buttons */
+.navigation {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.primaryButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 28px;
+  background-color: #0a4d2e;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-radius: 40px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.primaryButton:hover {
+  background-color: #0d5f38;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(10, 77, 46, 0.3);
+}
+
+.primaryButton:focus-visible {
+  outline: 2px solid #0a4d2e;
+  outline-offset: 2px;
+}
+
+.secondaryButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 28px;
+  background-color: transparent;
+  color: #0a4d2e;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border: 2px solid #0a4d2e;
+  border-radius: 40px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.secondaryButton:hover {
+  background-color: #0a4d2e;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.secondaryButton:focus-visible {
+  outline: 2px solid #0a4d2e;
+  outline-offset: 2px;
+}
+
+/* Helpful Links */
+.helpfulLinks {
+  margin-bottom: 32px;
+}
+
+.helpfulText {
+  font-size: 14px;
+  color: #718096;
+  margin-bottom: 12px;
+}
+
+.linkList {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.linkList li a {
+  color: #0a4d2e;
+  font-size: 14px;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  position: relative;
+}
+
+.linkList li a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #0a4d2e;
+  transition: width 0.3s ease;
+}
+
+.linkList li a:hover::after {
+  width: 100%;
+}
+
+.linkList li a:hover {
+  color: #0d5f38;
+}
+
+/* Support Text */
+.support {
+  font-size: 14px;
+  color: #718096;
+}
+
+.support a {
+  color: #0a4d2e;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+
+
+/* Responsive */
+@media (max-width: 480px) {
+  .container {
+    padding: 40px 16px;
+  }
+
+  .navigation {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .primaryButton,
+  .secondaryButton {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .linkList {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .forestDecoration {
+    width: 150px;
+    height: 90px;
+    top: -60px;
+  }
+}
+

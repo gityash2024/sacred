@@ -1,0 +1,1447 @@
+/* Coed Rhyal Page Styles */
+
+.pageWrapper {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.heroSection {
+  width: 100%;
+  height: calc(100vh - 136px);
+  min-height: calc(100vh - 136px);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 0;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.heroContainer {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+/* Gallery Bar - Full width bottom bar */
+.galleryBar {
+  width: calc(100% - 250px);
+  height: 140px;
+  display: flex;
+  align-items: stretch;
+  position: absolute;
+  bottom: 80px;
+  left: 0;
+  z-index: 10;
+}
+
+.galleryBarLeft {
+  background-color: rgba(5, 48, 61, 0.74);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 40px;
+  flex: 1;
+}
+
+.galleryBarLabel {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 120%;
+  color: #FFFFFF;
+  white-space: nowrap;
+}
+
+.galleryBarCenter {
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  align-items: stretch;
+  height: 100%;
+  justify-content: flex-end;
+  background-color: transparent;
+  padding: 0;
+}
+
+.gallerySlot {
+  height: 100%;
+  background-color: transparent;
+  transition: all 0.3s ease;
+  border-radius: 0;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  max-width: 20px;
+  cursor: pointer;
+}
+
+.gallerySlot:hover {
+  opacity: 0.8;
+}
+
+.galleryBarRight {
+  background-color: #44D09F;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 0 20px;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.galleryBarArrow {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 32px;
+  color: #05303D;
+  order: 1;
+}
+
+.galleryBarTitle {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  color: #05303D;
+  text-align: center;
+  order: 2;
+}
+
+@media (max-width: 768px) {
+  .heroSection {
+    height: calc(100vh - 136px);
+    min-height: calc(100vh - 136px);
+    background-size: cover;
+    background-position: 35% center;
+  }
+
+  .galleryBar {
+    height: 100px;
+    background: linear-gradient(to right, #05303D 0%, #05303D 30%, transparent 30%);
+  }
+
+  .galleryBarLeft {
+    padding: 0 20px;
+    min-width: 120px;
+  }
+
+  .galleryBarLabel {
+    font-size: 18px;
+  }
+
+  .galleryBarCenter {
+    gap: 4px;
+    padding: 0 10px;
+  }
+
+  .gallerySlot {
+    height: 80px;
+  }
+
+  .galleryBarRight {
+    padding: 0 20px;
+    min-width: 100px;
+    gap: 10px;
+  }
+
+  .galleryBarArrow {
+    font-size: 24px;
+  }
+
+  .galleryBarTitle {
+    font-size: 16px;
+  }
+}
+
+/* Section 2 */
+.section2 {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #DAF6EC;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 0;
+  box-sizing: border-box;
+}
+
+.section2Container {
+  max-width: 1380px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.section2Left {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.section2Left a {
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.section2Left a:hover {
+  opacity: 0.8;
+}
+
+.section2Icon {
+  width: 100%;
+  max-width: 351px;
+  height: auto;
+  object-fit: contain;
+}
+
+.section2Text {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.section2Heading {
+  font-family: 'Montserrat';
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: 0%;
+  color: #03303D;
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.section2Para {
+  font-family: 'Montserrat';
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: 0%;
+  color: #03303D;
+  margin: 0;
+  max-width: 406px;
+  width: 100%;
+}
+
+.section2Right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.section2Image {
+  width: 100%;
+  max-width: 708px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 20px;
+}
+
+.section2Map {
+  width: 100%;
+  max-width: 708px;
+  height: 820px;
+  /* Keep fixed height for map usability */
+  max-height: 80vh;
+  border-radius: 20px;
+  border: none;
+}
+
+@media (max-width: 1200px) {
+  .section2Container {
+    gap: 40px;
+    padding: 0 40px;
+  }
+
+  .section2Map {
+    height: 600px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .section2 {
+    padding: 60px 0;
+    min-height: auto;
+  }
+
+  .section2Container {
+    grid-template-columns: 1fr;
+    gap: 60px;
+    padding: 0 40px;
+  }
+
+  .section2Right {
+    order: 0;
+  }
+
+  .section2Image {
+    max-width: 100%;
+  }
+
+  .section2Map {
+    max-width: 100%;
+    height: 500px;
+    min-height: 400px;
+  }
+
+  .section2Para {
+    max-width: 100%;
+  }
+
+  .section2Icon {
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section2 {
+    padding: 40px 0;
+  }
+
+  .section2Container {
+    padding: 0 20px;
+    gap: 40px;
+  }
+
+  .section2Icon {
+    width: 200px;
+    height: auto;
+  }
+
+  .section2Heading {
+    font-size: 20px;
+  }
+
+  .section2Para {
+    font-size: 16px;
+  }
+
+  .section2Map {
+    height: 400px;
+  }
+}
+
+/* Section 3 */
+.section3 {
+  width: 100%;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 0;
+  box-sizing: border-box;
+}
+
+.section3Container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+
+.section3Top {
+  margin-bottom: 40px;
+}
+
+.section3TopText {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 1101px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.section3Text {
+  font-family: 'Montserrat';
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: 0%;
+  color: #FFFFFF;
+  margin: 0;
+  text-align: center;
+}
+
+.section3TextBold {
+  font-weight: 700;
+}
+
+.centerImageWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 40px 0;
+}
+
+.centerImage {
+  width: 100%;
+  max-width: 1106px;
+  height: auto;
+  object-fit: contain;
+}
+
+.section3Middle {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 40px;
+  max-width: 1082px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section3TextSmall {
+  font-family: 'Montserrat';
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: 0%;
+  color: #FFFFFF;
+  margin: 0;
+  text-align: center;
+}
+
+.section3Bottom {
+  width: 100%;
+  max-width: 1106px;
+  min-height: 158.86px;
+  background-color: #DAF6EC;
+  border-radius: 17.27px;
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: center;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.section3CardImage {
+  width: 156.13px;
+  height: 118.79px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.section3BottomTextWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  flex: 1;
+}
+
+.section3BottomText {
+  font-family: 'Montserrat';
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: 0%;
+  color: #03303D;
+  margin: 0;
+}
+
+@media (max-width: 1200px) {
+  .section3Container {
+    padding: 0 40px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .section3 {
+    min-height: auto;
+    padding: 60px 0;
+  }
+
+  .section3Container {
+    padding: 0 40px;
+    min-height: auto;
+  }
+
+  .section3Bottom {
+    width: 100%;
+    margin-left: 0;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .section3BottomTextWrapper {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .section3 {
+    padding: 40px 0;
+  }
+
+  .section3Container {
+    padding: 0 20px;
+  }
+
+  .section3Text {
+    font-size: 18px;
+  }
+
+  .section3TextBold {
+    font-size: 20px;
+  }
+
+  .section3TextSmall {
+    font-size: 18px;
+  }
+
+  .section3BottomText {
+    font-size: 16px;
+  }
+
+  .section3CardImage {
+    width: 120px;
+    height: auto;
+  }
+}
+
+/* Section 4 - Grid Layout */
+.section4 {
+  width: 100%;
+  min-height: 90vh;
+  background-color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding: 80px 0; */
+}
+
+.section4Container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  row-gap: 180px;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.gridItem {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.gridLeftImages,
+.gridRightImages {
+  display: flex;
+  flex-direction: row;
+  gap: 67px;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: nowrap;
+  /* Keep images in a row on desktop */
+}
+
+.gridImageWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10.8px;
+}
+
+.gridImage {
+  width: 130px;
+  height: 149.1px;
+  object-fit: contain;
+  border-radius: 0;
+}
+
+.gridLabel {
+  font-family: 'Montserrat';
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #03303D;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+}
+
+.gridTextRight {
+  font-family: 'Montserrat';
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: 0%;
+  color: #03303D;
+  margin: 0;
+  text-align: left;
+  max-width: 563px;
+  width: 100%;
+}
+
+.gridTextLeft {
+  font-family: 'Montserrat';
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: 0%;
+  color: #03303D;
+  margin: 0;
+  text-align: right;
+  max-width: 542px;
+  width: 100%;
+  margin-left: auto;
+}
+
+@media (max-width: 1200px) {
+  .section4Container {
+    padding: 0 40px;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .section4 {
+    min-height: auto;
+    padding: 60px 0;
+  }
+
+  .section4Container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 0 40px;
+  }
+
+  .gridTextRight,
+  .gridTextLeft {
+    text-align: left;
+    max-width: 100%;
+    margin-left: 0;
+  }
+
+  /* Reorder for mobile to keep logical flow if needed, but default stacking order is usually fine (Left images, Right text, Left text, Right images) 
+     Wait, grid order is:
+     1. Top Left (Images)
+     2. Top Right (Text)
+     3. Bottom Left (Text)
+     4. Bottom Right (Images)
+     
+     On mobile column:
+     1. Images
+     2. Text
+     3. Text
+     4. Images
+     This seems okay.
+  */
+}
+
+@media (max-width: 768px) {
+  .section4 {
+    padding: 40px 0;
+  }
+
+  /* Reorder for mobile: Images first, then Text */
+  .section4Container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    gap: 30px;
+  }
+
+  .gridItem {
+    width: 100%;
+  }
+
+  /* Ensure images are side-by-side on mobile */
+  .gridLeftImages,
+  .gridRightImages {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: nowrap;
+  }
+
+  .gridImageWrapper {
+    flex: 0 1 auto;
+    max-width: 120px;
+    /* Further reduced container max-width */
+  }
+
+  .gridImage {
+    width: 100%;
+    height: auto;
+    max-width: 80px;
+    /* Reduced image size for mobile */
+    min-width: 60px;
+    /* Prevent too small */
+    object-fit: contain;
+  }
+
+  .gridLabel {
+    font-size: 16px;
+    /* Reduced font size */
+    line-height: 1.2;
+  }
+
+  .gridTextRight,
+  .gridTextLeft {
+    font-size: 18px;
+  }
+
+  /* Specific targeting for the grid items based on content would be ideal, 
+     but since we have generic .gridItem classes, we rely on DOM order.
+     DOM Order:
+     1. Top Left (Images: Oak Tree, Bluebells)
+     2. Top Right (Text: Coed Rhyal description)
+     3. Bottom Left (Text: Closed canopy description)
+     4. Bottom Right (Images: Honeysuckle, Fern)
+
+     The user screenshot shows: Honeysuckle + Hard Shield Fern, then Peregrine Falcon + Puffins (Section 5), then Text.
+     Wait, the screenshot shows: 
+     Text "woodland contains extensive..." (from Section 4)
+     THEN "HONEYSUCKLE CLIMBERS" / "HARD SHIELD FERN" images (from Section 4)
+     THEN "PEREGRINE FALCON" / "PUFFINS" (from Section 5)
+     THEN Text "There is a patchy lower canopy..." (from Section 5)
+     
+     Wait, the prompt says: "In mobile need all section like first there 2 images then text"
+     But the screenshot shows Text -> Images -> Images -> Text.
+     
+     Let's re-read the user prompt: "In mobile need all section like first there 2 images then text in mobile screen screen shot shared for refrence"
+     And the screenshot shows:
+     1. Text (woodland contains extensive...)
+     2. Images (Honeysuckle, Fern)
+     3. Images (Peregrine, Puffins)
+     4. Text (There is a patchy...)
+     
+     This screenshot seems to be showing the CURRENT state or the DESIRED state?
+     "screen shot shared for refrence" usually means "make it look like this".
+     The screenshot shows Text then Images. 
+     BUT the text prompt says: "need all section like first there 2 images then text".
+     This contradicts the screenshot if the screenshot shows text first.
+     
+     Let's look closer at the screenshot. 
+     Top part: "woodland contains extensive..." -> This is the end of the text from Section 4 Bottom Left.
+     Middle part: Honeysuckle + Fern images -> This is Section 4 Bottom Right.
+     Bottom part: Peregrine + Puffins -> This is Section 5 Left.
+     Bottom Text: "There is a patchy..." -> This is Section 5 Right.
+     
+     So the screenshot shows:
+     [Section 4 Text]
+     [Section 4 Images]
+     [Section 5 Images]
+     [Section 5 Text]
+     
+     The user says: "need all section like first there 2 images then text".
+     This implies they want to CHANGE it to:
+     [Images]
+     [Text]
+     
+     So for Section 4 Bottom part: Images (Honeysuckle/Fern) FIRST, then Text.
+     For Section 5: Images (Peregrine/Puffins) FIRST, then Text.
+     
+     Currently in DOM Section 4:
+     3. Text
+     4. Images
+     So I need to reverse these two for mobile. Or use flex order.
+     
+     Currently in DOM Section 5:
+     1. Images (Left)
+     2. Text (Right)
+     So Section 5 is ALREADY Images then Text in DOM order.
+     
+     Let's check Section 4 Top part too.
+     1. Images (Oak, Bluebells)
+     2. Text (Coed Rhyal...)
+     This is ALREADY Images then Text.
+     
+     So only Section 4 Bottom part (items 3 and 4) needs swapping.
+     Item 3: Text
+     Item 4: Images
+     
+     I can use `order` property on flex children.
+     .section4Container is display: grid on desktop, but on mobile I can make it display: flex; flex-direction: column.
+     Then:
+     .gridItem:nth-child(1) -> order: 1 (Images)
+     .gridItem:nth-child(2) -> order: 2 (Text)
+     .gridItem:nth-child(3) -> order: 4 (Text - needs to be after images)
+     .gridItem:nth-child(4) -> order: 3 (Images - needs to be before text)
+     
+     Wait, is that right?
+     User: "first there 2 images then text".
+     So:
+     Block 1: Images (Oak/Bluebells) -> Text. (Already correct)
+     Block 2: Images (Honeysuckle/Fern) -> Text. (Needs swap)
+     
+     Section 5:
+     Images (Peregrine/Puffins) -> Text. (Already correct in DOM)
+     
+     So I just need to swap the order of the last two items in Section 4.
+  */
+
+  .section4Container .gridItem:nth-child(1) {
+    order: 1;
+  }
+
+  .section4Container .gridItem:nth-child(2) {
+    order: 2;
+  }
+
+  .section4Container .gridItem:nth-child(3) {
+    order: 4;
+    /* Text moves to bottom */
+  }
+
+  .section4Container .gridItem:nth-child(4) {
+    order: 3;
+    /* Images move up */
+  }
+}
+
+/* Section 5 */
+.section5 {
+  width: 100%;
+  background-color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section5Container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 80px 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  /* padding-top: 80px; */
+  padding-bottom: 80px;
+  box-sizing: border-box;
+}
+
+/* First Half - Images and Text */
+.section5FirstHalf {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.section5Left {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.section5ImageWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10.8px;
+}
+
+.section5LeftImage {
+  width: 172.25px;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.section5LeftImageSmall {
+  width: 130px;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.section5Label {
+  font-family: 'Montserrat';
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #03303D;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+}
+
+.section5Right {
+  display: flex;
+  align-items: center;
+}
+
+.section5RightText {
+  font-family: 'Montserrat';
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: 0%;
+  color: #03303D;
+  margin: 0;
+  text-align: left;
+}
+
+/* Second Half - Year Tabs and Carousel */
+.section5SecondHalf {
+  display: flex;
+  flex-direction: column;
+  /* gap: 20px; */
+  width: 100%;
+}
+
+/* Year Tabs */
+.yearTabs {
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.yearTab {
+  font-family: 'Montserrat';
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: 0%;
+  color: #03303D;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.yearTab:hover {
+  color: #44D09F;
+}
+
+.yearTabActive {
+  font-weight: 700;
+  color: #44D09F;
+  font-size: 32px;
+}
+
+.yearTabActive::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #44D09F;
+}
+
+/* Carousel */
+.carouselWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 40px;
+  margin-top: 50px;
+}
+
+.carouselArrow {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 10;
+  transition: transform 0.2s ease;
+  flex-shrink: 0;
+  display: block;
+  /* Hide on desktop/tablet by default */
+}
+
+.carouselArrow:hover {
+  transform: scale(1.1);
+}
+
+.carouselArrow img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+.carouselContainer {
+  flex: 1;
+  overflow: hidden;
+  /* Changed from visible to hidden to prevent overflow */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.carouselTrack {
+  display: flex;
+  gap: 20px;
+  width: fit-content;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.5s ease;
+  flex-wrap: nowrap;
+  transform: translateX(var(--slide-offset));
+  /* Allow wrapping on smaller screens if needed, or handle via JS */
+}
+
+.carouselCard {
+  width: 185.88px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #DAF6EC;
+  border-radius: 22.22px;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.carouselCardImage {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 22.22px 22.22px 0 0;
+  margin: 0;
+  padding: 15.56px 17.41px 0 17.32px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .carouselCardImage {
+    height: 190.45px;
+  }
+}
+
+.carouselCardContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px 15px 20px 15px;
+}
+
+.carouselCardText {
+  font-family: 'Montserrat';
+  font-size: 11.86px;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: 5%;
+  color: #03303D;
+  margin: 0;
+  flex: 1;
+  text-align: left;
+}
+
+.carouselCardIcon {
+  width: 26.68px;
+  height: 23.66px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+@media (max-width: 1200px) {
+  .section5Container {
+    padding: 0 40px;
+  }
+
+  .section5FirstHalf {
+    gap: 40px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .section5Container {
+    padding: 0 40px;
+    gap: 60px;
+  }
+
+  /* Section 5 Mobile Order - Already correct in DOM (Images then Text) but ensuring flex column */
+  .section5FirstHalf {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .section5Left {
+    order: 1;
+  }
+
+  .section5Right {
+    order: 2;
+  }
+
+  .carouselTrack {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .carouselCard {
+    width: calc(50% - 20px);
+    /* 2 per row */
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section5Container {
+    padding: 0 20px;
+    gap: 40px;
+  }
+
+  .section5RightText {
+    font-size: 18px;
+  }
+
+  .section5Label {
+    font-size: 16px;
+    /* Reduced font size */
+    line-height: 1.2;
+  }
+
+  /* Ensure Section 5 images are side-by-side */
+  .section5Left {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: nowrap;
+  }
+
+  .section5ImageWrapper {
+    flex: 0 1 auto;
+    max-width: 140px;
+    /* Reduced container width */
+  }
+
+  .section5LeftImage {
+    width: 100%;
+    height: auto;
+    max-width: 100px;
+    /* Reduced image size for mobile */
+    min-width: 70px;
+    object-fit: contain;
+  }
+
+  .yearTabs {
+    overflow-x: auto;
+    /* Enable horizontal scrolling */
+    flex-wrap: nowrap;
+    /* Keep all tabs in one row */
+    gap: 0px;
+    -webkit-overflow-scrolling: touch;
+    /* Smooth scrolling on iOS */
+    scrollbar-width: none;
+    /* Hide scrollbar on Firefox */
+    padding-left: 20px;
+    /* Add left padding to prevent cutting first tab */
+    padding-right: 20px;
+    /* Add right padding to prevent cutting last tab */
+  }
+
+  .yearTabs::-webkit-scrollbar {
+    display: none;
+    /* Hide scrollbar on Chrome/Safari */
+  }
+
+  .yearTab {
+    font-size: 16px;
+    padding: 8px 16px;
+    white-space: nowrap;
+    /* Prevent text wrapping */
+    flex-shrink: 0;
+    /* Prevent tabs from shrinking */
+  }
+
+  .section5 {
+    padding-bottom: 60px;
+    /* Add bottom margin for mobile */
+  }
+
+  .carouselWrapper {
+    overflow: visible;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .carouselContainer {
+    overflow: visible;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .carouselTrack {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 20px;
+    padding: 0;
+    transform: none !important;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .carouselCard {
+    width: 100%;
+    max-width: 100%;
+    flex-shrink: 0;
+  }
+
+  .carouselArrow {
+    display: none;
+  }
+}
+
+/* Section 6 - Video Icons Section */
+.section6 {
+  width: 100%;
+  background-color: #03303D;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 0;
+}
+
+.section6Container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 80px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  gap: 40px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.section6IconLeft {
+  width: 300px;
+  max-width: 20%;
+  height: 71px;
+  width: 256px;
+  max-width: none;
+  object-fit: contain;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 2;
+}
+
+.section6Center {
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  aspect-ratio: auto;
+  width: 688px;
+  height: 386px;
+  border-radius: 20px;
+  flex-shrink: 1;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.section6Video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  pointer-events: none;
+  /* Prevent video's default click behavior */
+}
+
+.playButton {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.playButton:hover {
+  background: rgba(255, 255, 255, 1);
+  transform: translate(-50%, -50%) scale(1.1);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+.playButton:active {
+  transform: translate(-50%, -50%) scale(0.95);
+}
+
+.playIcon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  margin-left: 4px;
+  /* Slight offset to center the play icon visually */
+}
+
+.fullscreenButton {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background: rgba(0, 0, 0, 0.6);
+  border: none;
+  border-radius: 8px;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(4px);
+}
+
+.fullscreenButton:hover {
+  background: rgba(0, 0, 0, 0.8);
+  transform: scale(1.1);
+}
+
+.fullscreenButton:active {
+  transform: scale(0.95);
+}
+
+.fullscreenButton svg {
+  width: 24px;
+  height: 24px;
+}
+
+.section6IconRight {
+  width: 256px;
+  max-width: none;
+  height: 71px;
+  object-fit: contain;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 2;
+}
+
+@media (max-width: 1200px) {
+  .section6Container {
+    padding: 0 40px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .section6Container {
+    padding: 0 40px;
+    gap: 30px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section6IconLeft,
+  .section6IconRight {
+    width: 250px;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .section6Center {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .section6 {
+    padding: 60px 0;
+  }
+
+  .section6Container {
+    padding: 0 20px;
+    gap: 20px;
+  }
+
+  .section6IconLeft,
+  .section6IconRight {
+    width: 200px;
+  }
+
+  .section6Center {
+    width: 100%;
+  }
+
+  .playButton {
+    width: 60px;
+    height: 60px;
+  }
+
+  .playIcon {
+    width: 30px;
+    height: 30px;
+  }
+}

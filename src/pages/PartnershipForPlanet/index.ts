@@ -1,0 +1,1 @@
+export { PartnershipForPlanet } from './PartnershipForPlanet'

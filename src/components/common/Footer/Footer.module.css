@@ -1,0 +1,380 @@
+.footer {
+  background: #FFFFFF;
+  color: #111;
+  /* padding: 60px 0 20px; */
+
+  width: 100%;
+  max-width: 100vw;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/* Add padding-top when Follow Us section is hidden */
+.footerNoFollow {
+  padding-top: 40px;
+}
+
+.followContainer {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.followButton {
+  background-color: #44D09F;
+  color: #03303D;
+  border-radius: 40px;
+  padding: 14px 36px;
+  font-family: 'Montserrat';
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 130%;
+  letter-spacing: 0%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  /* Add this line */
+  gap: 10px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  height: 58px;
+  width: 300px;
+}
+
+.follow_us_icon {
+  width: 14px;
+  height: 14px;
+}
+
+.followButton:hover {
+  background-color: #03303D;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.followButton:hover img {
+  filter: brightness(0) invert(1);
+}
+
+.container {
+  max-width: 1281px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+@media (min-width: 1441px) {
+  .container {
+    max-width: 90%;
+  }
+}
+
+.footerGrid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 40px;
+}
+
+.footerGrid h3 {
+  font-family: 'Montserrat';
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 130%;
+  letter-spacing: 0%;
+  color: #03303D;
+  margin-bottom: 14px;
+}
+
+.footerGrid a {
+  display: block;
+  font-family: 'Montserrat';
+  color: #03303D;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: 0%;
+  text-decoration: none;
+  margin-bottom: 12px;
+  transition: color 0.3s ease;
+}
+
+.footerGrid a:hover {
+  color: #44D09F;
+}
+
+.legalHeading {
+  margin-top: 24px;
+}
+
+.contactSection {
+  text-align: left;
+}
+
+.logo {
+  width: 130px;
+  margin-bottom: 20px;
+}
+
+.contactSection p {
+  font-family: 'Montserrat';
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: 0%;
+  color: #03303D;
+  margin-bottom: 20px;
+  white-space: nowrap;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.socialIcons img {
+  width: 30px;
+  height: 30px;
+  transition: opacity 0.3s ease;
+}
+
+.socialIcons img:hover {
+  opacity: 0.7;
+}
+
+.contactSection .mail {
+  display: inline-block;
+  font-family: 'Montserrat';
+  color: #03303D;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: 0%;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+.contactSection .mail:hover {
+  color: #03303D;
+}
+
+.contactSection .downloadHeading {
+  font-family: 'Montserrat';
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0%;
+  color: #03303D;
+  margin: 12px 0 10px 0;
+}
+
+.appButtons {
+  display: flex;
+  gap: 12px;
+  margin-top: 0;
+  align-items: center;
+}
+
+.appStoreIcon {
+  height: 40px;
+  width: auto;
+}
+
+.playStoreIcon {
+  height: 40px;
+  width: auto;
+}
+
+.footerBottom {
+  margin-top: 0;
+  text-align: center;
+  /* border-top: 1px solid #ddd; */
+  padding-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footerBottom p {
+  font-family: 'Montserrat';
+  flex: 1;
+  text-align: center;
+  color: #03303D;
+  font-weight: 400;
+  line-height: 50%;
+  letter-spacing: 0%;
+}
+
+.copyrightFirst {
+  font-size: 12px;
+  display: block;
+}
+
+.copyrightSecond {
+  font-size: 10px;
+  display: block;
+  margin-top: 4px;
+  line-height: 130%;
+}
+
+.leftIcons {
+  width: 120px;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 20px !important;
+}
+
+.rightIcons {
+  width: 180px;
+  height: auto;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 40px 0 0 0;
+  }
+
+  /* Hide FOLLOW US button from footer on mobile */
+  .followContainer {
+    display: none;
+  }
+
+  .container {
+    padding: 0 20px;
+  }
+
+  .footerGrid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    /* Reduced gap between sections */
+    text-align: left;
+    /* Left-aligned on mobile */
+  }
+
+  .footerGrid h3 {
+    text-align: left;
+    /* Left-aligned headings */
+  }
+
+  .footerGrid a {
+    text-align: left;
+    /* Left-aligned links */
+  }
+
+  .contactSection {
+    text-align: left;
+    /* Left-aligned contact section */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* Align items to left */
+    gap: 0;
+    /* Remove default gap */
+  }
+
+  .contactSection .logo {
+    margin-bottom: 10px;
+  }
+
+  .contactSection p {
+    margin-bottom: 12px;
+  }
+
+  .contactSection .socialIcons {
+    margin-bottom: 12px;
+  }
+
+  .contactSection .mail {
+    margin-bottom: 12px;
+  }
+
+  .contactSection .downloadHeading {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  .contactSection .appButtons {
+    margin-bottom: 0;
+    /* No margin after app buttons */
+  }
+
+  .logo {
+    align-self: flex-start;
+    /* Logo aligned to left */
+  }
+
+  .contactSection p {
+    text-align: left;
+    /* Address left-aligned */
+  }
+
+  .socialIcons {
+    justify-content: flex-start;
+    /* Social icons aligned to left */
+  }
+
+  .mail {
+    text-align: left;
+    /* Email left-aligned */
+  }
+
+  .downloadHeading {
+    text-align: left;
+    /* Download heading left-aligned */
+    margin-bottom: 10px;
+    /* Reduce space after heading */
+  }
+
+  .appButtons {
+    justify-content: flex-start;
+    /* App buttons aligned to left */
+    margin-bottom: 0;
+    /* Remove any bottom margin */
+  }
+
+  .footerBottom {
+    flex-direction: column;
+    gap: 15px;
+    /* Reduced gap */
+    align-items: flex-start;
+    /* Left-aligned footer bottom */
+    text-align: center;
+    /* Left-aligned text */
+    /* margin-top: 30px; */
+    /* Reduced top margin */
+  }
+
+  /* Hide left icon on mobile */
+  .leftIcons {
+    display: none;
+  }
+
+  /* Show only right icon on mobile */
+  .rightIcons {
+    width: 100%;
+    max-width: 65%;
+    /* 65% max width */
+    align-self: center;
+    /* Center horizontally */
+    margin-top: 15px;
+    margin-bottom: 20px;
+    /* Top margin */
+  }
+
+  .footerBottom p {
+    order: -1;
+    width: 100%;
+    text-align: center;
+    /* Left-aligned copyright text */
+  }
+}
+
+.webMargin {
+  margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+  .webMargin {
+    margin-top: 25px;
+  }
+}

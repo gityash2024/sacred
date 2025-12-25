@@ -1,0 +1,1 @@
+export { MyEarthPoint } from './MyEarthPoint'

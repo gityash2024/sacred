@@ -1,0 +1,1328 @@
+/* Hero Section */
+.heroSection {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -136px;
+  /* Account for header height */
+  padding-top: 136px;
+  overflow: hidden;
+}
+
+.heroContainer {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+/* Left Section */
+.heroLeft {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.heroLeftBg {
+  width: 100%;
+  height: auto;
+  min-height: calc(100vh - 200px);
+  margin-top: 100px;
+  margin-bottom: 100px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.heroLeftImage {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  position: relative;
+  z-index: 1;
+}
+
+/* Right Section */
+.heroRight {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 40px;
+  max-width: 600px;
+}
+
+.heroRightIcon {
+  width: 515.14px;
+  height: 150.34px;
+  object-fit: contain;
+  margin-bottom: 40px;
+}
+
+.heroHeading {
+  font-family: 'Montserrat';
+  font-size: 55px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 130%;
+  letter-spacing: 0%;
+  color: #03303D;
+  margin: 0 0 30px 0;
+  text-align: left;
+}
+
+.heroText {
+  font-family: 'Montserrat';
+  font-size: 24px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 130%;
+  letter-spacing: 0%;
+  color: #03303D;
+  margin: 0;
+  text-align: left;
+}
+
+/* Responsive Design */
+@media (max-width: 1400px) {
+  .heroContainer {
+    padding: 0 60px;
+  }
+
+  .heroRightIcon {
+    width: 450px;
+    height: auto;
+  }
+
+  .heroHeading {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .heroContainer {
+    flex-direction: column;
+    padding: 0 40px;
+    gap: 30px;
+    justify-content: center;
+  }
+
+  .heroLeft {
+    width: 100%;
+    height: auto;
+    flex: unset;
+  }
+
+  .heroLeftBg {
+    min-height: 400px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .heroRight {
+    width: 100%;
+    padding-left: 0;
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+    flex: unset;
+  }
+
+  .heroRightIcon {
+    width: 400px;
+    margin-bottom: 30px;
+  }
+
+  .heroHeading {
+    font-size: 42px;
+    text-align: center;
+  }
+
+  .heroText {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .heroSection {
+    margin-top: -100px;
+    padding-top: 100px;
+    height: auto;
+    min-height: 100vh;
+    padding-bottom: 40px;
+  }
+
+  .heroContainer {
+    padding: 0 20px;
+  }
+
+  .heroLeftBg {
+    min-height: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .heroRightIcon {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .heroHeading {
+    font-size: 32px;
+  }
+
+  .heroText {
+    font-size: 18px;
+  }
+}
+
+/* Section 2 */
+.section2 {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.section2::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* background-color: #03303DBD; */
+  z-index: 0;
+}
+
+.section2Container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* gap: 60px; */
+  height: 100%;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+}
+
+/* Left Section */
+.section2Left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 40px;
+}
+
+.section2Heading {
+  font-family: 'Montserrat';
+  font-size: 55px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 130%;
+  letter-spacing: 0%;
+  color: #FFFFFF;
+  margin: 0;
+  text-align: right;
+}
+
+/* Right Section */
+.section2Right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  /* padding-left: 40px; */
+  max-width: 600px;
+  position: relative;
+  min-height: 100%;
+}
+
+.section2RightContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* justify-content: center; */
+  flex: 1;
+}
+
+.section2Icons {
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.section2TextWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.section2Text {
+  font-family: 'Montserrat';
+  font-size: 24px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 130%;
+  letter-spacing: 0%;
+  color: #FFFFFF;
+  margin: 0;
+  text-align: left;
+  align-self: flex-start;
+}
+
+.section2Icon {
+  width: 68.24px;
+  height: 55.76px;
+  object-fit: contain;
+}
+
+.section2Location {
+  font-family: 'Montserrat';
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 130%;
+  letter-spacing: 0%;
+  color: #FFFFFF;
+  margin: 0 0 30px 0;
+  text-align: right;
+  align-self: flex-end;
+  width: 100%;
+  margin-bottom: 50px !important;
+}
+
+/* Responsive Design for Section 2 */
+@media (max-width: 1400px) {
+  .section2Container {
+    padding: 0 60px;
+  }
+
+  .section2Heading {
+    font-size: 48px;
+  }
+
+  .section2Text {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .section2 {
+    height: auto;
+    min-height: 100vh;
+    padding: 60px 0;
+  }
+
+  .section2Container {
+    flex-direction: column;
+    padding: 0 40px;
+    gap: 40px;
+  }
+
+  .section2Left {
+    width: 100%;
+    padding-right: 0;
+    justify-content: center;
+    flex: unset;
+  }
+
+  .section2Heading {
+    text-align: center;
+  }
+
+  .section2Right {
+    width: 100%;
+    padding-left: 0;
+    max-width: 100%;
+    align-items: center;
+    flex: unset;
+  }
+
+  .section2RightContent {
+    align-items: center;
+    width: 100%;
+  }
+
+  .section2Icons {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+
+  .section2TextWrapper {
+    align-items: center;
+    width: 100%;
+  }
+
+  .section2Text {
+    text-align: center;
+    align-self: center;
+  }
+
+  .section2Location {
+    text-align: center;
+    align-self: center;
+    margin-bottom: 0 !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .section2 {
+    padding: 40px 0;
+  }
+
+  .section2Container {
+    padding: 0 20px;
+    gap: 30px;
+  }
+
+  .section2Heading {
+    font-size: 36px;
+  }
+
+  .section2Icons {
+    gap: 20px;
+  }
+
+  .section2Text {
+    font-size: 16px;
+  }
+
+  .section2Icon {
+    width: 50px;
+    height: 40px;
+  }
+
+  .section2Location {
+    font-size: 9px;
+    margin-top: 40px !important;
+    white-space: nowrap;
+    width: 100%;
+    display: block;
+    text-align: center;
+    letter-spacing: -0.2px;
+  }
+}
+
+/* Section 3 */
+.section3 {
+  width: 100%;
+  height: 100vh;
+  background-color: #B8E0D3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.section3Container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  box-sizing: border-box;
+}
+
+/* Left Section */
+.section3Left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 40px;
+  max-width: 600px;
+}
+
+.section3Point {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+  width: 100%;
+}
+
+.section3Heading {
+  font-family: 'Montserrat';
+  font-size: 32px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 130%;
+  letter-spacing: 0%;
+  color: #3F606E;
+  margin: 0 0 10px 0;
+  text-align: right;
+}
+
+.section3Text {
+  font-family: 'Montserrat';
+  font-size: 18px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 130%;
+  letter-spacing: 0%;
+  color: #3F606E;
+  margin: 0;
+  text-align: right;
+}
+
+.contactUsButton {
+  font-family: 'Montserrat';
+  font-size: 18px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 130%;
+  letter-spacing: 0%;
+  color: #03303D;
+  background-color: #FFFFFF;
+  border: none;
+  border-radius: 40px;
+  padding: 20px 40px;
+  width: 297px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-align: center;
+  box-sizing: border-box;
+  margin-top: 20px;
+}
+
+.contactUsButton:hover,
+.contactUsButton:active {
+  background-color: #03303D;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.contactUsArrow {
+  width: auto;
+  height: auto;
+  transition: filter 0.3s ease;
+  filter: brightness(0) saturate(100%) invert(12%) sepia(95%) saturate(2000%) hue-rotate(180deg) brightness(95%) contrast(95%);
+  /* Change arrow color to #03303D */
+}
+
+.contactUsButton:hover .contactUsArrow,
+.contactUsButton:active .contactUsArrow {
+  filter: brightness(0) invert(1);
+  /* Change arrow color to white on hover */
+}
+
+/* Right Section */
+.section3Right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  position: relative;
+  overflow: hidden;
+  max-height: 100%;
+  padding: 0;
+  height: 100%;
+}
+
+.cableTopImage {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
+  z-index: 2;
+  position: relative;
+  top: 19vh;
+  left: 50px;
+  display: block;
+  flex-shrink: 0;
+}
+
+.cableBottomImage {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
+  z-index: 1;
+  position: relative;
+  display: block;
+  flex-shrink: 0;
+  margin-bottom: 0;
+}
+
+/* Responsive Design for Section 3 */
+@media (max-width: 1400px) {
+  .section3Container {
+    padding: 0 60px;
+  }
+
+  .section3Heading {
+    font-size: 28px;
+  }
+
+  .section3Text {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .section3 {
+    height: auto;
+    min-height: 100vh;
+    padding: 60px 0;
+  }
+
+  .section3Container {
+    flex-direction: column;
+    padding: 0 40px;
+    gap: 60px;
+  }
+
+  .section3Left {
+    width: 100%;
+    max-width: 100%;
+    align-items: center;
+    order: 1;
+  }
+
+  .section3Point {
+    align-items: center;
+    text-align: center;
+  }
+
+  .section3Heading {
+    text-align: center;
+  }
+
+  .section3Text {
+    text-align: center;
+  }
+
+  .section3Right {
+    width: 100%;
+    order: 2;
+    height: auto;
+    min-height: 400px;
+  }
+
+  .cableTopImage {
+    top: 0;
+    left: 0;
+    margin-bottom: -100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section3 {
+    padding: 40px 0;
+  }
+
+  .section3Container {
+    padding: 0 20px;
+    gap: 40px;
+  }
+
+  .section3Left {
+    order: 2;
+    /* Text comes second */
+  }
+
+  .section3Right {
+    order: 1;
+    /* Images come first */
+    min-height: auto;
+    margin-bottom: 20px;
+  }
+
+  .section3Heading {
+    font-size: 24px;
+  }
+
+  .section3Text {
+    font-size: 14px;
+  }
+
+  .contactUsButton {
+    width: 100%;
+    max-width: 297px;
+  }
+
+  .cableTopImage {
+    max-width: 80%;
+    margin-bottom: -100px;
+    top: 0;
+    left: 0;
+  }
+
+  .cableBottomImage {
+    max-width: 80%;
+  }
+}
+
+/* Section 4 - Three Stories of Junk to Jungles */
+.section4 {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.section4::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* background-color: #03303DBD; */
+  z-index: 0;
+}
+
+.section4Container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+}
+
+.section4TopIcon {
+  width: 340.78px;
+  height: 86.14px;
+  object-fit: contain;
+  margin-bottom: 40px;
+}
+
+.section4Heading {
+  font-family: 'Montserrat';
+  font-size: 55px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 130%;
+  letter-spacing: 0%;
+  color: #FFFFFF;
+  margin: 0 0 60px 0;
+  text-align: center;
+}
+
+.section4Cards {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+.section4Card {
+  flex: 1;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.section4CardLink {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  transition: opacity 0.3s ease;
+  height: 100%;
+}
+
+.section4CardLink:hover {
+  opacity: 0.8;
+}
+
+.section4CardLogoContainer {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .section4CardLogoContainer {
+    width: 80%;
+  }
+}
+
+.section4CardLogo {
+  width: auto;
+    height: auto;
+    max-width: 75%;
+    max-height: 160px;
+    object-fit: contain;
+    object-position: center;
+}
+
+.section4CardTextWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.section4CardText {
+  font-family: 'Montserrat';
+  font-size: 18px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 130%;
+  letter-spacing: 0%;
+  color: #FFFFFF;
+  margin: 0;
+  text-align: center;
+}
+
+.section4Location {
+  font-family: 'Montserrat';
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 130%;
+  letter-spacing: 0%;
+  color: #FFFFFF;
+  margin: 0;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  text-align: right;
+  z-index: 10;
+  margin-bottom: 20px !important;
+  margin-right: 20px !important;
+}
+
+/* Responsive Design for Section 4 */
+@media (max-width: 1400px) {
+  .section4Container {
+    padding: 0 60px;
+  }
+
+  .section4Heading {
+    font-size: 48px;
+  }
+
+  .section4Cards {
+    gap: 30px;
+  }
+
+  .section4CardText {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .section4 {
+    height: auto;
+    min-height: 100vh;
+    padding: 60px 0;
+  }
+
+  .section4Container {
+    padding: 0 40px;
+  }
+
+  .section4Cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+  }
+
+  .section4Card {
+    max-width: 600px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .section4 {
+    padding: 40px 0;
+  }
+
+  .section4Container {
+    padding: 0 20px;
+  }
+
+  .section4TopIcon {
+    width: 250px;
+    height: auto;
+    margin-bottom: 30px;
+  }
+
+  .section4Heading {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+
+  .section4Cards {
+    gap: 50px;
+  }
+
+  .section4CardLogoContainer {
+    height: 120px;
+    margin-bottom: 20px;
+  }
+
+  .section4CardLogo {
+    max-height: 90px;
+    max-width: 70%;
+  }
+
+  .section4CardText {
+    font-size: 14px;
+  }
+
+  .section4Location {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    font-size: 9px;
+    white-space: nowrap;
+    width: auto;
+    text-align: right;
+    letter-spacing: -0.2px;
+    margin-top: 0;
+    
+  }
+}
+
+/* Recognized Globally Section */
+.recognizedSection {
+  width: 100%;
+  min-height: 100vh;
+  padding: 80px 20px;
+  background-color: #ffffff;
+  overflow: hidden;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 1441px) {
+  .recognizedSection {
+    min-height: auto;
+    padding: 60px 20px;
+  }
+}
+
+.recognizedContainer {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 80px;
+}
+
+.recognizedContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  width: 100%;
+}
+
+@media (min-width: 1441px) {
+  .recognizedContent {
+    max-width: 90%;
+  }
+}
+
+.recognizedTopDecoration {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.recognizedTreeIcon {
+  height: 80px;
+  width: 300px;
+}
+
+@media (max-width: 768px) {
+  .recognizedTreeIcon {
+    height: 65px;
+  }
+}
+
+.recognizedHeading {
+  font-family: 'Montserrat';
+  font-size: 40px;
+  font-weight: 600;
+  color: #03303D;
+  margin-bottom: 60px;
+  line-height: 130%;
+  letter-spacing: 0%;
+}
+
+.recognizedCards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.recognizedCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 20px;
+  position: relative;
+  justify-content: flex-start;
+  min-height: 400px;
+  text-decoration: none;
+}
+
+.recognizedCardHeader {
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.recognizedLogoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 200px;
+  height: 250px;
+}
+
+@media (max-width: 1200px) {
+  .recognizedSection {
+    min-height: auto;
+    padding: 60px 0;
+  }
+
+  .recognizedContainer {
+    padding: 0 40px;
+  }
+
+  .recognizedCards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .recognizedSection {
+    padding: 40px 0;
+  }
+
+  .recognizedContainer {
+    padding: 0 20px;
+
+  }
+
+  .recognizedHeading {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+
+  .recognizedCards {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .recognizedLogoContainer {
+    width: 180px !important;
+  }
+
+  .recognizedCard {
+    min-height: auto;
+    padding: 20px;
+  }
+
+  .recognizedCardHeader {
+    height: 200px;
+  }
+
+  .recognizedLogoContainer {
+    height: 200px;
+  }
+}
+
+.recognizedLogoContainer::before,
+.recognizedLogoContainer::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 40px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.recognizedLogoContainer::before {
+  left: -40px;
+  background-image: url('/src/assets/left_border.svg');
+}
+
+.recognizedLogoContainer::after {
+  right: -40px;
+  background-image: url('/src/assets/right_border.svg');
+}
+
+.recognizedMainLogo {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.recognizedCardDescription {
+  font-family: 'Montserrat';
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 130%;
+  color: #03303D;
+  text-align: center;
+  max-width: 280px;
+  margin: 0 auto;
+  letter-spacing: 0%;
+}
+
+.recognizedCardDescription strong {
+  color: #03303D;
+}
+
+/* Carousel Navigation Container */
+.recognizedCarouselNavigation {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  margin-top: 60px;
+  padding-right: 20px;
+  padding-left: 20px;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+@media (min-width: 1441px) {
+  .recognizedCarouselNavigation {
+    margin-bottom: 80px;
+  }
+}
+
+/* Carousel Navigation Buttons */
+.recognizedPrevButton,
+.recognizedNextButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 10;
+  transition: transform 0.2s ease;
+}
+
+.recognizedPrevButton:hover,
+.recognizedNextButton:hover {
+  transform: scale(1.1);
+}
+
+.recognizedPrevButton:active,
+.recognizedNextButton:active {
+  transform: scale(0.95);
+}
+
+.recognizedPrevButton img,
+.recognizedNextButton img {
+  width: 40px;
+  height: 40px;
+}
+
+/* SECTION 7 - The Sacred Groves */
+.section7 {
+  width: 100%;
+  min-height: 900px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.sec7Content {
+  width: 100%;
+  min-height: 1056px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 120px;
+}
+
+.sec7Left {
+  width: 50%;
+  color: white;
+  z-index: 2;
+}
+
+.sec7Logo {
+  width: 300px;
+  height: 80px;
+  margin-bottom: 40px;
+}
+
+.sec7Heading {
+  font-family: 'Montserrat';
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 140%;
+  color: white;
+  margin-bottom: 40px;
+}
+
+.sec7Para {
+  font-family: 'Montserrat';
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 160%;
+  color: white;
+}
+
+.sec7Para strong {
+  font-weight: 700;
+}
+
+/* Responsive Design for Section 7 */
+@media (max-width: 1200px) {
+  .section7 {
+    min-height: auto;
+    padding: 80px 0;
+  }
+
+  .sec7Content {
+    min-height: auto;
+    padding: 0 40px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .sec7Left {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sec7Heading {
+    text-align: center;
+  }
+
+  .sec7Para {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .section7 {
+    padding: 60px 0;
+  }
+
+  .sec7Content {
+    padding: 0 20px;
+  }
+
+  .sec7Logo {
+    width: 250px;
+    height: auto;
+    margin-bottom: 30px;
+  }
+
+  .sec7Heading {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+  .sec7Heading br {
+    display: none;
+  }
+
+  .sec7Para {
+    font-size: 16px;
+    text-align: center;
+    max-width: 320px;
+    /* Constrain width to encourage wrapping to ~5 lines */
+    margin: 0 auto;
+  }
+
+  .sec7Para br {
+    display: none;
+  }
+}
