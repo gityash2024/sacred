@@ -17,7 +17,7 @@ import {
   fetchAllBlogs,
   fetchTags,
   getFeaturedImageUrl,
-  getBlogTags,
+  // getBlogTags,
   extractPlainText,
   type BlogPost
 } from '@/utils/blogApi'
@@ -132,7 +132,7 @@ export const BlogDetail: React.FC = () => {
   const blogContent = blog ? parseContent(blog.content.rendered) : []
 
   // Get blog tags
-  const blogTags = blog ? getBlogTags(blog) : []
+  // const blogTags = blog ? getBlogTags(blog) : []
 
   // Cleanup speech synthesis on unmount or route change
   useEffect(() => {
