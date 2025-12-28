@@ -3,7 +3,7 @@
  * Centralized service for making backend API calls
  */
 
-const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:3001'
+const API_BASE_URL = import.meta.env.VITE_API_URL || 'https://outshade.sacredgroves.earth'
 const BLOG_BASE_URL = 'https://www.sacredgroves.earth/blog'
 
 export interface LinkedInPost {
