@@ -3,7 +3,7 @@
  * Centralized service for making backend API calls
  */
 
-const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:3000'
+const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:3001'
 const BLOG_BASE_URL = 'https://www.sacredgroves.earth/blog'
 
 export interface LinkedInPost {
@@ -87,6 +87,67 @@ export async function fetchForestImages(category: string = 'coed-rhyal'): Promis
         return images
     } catch (error) {
         console.error(`❌ Error fetching forest images for ${category}:`, error)
+        // Return empty array on error - component will use fallback
+        return []
+    }
+}
+
+/**
+ * Media Center Article from Database
+ */
+export interface MediaCenterArticle {
+    id: number
+    image: string
+    source_logo: string
+    source_name: string
+    news_title: string
+    date: string
+    source_link: string
+}
+
+export interface MediaCenterResponse {
+    success: number
+    data: MediaCenterArticle[]
+    message?: string
+}
+
+/**
+ * Fetch media center articles from backend API
+ */
+export async function fetchMediaCenter(): Promise<MediaCenterArticle[]> {
+    try {
+        console.log('🔄 Fetching media center from:', `${API_BASE_URL}/api/general/media-center`)
+        
+        const response = await fetch(`${API_BASE_URL}/api/general/media-center`, {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            // Add timeout
+            signal: AbortSignal.timeout(30000), // 30 second timeout
+        })
+
+        if (!response.ok) {
+            const errorText = await response.text()
+            console.error(`❌ HTTP error! status: ${response.status}, body: ${errorText}`)
+            throw new Error(`HTTP error! status: ${response.status}`)
+        }
+
+        const result: MediaCenterResponse = await response.json()
+        console.log('📦 Media center API response:', result)
+
+        if (result.success === 1 && result.data) {
+            console.log('✅ Media center articles fetched successfully:', result.data.length, 'articles')
+            return result.data
+        } else {
+            console.warn('⚠️ Media center API returned no data:', result.message)
+            return []
+        }
+    } catch (error) {
+        console.error('❌ Error fetching media center articles:', error)
+        if (error instanceof Error) {
+            console.error('Error details:', error.message)
+        }
         // Return empty array on error - component will use fallback
         return []
     }
