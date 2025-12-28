@@ -900,7 +900,7 @@
 @media (min-width: 1441px) {
   .aboutLeftLineWrapper {
     bottom: -85px !important;
-    left: -240px !important;
+    left: -260px !important;
   }
 }
 
@@ -924,7 +924,7 @@
 
   .aboutLeftLogo {
     top: 43px !important;
-    left: 50px !important;
+    left: 30px !important;
   }
 }
 
