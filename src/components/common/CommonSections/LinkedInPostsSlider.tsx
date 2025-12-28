@@ -57,7 +57,7 @@ export const LinkedInPostsSlider: React.FC = () => {
     },
     {
       id: 5,
-      title: "The National Forest for Wales (NFW), represented by Mr. Owain Grant, recently surveyed Sacred Groves Coed Rhyal. He was pleased to confirm that the woodland is in good health and the evidence of active oak regeneration indicates a flourishing ecosystem benefitting all 🐾 On behalf of our global community of Guardians...",
+      title: "The National Forest for Wales (NFW), represented by Mr. Owain Grant, recently surveyed Sacred Groves Coed Rhyal. He was pleased to confirm that the woodland is in good health and the evidence of active oak regeneration indicates a flourishing ecosystem benefitting all...",
       image: "https://media.licdn.com/dms/image/v2/D4D05AQHfm9EYHOnflA/videocover-high/B4DZmO5qC2GQB8-/0/1759039132858?e=1767506400&v=beta&t=hbmqJkI7F7_9ic134FNPkedAumVScVl7FFzbM8QGbo0",
       likes: 101,
       comments: 50,
@@ -65,7 +65,7 @@ export const LinkedInPostsSlider: React.FC = () => {
     },
     {
       id: 6,
-      title: "Guardian Spotlight: Darsh Misra, Grade 6, Riyadh. Every once in a while, a message arrives that touches our hearts and reminds us why we began this journey — to protect what truly matters 🦌 We recently heard from Darsh Misra, a bright Grade 6 student from Riyadh, who received a Sacred Groves Cluster as a gift...",
+      title: "Guardian Spotlight: Darsh Misra, Grade 6, Riyadh. Every once in a while, a message arrives that touches our hearts and reminds us why we began this journey — to protect what truly matters 🦌 We recently heard from Darsh Misra, a bright Grade 6 student from Riyadh...",
       image: "https://media.licdn.com/dms/image/v2/D4D22AQFpERjojFg1Tg/feedshare-shrink_800/B4DZpxSkV1IMAg-/0/1762837285024?e=1767225600&v=beta&t=QCsggMxjoU4QvojkgiiUuCV8-xeITzTf2s5DysXFAMw",
       likes: 101,
       comments: 50,
