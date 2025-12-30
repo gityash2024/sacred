@@ -1062,3 +1062,22 @@
     text-align: left;
   }
 }
+
+@media (min-width: 1200px) and (max-width: 1441px) {
+
+  .heroSection{
+    height: 120vh;
+  }
+
+  .heroText {
+    font-size: 22px;
+  }
+
+  .aboutCenterImage {
+    width: 90%;
+  }
+
+  .aboutLeftLogo {
+    left: 7rem;
+  }
+}
