@@ -1308,16 +1308,21 @@
     margin-right: 6rem;
   }
 
-  a[href="/code-rhyal"] {
-    left: calc(352.74px);
+  .coedMap {
+    margin-right: 12rem;
+  }
+
+  .girgin {
+    margin-right: 25rem;
   }
 
   .forestText {
     font-size: 16px;
   }
 
+
   .desktopContent {
-    height: 95vh;
+    height: 90vh;
   }
 
 }

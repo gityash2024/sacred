@@ -1019,9 +1019,29 @@
   .heroImage {
     width: 90%;
   }
+    .mapArrow {
+    margin-top: 6rem;
+  }
+
+  .habitatMapFull {
+    height: 60%;
+    margin-right: 6rem;
+  }
+
+  .coedMap {
+    margin-right: 12rem;
+  }
+
+  .girgin {
+    margin-right: 25rem;
+  }
+
+  .forestText {
+    font-size: 16px;
+  }
 
   .desktopContent {
-    height: 125vh;
+    height: 90vh;
   }
 
   .artScienceLeft {
