@@ -283,7 +283,7 @@ export const KnowledgeBaseDetail = () => {
               </div>
               
               {/* Related Articles in Sidebar */}
-              {relatedDocs.length > 0 && (
+              {relatedDocs.length > 0 && doc && (
                 <div className={styles.relatedSection}>
                   <h3 className={styles.relatedTitle}>Related Articles</h3>
                   <div className={styles.relatedList}>
