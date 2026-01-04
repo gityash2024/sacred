@@ -305,8 +305,8 @@
 .tabHeader {
   display: flex;
   flex-wrap: nowrap;
-  gap: 10vw;
-  justify-content: flex-start;
+  /* gap: 10vw; */
+  justify-content: space-between;
   margin-bottom: 40px;
   width: 100%;
   position: relative;
@@ -595,7 +595,7 @@
 .seedsContent {
   position: absolute;
   top: -80px;
-  left: -80px;
+  left: -15rem;
   right: -80px;
   bottom: -80px;
   width: calc(100% + 160px);
@@ -1479,7 +1479,7 @@
   }
 
   .section3Container {
-    padding: 0 20px;
+    padding: 0 0px;
   }
 
   .tabHeader {

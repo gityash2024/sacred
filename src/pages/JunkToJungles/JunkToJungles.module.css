@@ -1365,9 +1365,11 @@
 
   .cableTopImage {
     width: 65%;
+    margin-left: -3rem;
   }
   .cableBottomImage {
     width: 60%;
+    margin-top: -2rem;
   }
 
   .section3Left {
@@ -1434,16 +1436,20 @@
   }
 
   .sec7Heading {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .sec7Content {
-    width: 80%;
+    width: 90%;
+  }
+
+  .sec7Left {
+    margin-left: -8rem;
   }
 
   .sec7Para {
 
-    font-size: 16px;
+    font-size: 14px;
   }
   
 }
@@ -1485,10 +1491,11 @@
 
   .cableTopImage {
     margin-top: 10rem;
-    width: 70%;
+    width: 69%;
   }
   .cableBottomImage {
     width:70%;
+    margin-top: -3rem;
   }
 
   .section3Left {
@@ -1559,7 +1566,8 @@
   }
 
   .sec7Content {
-    width: 80%;
+    width: 100%;
+    margin-left: -1rem;
   }
 
   .sec7Para {

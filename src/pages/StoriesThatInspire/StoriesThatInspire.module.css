@@ -1201,12 +1201,12 @@
   }
 
   .heroText {
-    font-size: 38px;
+    font-size: 32px;
   }
 
   .aboutCenterImage {
     width: 90%;
-    margin-left: -20rem;
+    margin-left: 0rem;
   }
 
   .aboutLeftLogo {
@@ -1221,16 +1221,32 @@
   }
 
   .heroText {
-    font-size: 38px;
+    font-size: 50px;
   }
 
   .aboutCenterImage {
     width: 90%;
-    margin-left: -20rem;
+    margin-left: -0rem;
   }
 
   .aboutLeftLogo {
     left: 7rem;
+  }
+}
+
+@media (min-width: 1900px) {
+  .aboutContainer{
+    padding: 0 0;
+
+  }
+
+  .aboutLeftLine {
+    top: 0;
+    left: -2rem;
+  }
+
+  .aboutLeftLogo{
+    margin-left: -2rem;
   }
 }
 

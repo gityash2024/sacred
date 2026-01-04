@@ -57,7 +57,7 @@
 
 .secondSection {
   width: 100%;
-  min-height: 1024px;
+  /* min-height: 1024px; */
   background-color: #FFFFFF;
   display: flex;
   align-items: center;
@@ -1523,7 +1523,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding: 0 80px;
+  padding: 0 0px;
   box-sizing: border-box;
 }
 
@@ -1532,6 +1532,7 @@
   max-width: 50%;
   color: white;
   z-index: 2;
+  margin-left: -5rem;
 }
 
 .sec7Logo {
@@ -1672,6 +1673,10 @@
 
 @media (min-width: 1200px) and (max-width: 1440px) {
 
+  .heroSection {
+    min-height: 120vh;
+  }
+
   .logoImage {
     width: 70%;
     margin-bottom: -2rem;
@@ -1733,7 +1738,7 @@
 
   .slideIcon {
     width: 50%;
-    margin-top: -2rem;
+    margin-top: 1rem;
     margin-bottom: -1rem;
   }
 
@@ -1766,7 +1771,7 @@
   }
 
   .sec7Left {
-    margin-left: -10rem;
+    margin-left: -5rem;
   }
 
   .sec7Logo{
@@ -1888,7 +1893,7 @@
   }
 
   .sec7Left {
-    margin-left: -10rem;
+    margin-left: -5rem;
   }
 
   .sec7Logo{

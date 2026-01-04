@@ -177,7 +177,7 @@ export const Home: React.FC = () => {
         <section className={styles.heroSection}>
           {/* Background Earth Video */}
           <div className={styles.earthBackground}>
-            <video
+            {/* <video
               src={earth_video}
               autoPlay
               loop
@@ -185,7 +185,7 @@ export const Home: React.FC = () => {
               playsInline
               preload="auto"
               className={styles.earthVideo}
-            />
+            /> */}
             {/* <img src={earth_image} alt="Earth Background" className={styles.earthImageBg} /> */}
             <img src={mobileHeroBg} alt="Earth Mobile" className={styles.mobileEarthImage} />
           </div>
