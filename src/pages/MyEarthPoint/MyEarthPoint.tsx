@@ -605,7 +605,7 @@ export const MyEarthPoint: React.FC = () => {
                                 style={{ left: 'calc(33.33% - 27.26px - 10px)' }}
                                 aria-label="Visit Ocean Sanctuary page"
                             >
-                                <img src={forestArrow} alt="Arrow" />
+                                <img src={forestArrow} className='oceanArrow' alt="Arrow" />
                             </a>
                             <a
                                 href="/coed-rhyal"
@@ -615,7 +615,7 @@ export const MyEarthPoint: React.FC = () => {
                                 style={{ left: 'calc(66.66% - 27.26px - 10px)' }}
                                 aria-label="Visit Coed Rhyal page"
                             >
-                                <img src={forestArrow} alt="Arrow" />
+                                <img src={forestArrow} className='coedArrow' alt="Arrow" />
                             </a>
                             <a
                                 href="/girgin-prysg"
@@ -625,7 +625,7 @@ export const MyEarthPoint: React.FC = () => {
                                 style={{ left: 'calc(100% - 27.26px - 10px)' }}
                                 aria-label="Visit Gigrin Prysg page"
                             >
-                                <img src={forestArrow} alt="Arrow" />
+                                <img src={forestArrow} className='girginArrow' alt="Arrow" />
                             </a>
                         </div>
                     </div>
