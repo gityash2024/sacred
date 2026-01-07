@@ -366,7 +366,7 @@
 }
 
 .section3Content {
-  width: 100%;
+  width: 130%;
   display: flex;
   align-items: flex-start;
   gap: 80px;
@@ -598,8 +598,8 @@
   left: -15rem;
   right: -80px;
   bottom: -80px;
-  width: calc(100% + 160px);
-  height: calc(100% + 160px);
+  width: calc(130% + 160px);
+  height: calc(92.5% + 160px);
   display: flex;
   align-items: center;
   background-image: url('@/assets/speed_of_recogition_bg.svg');
@@ -1821,6 +1821,11 @@
     margin-top: 10rem;
   }
 
+  .seedsContent {
+    left: -5rem;
+    width: 110%;
+  }
+
   .contactBtn {
     width: 100%;
   }
@@ -1922,13 +1927,15 @@
   }
 
   .section3Content {
-    width: 60%;
+    width: 100%;
     margin: auto;
     margin-top: -2rem;
   }
 
   .sliderImg {
-    top: -9rem;
+    top: -7rem;
+    width: 70%;
+    left: 10rem;
   }
 
   .headingBold {
@@ -1946,7 +1953,11 @@
   }
 
   .sliderDots {
-    margin-top: -15rem;
+    margin-top: -14rem;
+  }
+
+  .myEarthImage {
+    width: 85%
   }
 
   .exploreBtn {
@@ -2047,6 +2058,11 @@
     margin-top: 10rem;
   }
 
+  .seedsContent {
+    left: -5rem;
+    width: 110%;
+  }
+
   .contactBtn {
     width: 100%;
   }
@@ -2144,13 +2160,16 @@
   }
 
   .section3Content {
-    width: 60%;
+    width: 100%;
     margin: auto;
     margin-top: 2rem;
+    margin-left: 5rem;
   }
 
-  .sliderImg {
-    top: -9rem;
+    .sliderImg {
+    top: -5rem;
+    width: 80%;
+    /* left: 10rem; */
   }
 
   .headingBold {
@@ -2168,7 +2187,7 @@
   }
 
   .sliderDots {
-    margin-top: -15rem;
+    margin-top: -7rem;
   }
 
   .exploreBtn {

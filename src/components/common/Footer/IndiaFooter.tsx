@@ -11,7 +11,7 @@ export const IndiaFooter = () => {
           {/* About Us Section */}
           <div className={styles.indiaFooterColumn}>
             <h3 className={styles.indiaFooterHeading}>About Us</h3>
-            <a href="#" className={styles.indiaFooterLink}>Note from our Founders</a>
+            <a href="/about#team" className={styles.indiaFooterLink}>Note from our Founders</a>
             <a href="#" className={styles.indiaFooterLink}>Our Story</a>
           </div>
 

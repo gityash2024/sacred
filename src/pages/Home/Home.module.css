@@ -2547,14 +2547,14 @@
   .indicatorValue,
   .weatherValue,
   .densityValue {
-    font-size: 0.69vw;
+    font-size: 1vw;
   }
 
   .indicatorLabel,
   .weatherLabel,
   .densityLabel,
   .dataTimestamp {
-    font-size: 0.48vw;
+    font-size: 0.7vw;
   }
 
   .weatherIcon {
@@ -4616,7 +4616,7 @@
   .indicatorsCard {
     height: auto;
     min-height: 250px;
-    margin-top: 50px;
+    /* margin-top: 50px; */
   }
 
   .guardianSection {

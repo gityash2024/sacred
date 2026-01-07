@@ -33,6 +33,7 @@ import forestArrow from '@/assets/forest_arrow.svg'
 
 
 const About: React.FC = () => {
+  
   return (
     <>
       <SEO
@@ -74,7 +75,7 @@ const About: React.FC = () => {
           </div>
         </div>
 
-        <section className={styles.teamSection}>
+        <section id="team" className={styles.teamSection}>
           <h3 className={styles.teamHeading}>We are not environmentalists. Nor scientists or technologists. We are business folk. And so we got into the business of protecting habitats.</h3>
           <div className={styles.cardsRow}>
             <div className={styles.card}>
