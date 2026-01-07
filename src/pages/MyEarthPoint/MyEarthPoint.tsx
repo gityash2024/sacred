@@ -95,6 +95,7 @@ import rightarrow from '@/assets/right_arrow.svg'
 import leftarrow from '@/assets/left_arrow.svg'
 import TheSacredGrovesisa from '@/assets/TheSacredGrovesisa.svg'
 import earth from '@/assets/earth.png'
+import ForcastIndicatorCard from '@/components/common/ForcastIndicatorCard/ForcastIndicatorCard'
 
 export const MyEarthPoint: React.FC = () => {
   const [currentCardPage, setCurrentCardPage] = React.useState(0)
@@ -1000,7 +1001,7 @@ const CustomerExperienceSection: React.FC = () => {
               <img src={currentPersona.walkImage} alt={currentPersona.name} />
             </div>
             {/* Climate */}
-            <div className='section-four-climate-container'>
+            {/* <div className='section-four-climate-container'>
                 <h2 className='section-four-climate-title'>{currentPersona.climateTitle}</h2>
                 <div className='secttion-four-climate-tab'>
                     <div><img src={map27} className='map27' alt="map" /></div>
@@ -1008,13 +1009,13 @@ const CustomerExperienceSection: React.FC = () => {
                     <div>
                       <div className='section-four-temp'>
                         <div className='section-four-temp-label'>
-                          <img src={temp} alt={currentPersona.climateTitle} />
-                          <div className='section-four-temp'>
-                            <p><b>{currentPersona.temp}</b> o</p>
-                            <p>Temp</p>
+                          <img src={temp} className='section-four-tempImg' alt={currentPersona.climateTitle} />
+                          <div className='section-four-temp-data'>
+                            <p className='temp-data'><b>{currentPersona.temp}</b> o</p>
+                            <p className='temp-data2' >Temp</p>
                           </div>
                         </div>
-                        <div>
+                        <div className='section-frour-humid'>
                           <img src={humidity} alt={currentPersona.climateTitle} />
                           <div>
                             <p><b>{currentPersona.humidity}%</b></p>
@@ -1026,27 +1027,32 @@ const CustomerExperienceSection: React.FC = () => {
                         <img src={cloudy} alt="Weather" />
                         <p><b>{currentPersona.weather}</b></p>
                       </div>
-                      <div>
+                      <div className='section-four-greencover'>
                         <img src={greencover} alt="GreenCover" />
                         <p><b>{currentPersona.greenCover}%</b> Green Cover Density</p>
                       </div>
                     </div>
                 </div>
                 
-            </div>
+            </div> */}
+            < ForcastIndicatorCard props={currentPersona} />
           </div>
           <div className='section-four-shop-arrows'>
             <div >
-            <img src={rightArrow} alt="rightArrow" />
-            <img src={cone} alt="cone" />
+            <img src={rightArrow} alt="rightArrow" className='rightArrow' />
+            <img src={cone} alt="cone" className='cone' />
             </div>
             <div className='section-four-redeem-container'>
                 <h2 className='section-four-redeem-label'>Redeem</h2>
                 <div className='section-four-redeem-offer'>
-                    <p>{currentPersona.redeemOffer}</p>
+                    <p className='section-four-redeem-para'>{currentPersona.redeemOffer}</p>
                 </div>
             </div>
-            <img src={upArrrow} alt="upArrow" />
+            <div>
+
+            <img src={upArrrow} className='upArrow' alt="upArrow" />
+            </div>
+            <div></div>
           </div>
         </div>
 

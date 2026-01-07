@@ -162,7 +162,7 @@ export const OurSacredGroves: React.FC = () => {
 
                 {/* Art and Science of Conservation Section */}
                 <FadeInSection>
-                    <section className={styles.artScienceSection}>
+                    <section id='artscience' className={styles.artScienceSection}>
                         <div className={styles.artScienceContainer}>
                             {/* Left Column */}
                             <div className={styles.artScienceLeft}>

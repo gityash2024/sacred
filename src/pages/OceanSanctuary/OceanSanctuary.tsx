@@ -429,13 +429,13 @@ export const OceanSanctuary: React.FC = () => {
                         <div className={styles.section2Container}>
                             {/* Left Section - Text with Icon */}
                             <div className={styles.section2Left}>
-                                <a
+                                {/* <a
                                     href="https://www.gov.wales/visit-national-forest-wales#159116"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >
                                     <img src={coedSec2IconLeft} alt="Ocean Sanctuary Icon" className={styles.section2Icon} />
-                                </a>
+                                </a> */}
                                 <div className={styles.section2Text}>
                                     <p className={styles.section2Para}>
                                         Along Nova Scotia's South Shore lies Ocean Sanctuary, an 83-acre forest corridor connecting the Atlantic's saltwater with the freshwater of Haley Lake to create a rare, living harmony.

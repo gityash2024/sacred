@@ -1256,7 +1256,7 @@
 }
 
 .virtualLabel {
-  margin-top: 5rem;
+  margin-top: 2rem;
 }
 
 .sacredBtnWrapper {
@@ -1800,6 +1800,10 @@
 
 @media (min-width:1200px)and (max-width:1400px) {
 
+  .guardianRight {
+    margin-left: -6rem;
+  }
+
   .dotGrid{
     right : 6rem;
   }
@@ -1869,11 +1873,11 @@
   }
 
   .virtualScreen {
-    width: 70%;
+    width: 80%;
   }
 
   .virtualLabel{
-    margin-top: 1rem;
+    margin-top: -1rem;
   }
   
   .braceLeft, .braceRight{
@@ -1913,6 +1917,11 @@
 }
 
 @media (min-width:1441px)and (max-width:1700px) {
+
+  .guardianRight {
+    margin-left: -5rem;
+  }
+
   .guardianGrid{
     padding: 0px;
   }
@@ -1954,15 +1963,15 @@
   }
 
   .sacredCardImage{
-    width: 70%
+    width: 80%
   }
 
   .virtualScreen {
-    width: 70%;
+    width: 80%;
   }
 
   .virtualLabel{
-    margin-top: 1rem;
+    margin-top: -1rem;
   }
   
   .braceLeft, .braceRight{

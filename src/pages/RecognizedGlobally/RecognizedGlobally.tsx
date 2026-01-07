@@ -792,7 +792,7 @@ export const RecognizedGlobally: React.FC<RecognizedGloballyProps> = ({ showWild
       {/* 3. Built with Wild Tech Section */}
       {showWildTech && (
         <FadeInSection>
-          <section className={styles.wildTechSection}>
+          <section id='wild' className={styles.wildTechSection}>
             <div className={styles.wildTechContent}>
               {/* Left Side - Forest Image & Interactive Elements */}
               <div className={styles.wildTechLeft}>

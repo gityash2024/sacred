@@ -264,7 +264,7 @@ const About: React.FC = () => {
         </section>
       </FadeInSection>
 
-      <div className={styles.disclosuresSection}>
+      <div id="#disclouseres" className={styles.disclosuresSection}>
         <div className={styles.disclosuresInner}>
           <img src={Disclosureslogo} alt="disclosures logo" className={styles.disclosuresLogo} />
           <h3 className={styles.disclosuresHeading}>Disclosures</h3>

@@ -1266,8 +1266,8 @@ section {
 
 @media (min-width: 1200px) and (max-width: 1440px) {
     .section-four-container {
-        height: 100vh;
-        min-height: 100vh;
+        /* height: 100vh;
+        min-height: 100vh; */
     }
 }
 
@@ -1305,12 +1305,15 @@ section {
 .section-four-gif-top-container-shop-title {
     color: #ffffff;
     text-align: center;
-    padding: 1rem;
+    padding-top: 10px;
+      font-weight: 700;
+  font-size: 24px;
 }
 
 .section-four-shopImage {
-    padding: 1rem;
+    padding: 10px;
     margin: auto;
+    width: 45%;
 }
 
 .downarrow {
@@ -1322,7 +1325,7 @@ section {
     width: 0.3rem;
     height: 3rem;
     margin: 0.5rem auto; */
-    margin: 1rem auto;
+    margin: 10px auto;
 }
 /* .downarrowrightside {
     background-color: #ffffff;
@@ -1348,116 +1351,101 @@ section {
     transform: rotate(135deg);
 } */
 
+.rightArrow {
+    width: 100%;
+    height: 50%;
+}
+
+.upArrow {
+    width: 100%;
+    height: 40%;
+}
+
 .section-four-gif-top-container-earn {
     display: flex;
     /* background-color: #FFFFFF; */
     border-radius: 40px;
-    padding: 1rem;
-    margin: 1rem;
+    padding: 5px;
     justify-content: center;
 }
 .section-four-gif-top-container-bonus {
     display: flex;
     background-color: #FFFFFF;
     border-radius: 40px;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    margin: 1rem;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 10px;
+    width: 100%;
 }
 
 .section-four-bonuspoint {
-    font-size: 2rem;
+    font-size: 20px;
     font-weight: bold;
     color: #03303D;  /* Inside text empty */
     /* -webkit-text-stroke: 1px #59C09A;  Text border */
     align-self: center;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .section-four-earnbLabel {
-    /* font-size: 2rem; */
+    font-size: 14px;
     font-weight: bold;
     color: #03303D;  /* Inside text empty */
     /* -webkit-text-stroke: 1px #59C09A;  Text border */
     align-self: center;
-    margin-right: 2rem;
+    margin-right: 20px;
 }
 
 .section-four-earnIcon-wrapper{
     background-color:#03303D;
     border-radius: 50%;
-    margin: auto auto auto -3rem;
+    margin: auto auto auto -30px;
 }
 
 .section-four-earnIcon {
-    padding: 0.5rem;
+    padding: 5px;
 }
 
 .section-four-shop-arrows {
     display: flex;
+    width: 100%;
+    margin-left: 8rem;
+}
+
+.cone {
+    margin-left: 50%;
 }
 
 h2.section-four-redeem-label {
     color: #ffffff;
     text-align: center;
-    padding: 1rem;
+    padding-top: 10px;
+    font-size: 24px;
 }
 
 .section-four-redeem-container {
     background-color: #59C09A;
     border-radius: 40px;
     color: #ffffff;
+    margin-bottom: 5rem;
 }
 
 .section-four-redeem-offer {
     background-color: #03303D;
-    color: #59C09A;
-    padding: 1rem;
+    color: #ffffff;
+    padding: 10px;
     border-radius: 40px;
-    margin: 1rem;
+    margin: 10px;
 }
 
-.section-four-climate-container {
-    background-color: #59C09A;
-    border-radius: 40px;
-}
-
-h2.section-four-climate-title {
- color: #ffffff;
- text-align: center;
-}
-
-.secttion-four-climate-tab {
-    background-color: #B8e0d3;
-    color: #03303D;
-    margin: 1rem;
-    padding: 1rem;
-    border-radius: 40px;
-}
-
-.map27 {
-    border-radius: 20px;
-}
-
-.section-four-indicator {
-    margin: 1rem;
+.section-four-redeem-para {
+    font-size: 16px;
+    font-weight: 500;
     text-align: center;
 }
 
-.section-four-temp {
-    display: flex;
-    border-top: 2px solid #ffffff;
-    border-bottom: 2px solid #ffffff;
-}
 
-.section-four-temp-label {
-    border-right: 2px solid #ffffff;
-}
-
-.section-four-cloudy {
-    border-bottom: 2px solid #ffffff;
-}
 
 /* Section 4 - Persona GIF Responsive */
 @media (min-width: 1920px) {
@@ -1628,7 +1616,7 @@ h2.section-four-climate-title {
         max-width: 450px;
         height: auto;
         top: 10.2%;
-        left: 62.4%;
+        left: 80%;
         gap: 1.4vw;
     }
 }
@@ -2085,6 +2073,7 @@ h2.section-four-climate-title {
     height: 382px;
     top: 398px;
     left: 1004px;
+    margin-left: 7rem;
 }
 
 .persona-info-title {
@@ -4421,6 +4410,22 @@ h2.section-four-climate-title {
 
     .girginArrow{
         margin-right: 23rem;
+    }
+
+    .persona-icons-container {
+        margin-left: 5rem;
+    }
+
+    .persona-info-container {
+        margin-left: 2rem;
+    }
+
+    .persona-info-description {
+        width: 60%;
+    }
+
+    .upArrow {
+        width: 40%;
     }
 }
 

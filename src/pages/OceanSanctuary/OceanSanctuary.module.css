@@ -5,6 +5,11 @@
   height: fit-content;
 }
 
+.modalOverlay {
+  width: fit-content;
+  height: fit-content;
+}
+
 .pageWrapper {
   width: 100%;
   margin: 0;
@@ -213,7 +218,7 @@
 .section2 {
   width: 100%;
   min-height: 100vh;
-  background-color: #DAF6EC;
+  /* background-color: #DAF6EC; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1642,7 +1647,7 @@ p.videoparagraph {
 }
 
 .carouselWrapper {
-  margin-top: -2rem;
+  margin-top: 2rem;
 }
 
 .ecologicalText {
@@ -1760,7 +1765,7 @@ p.videoparagraph {
   font-size: 22px;
 }
 .section4Container{
-  gap: 10rem;
+  gap: 3rem;
 }
 
 .carouselWrapper {

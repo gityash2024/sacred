@@ -72,7 +72,7 @@ export const Footer = () => {
         <div className={styles.footerGrid}>
           <div>
             <h3>About Us</h3>
-            <Link to="/about">Note from our Founders</Link>
+            <Link to="/about#team">Note from our Founders</Link>
             <Link to="/about">Our Story</Link>
           </div>
 
@@ -81,8 +81,8 @@ export const Footer = () => {
             <Link to="/coed-rhyal">Coed Rhyal<br />Wales, United Kingdom</Link>
             <Link to="/girgin-prysg">Gigrin Prysg<br />Wales, United Kingdom</Link>
             <Link to="/ocean-sanctuary">Ocean Sanctuary<br />Nova Scotia, Canada</Link>
-            <Link to="/our-sacred-groves">Art and Science of <br />Conservation</Link>
-            <Link to="/our-sacred-groves">Wild Tech</Link>
+            <Link to="/our-sacred-groves#artscience">Art and Science of <br />Conservation</Link>
+            <Link to="/our-sacred-groves#wild">Wild Tech</Link>
           </div>
 
           <div>
@@ -118,8 +118,8 @@ export const Footer = () => {
             </a>
 
             <h3 className={styles.legalHeading}>Legal</h3>
-            <Link to="/about">Disclosures</Link>
-            <a href="/policy#cookies" target="_blank" rel="noopener noreferrer">Cookie Policy</a>
+            <Link to="/about#disclouseres">Disclosures</Link>
+            <a href="/about#disclouseres" target="_blank" rel="noopener noreferrer">Cookie Policy</a>
             <a href="/policy" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
             <a href="/terms-and-conditions" target="_blank" rel="noopener noreferrer">Terms and Conditions</a>
           </div>
