@@ -1,5 +1,10 @@
 /* Girgin Prysg Page Styles */
 
+.modalImage {
+  width: fit-content;
+  height: fit-content;
+}
+
 .pageWrapper {
   width: 100%;
   margin: 0;
@@ -32,7 +37,7 @@
 
 /* Gallery Bar - Full width bottom bar */
 .galleryBar {
-  width: calc(100% - 250px);
+  width: calc(110% - 250px);
   height: 140px;
   display: flex;
   align-items: stretch;
@@ -913,7 +918,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 0px;
   width: 100%;
   position: relative;
   overflow: hidden;
@@ -1031,6 +1036,11 @@
   height: 23.66px;
   object-fit: contain;
   flex-shrink: 0;
+}
+
+p.videoparagraph {
+  color: #FFFFFF;
+  width: 35%;
 }
 
 @media (max-width: 1200px) {
@@ -1331,7 +1341,7 @@
 
 .section6IconRight {
   width: 300px;
-  max-width: 20%;
+  max-width: 100%;
   height: auto;
   object-fit: contain;
   flex-shrink: 0;
@@ -1500,8 +1510,8 @@
   font-size: 22px;
 }
 .section5Container{
-  gap: 1rem;
-  margin-top: -4rem;
+  gap: 3rem;
+  margin-top: 0rem;
 }
 
 }
@@ -1610,7 +1620,7 @@
   font-size: 22px;
 }
 .section5Container{
-  gap: 1rem;
+  gap: 3rem;
   margin-top: -4rem;
 }
 

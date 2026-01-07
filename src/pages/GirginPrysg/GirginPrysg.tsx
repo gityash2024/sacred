@@ -665,7 +665,10 @@ export const GirginPrysg: React.FC = () => {
                                     </svg>
                                 </button>
                             </div>
+                            <div></div>
+                            <p className={styles.videoparagraph}>Review by Mr. Owain Grant, National Forest for Wales Liaison Officer South West Wales.</p>
                             <img src={videCoedRight} alt="Video Icon Right" className={styles.section6IconRight} />
+
                         </div>
                     </section>
                 </FadeInSection>

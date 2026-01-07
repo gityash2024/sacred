@@ -677,8 +677,12 @@ export const CoedRhyal: React.FC = () => {
                                         <path d="M8 3H5C3.89543 3 3 3.89543 3 5V8M21 8V5C21 3.89543 20.1046 3 19 3H16M16 21H19C20.1046 21 21 20.1046 21 19V16M3 16V19C3 20.1046 3.89543 21 5 21H8" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                                     </svg>
                                 </button>
+                               
                             </div>
-                            <img src={videCoedRight} alt="Video Icon Right" className={styles.section6IconRight} />
+                            <div>
+                                <p className={styles.videoparagraph}>Review by Mr. Owain Grant, National Forest for Wales Liaison Officer South West Wales.</p>
+                                <img src={videCoedRight} alt="Video Icon Right" className={styles.section6IconRight} />
+                            </div>
                         </div>
                     </section>
                 </FadeInSection>

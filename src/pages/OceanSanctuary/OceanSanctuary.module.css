@@ -1,5 +1,10 @@
 /* Ocean Sanctuary Page Styles */
 
+.modalImage {
+  width: fit-content;
+  height: fit-content;
+}
+
 .pageWrapper {
   width: 100%;
   margin: 0;
@@ -75,7 +80,7 @@
 
 /* Gallery Bar - Full width bottom bar */
 .galleryBar {
-  width: calc(100% - 250px);
+  width: calc(110% - 250px);
   height: 140px;
   display: flex;
   align-items: stretch;
@@ -975,7 +980,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 0px;
   width: 100%;
   position: relative;
   overflow: hidden;
@@ -1072,6 +1077,11 @@
   padding: 15.56px 17.41px 0 17.32px;
   /* Use padding instead */
   box-sizing: border-box;
+}
+
+p.videoparagraph {
+  color: #FFFFFF;
+  width: 35%;
 }
 
 @media (max-width: 768px) {
@@ -1347,7 +1357,7 @@
 
 .section6IconRight {
   width: 300px;
-  max-width: 20%;
+  max-width: 100%;
   height: auto;
   object-fit: contain;
   flex-shrink: 0;
@@ -1628,7 +1638,7 @@
   font-size: 22px;
 }
 .section4Container{
-  gap: 10rem;
+  gap: 5rem;
 }
 
 .carouselWrapper {
