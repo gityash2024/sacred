@@ -5,6 +5,7 @@ node_modules/
 dist/
 
 src/assets
+src/assets.zip
 
 # Video files only
 *.mp4

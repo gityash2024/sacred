@@ -1418,6 +1418,47 @@ h2.section-four-redeem-label {
     margin: 1rem;
 }
 
+.section-four-climate-container {
+    background-color: #59C09A;
+    border-radius: 40px;
+}
+
+h2.section-four-climate-title {
+ color: #ffffff;
+ text-align: center;
+}
+
+.secttion-four-climate-tab {
+    background-color: #B8e0d3;
+    color: #03303D;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 40px;
+}
+
+.map27 {
+    border-radius: 20px;
+}
+
+.section-four-indicator {
+    margin: 1rem;
+    text-align: center;
+}
+
+.section-four-temp {
+    display: flex;
+    border-top: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+}
+
+.section-four-temp-label {
+    border-right: 2px solid #ffffff;
+}
+
+.section-four-cloudy {
+    border-bottom: 2px solid #ffffff;
+}
+
 /* Section 4 - Persona GIF Responsive */
 @media (min-width: 1920px) {
     .persona-gif {

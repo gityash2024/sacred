@@ -65,6 +65,11 @@ import Usingtechnology from '@/assets/Usingtechnology.svg'
 import coedwing from '@/assets/coedwing.svg'
 import map from '@/assets/3_forest_image.png'
 import forestArrow from '@/assets/forest_arrow.svg'
+import map27  from  "@/assets/map27.png"
+import temp from  "@/assets/temp.png"
+import humidity from  "@/assets/humidity.svg"
+import cloudy from "@/assets/cloudy.png"
+import greencover from  "@/assets/Greencovericon.png"
 
 // section 6 images
 import nude_bg from '@/assets/nude_bg.jpg'
@@ -995,12 +1000,39 @@ const CustomerExperienceSection: React.FC = () => {
               <img src={currentPersona.walkImage} alt={currentPersona.name} />
             </div>
             {/* Climate */}
-            <div>
-                <h2>{currentPersona.climateTitle}</h2>
-                <div>
-                    <div><img src="" alt="" /></div>
+            <div className='section-four-climate-container'>
+                <h2 className='section-four-climate-title'>{currentPersona.climateTitle}</h2>
+                <div className='secttion-four-climate-tab'>
+                    <div><img src={map27} className='map27' alt="map" /></div>
+                    <h6 className='section-four-indicator'>Forcast Indicators</h6>
+                    <div>
+                      <div className='section-four-temp'>
+                        <div className='section-four-temp-label'>
+                          <img src={temp} alt={currentPersona.climateTitle} />
+                          <div className='section-four-temp'>
+                            <p><b>{currentPersona.temp}</b> o</p>
+                            <p>Temp</p>
+                          </div>
+                        </div>
+                        <div>
+                          <img src={humidity} alt={currentPersona.climateTitle} />
+                          <div>
+                            <p><b>{currentPersona.humidity}%</b></p>
+                            <p>Humidity</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div className='section-four-cloudy'>
+                        <img src={cloudy} alt="Weather" />
+                        <p><b>{currentPersona.weather}</b></p>
+                      </div>
+                      <div>
+                        <img src={greencover} alt="GreenCover" />
+                        <p><b>{currentPersona.greenCover}%</b> Green Cover Density</p>
+                      </div>
+                    </div>
                 </div>
-                <h3>Forcast Indicators</h3>
+                
             </div>
           </div>
           <div className='section-four-shop-arrows'>
